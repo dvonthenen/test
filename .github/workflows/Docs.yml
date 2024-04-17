@@ -25,15 +25,12 @@ jobs:
         - name: Set the current major version
           run: echo "MAJOR_VERSION=$(echo $TAG_NAME | cut -d '.' -f 1)" >> "$GITHUB_ENV" # This extracts the major version assuming a 'vX.Y.Z' format
 
-        - name: Checkout the gh-pages branch
-          uses: actions/checkout@v3
+        - uses: DenverCoder1/doxygen-github-pages-action@v1.3.0
           with:
-            ref: gh-pages
-            path: gh-pages
-
-        - uses: mattnotmitt/doxygen-action@v1.9.8
-          with:
-            doxyfile-path: 'docs/Doxygen'
+              github_token: ${{ secrets.GITHUB_TOKEN }}
+              branch: gh-pages
+              folder: docs/${{ MAJOR_VERSION }}
+              config_file: Doxyfile
 
         - name: Deploy to GitHub Pages
           uses: peaceiris/actions-gh-pages@v3
