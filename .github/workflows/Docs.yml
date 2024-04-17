@@ -33,7 +33,6 @@ jobs:
 
         - uses: mattnotmitt/doxygen-action@v1.9.8
           with:
-            working-directory: 'submodule/'
             doxyfile-path: 'docs/Doxygen'
 
         - name: Deploy to GitHub Pages
