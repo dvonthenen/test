@@ -1,0 +1,181 @@
+\hypertarget{interfaceIAnalyzeClient}{}\doxysection{IAnalyze\+Client Interface Reference}
+\label{interfaceIAnalyzeClient}\index{IAnalyzeClient@{IAnalyzeClient}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ \mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}} $>$ \mbox{\hyperlink{interfaceIAnalyzeClient_af6bc7284ef22143e13e284e8b83a94d7}{Analyze\+Url}} (\mbox{\hyperlink{PreRecorded_2v1_2UrlSource_8cs_a7b28b72460d7597a2d6d7666c7a585c6}{Url\+Source}} source, \mbox{\hyperlink{classAnalyzeSchema}{Analyze\+Schema}}? analyze\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Analyze a file by providing a url \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}} $>$ \mbox{\hyperlink{interfaceIAnalyzeClient_a40e61cf3123af2d0c0386ed19a8c8150}{Analyze\+File}} (byte\mbox{[}$\,$\mbox{]} source, \mbox{\hyperlink{classAnalyzeSchema}{Analyze\+Schema}}? analyze\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Analyzes a file using the provided byte array \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}} $>$ \mbox{\hyperlink{interfaceIAnalyzeClient_a3c7eacf7ae49a92557491e8c86992e87}{Analyze\+File}} (Stream source, \mbox{\hyperlink{classAnalyzeSchema}{Analyze\+Schema}}? analyze\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Analyzes a file using the provided stream \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}} $>$ \mbox{\hyperlink{interfaceIAnalyzeClient_aca39fe68e1d5ef648c8a89155667177d}{Analyze\+File\+Call\+Back}} (byte\mbox{[}$\,$\mbox{]} source, string? call\+Back, \mbox{\hyperlink{classAnalyzeSchema}{Analyze\+Schema}}? analyze\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Analyzes a file using the provided byte array and providing a Call\+Back \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}} $>$ \mbox{\hyperlink{interfaceIAnalyzeClient_a8ca7f6790ee53d4ad2dae2a522e58635}{Analyze\+File\+Call\+Back}} (Stream source, string? call\+Back, \mbox{\hyperlink{classAnalyzeSchema}{Analyze\+Schema}}? analyze\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Analyzes a file using the provided stream and providing a Call\+Back \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}} $>$ \mbox{\hyperlink{interfaceIAnalyzeClient_ae852b63477cd3a8a0a61d8fd256363f4}{Analyze\+Url\+Call\+Back}} (\mbox{\hyperlink{PreRecorded_2v1_2UrlSource_8cs_a7b28b72460d7597a2d6d7666c7a585c6}{Url\+Source}} source, string? call\+Back, \mbox{\hyperlink{classAnalyzeSchema}{Analyze\+Schema}}? analyze\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Analyze a file by providing a url and a Call\+Back \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 9 of file IAnalyze\+Client.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceIAnalyzeClient_a40e61cf3123af2d0c0386ed19a8c8150}\label{interfaceIAnalyzeClient_a40e61cf3123af2d0c0386ed19a8c8150}} 
+\index{IAnalyzeClient@{IAnalyzeClient}!AnalyzeFile@{AnalyzeFile}}
+\index{AnalyzeFile@{AnalyzeFile}!IAnalyzeClient@{IAnalyzeClient}}
+\doxysubsubsection{\texorpdfstring{AnalyzeFile()}{AnalyzeFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}}$>$ IAnalyze\+Client.\+Analyze\+File (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{source,  }\item[{\mbox{\hyperlink{classAnalyzeSchema}{Analyze\+Schema}}?}]{analyze\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Analyzes a file using the provided byte array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & file is the form of a byte\mbox{[}\mbox{]}\\
+\hline
+{\em analyze\+Schema} & Options for the transcription \mbox{\hyperlink{classAnalyzeSchema}{Analyze\+Schema}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIAnalyzeClient_a3c7eacf7ae49a92557491e8c86992e87}\label{interfaceIAnalyzeClient_a3c7eacf7ae49a92557491e8c86992e87}} 
+\index{IAnalyzeClient@{IAnalyzeClient}!AnalyzeFile@{AnalyzeFile}}
+\index{AnalyzeFile@{AnalyzeFile}!IAnalyzeClient@{IAnalyzeClient}}
+\doxysubsubsection{\texorpdfstring{AnalyzeFile()}{AnalyzeFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}}$>$ IAnalyze\+Client.\+Analyze\+File (\begin{DoxyParamCaption}\item[{Stream}]{source,  }\item[{\mbox{\hyperlink{classAnalyzeSchema}{Analyze\+Schema}}?}]{analyze\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Analyzes a file using the provided stream 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & file is the form of a stream Stream\\
+\hline
+{\em analyze\+Schema} & Options for the transcription \mbox{\hyperlink{classAnalyzeSchema}{Analyze\+Schema}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIAnalyzeClient_aca39fe68e1d5ef648c8a89155667177d}\label{interfaceIAnalyzeClient_aca39fe68e1d5ef648c8a89155667177d}} 
+\index{IAnalyzeClient@{IAnalyzeClient}!AnalyzeFileCallBack@{AnalyzeFileCallBack}}
+\index{AnalyzeFileCallBack@{AnalyzeFileCallBack}!IAnalyzeClient@{IAnalyzeClient}}
+\doxysubsubsection{\texorpdfstring{AnalyzeFileCallBack()}{AnalyzeFileCallBack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}}$>$ IAnalyze\+Client.\+Analyze\+File\+Call\+Back (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{source,  }\item[{string?}]{call\+Back,  }\item[{\mbox{\hyperlink{classAnalyzeSchema}{Analyze\+Schema}}?}]{analyze\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Analyzes a file using the provided byte array and providing a Call\+Back 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & file is the form of a byte\mbox{[}\mbox{]}\\
+\hline
+\end{DoxyParams}
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Call\+Back url\\
+\hline
+\end{DoxyParams}
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em analyze\+Schema} & Options for the transcription\mbox{\hyperlink{classAnalyzeSchema}{Analyze\+Schema}} \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}}
+\end{DoxyReturn}
+\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceIAnalyzeClient_a8ca7f6790ee53d4ad2dae2a522e58635}\label{interfaceIAnalyzeClient_a8ca7f6790ee53d4ad2dae2a522e58635}} 
+\index{IAnalyzeClient@{IAnalyzeClient}!AnalyzeFileCallBack@{AnalyzeFileCallBack}}
+\index{AnalyzeFileCallBack@{AnalyzeFileCallBack}!IAnalyzeClient@{IAnalyzeClient}}
+\doxysubsubsection{\texorpdfstring{AnalyzeFileCallBack()}{AnalyzeFileCallBack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}}$>$ IAnalyze\+Client.\+Analyze\+File\+Call\+Back (\begin{DoxyParamCaption}\item[{Stream}]{source,  }\item[{string?}]{call\+Back,  }\item[{\mbox{\hyperlink{classAnalyzeSchema}{Analyze\+Schema}}?}]{analyze\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Analyzes a file using the provided stream and providing a Call\+Back 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & file is the form of a stream \mbox{\hyperlink{}{Stream}} ~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Call\+Back url\\
+\hline
+\end{DoxyParams}
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em analyze\+Schema} & Options for the transcription\mbox{\hyperlink{classAnalyzeSchema}{Analyze\+Schema}} \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}}
+\end{DoxyReturn}
+\\
+\hline
+\end{DoxyParams}
+\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceIAnalyzeClient_af6bc7284ef22143e13e284e8b83a94d7}\label{interfaceIAnalyzeClient_af6bc7284ef22143e13e284e8b83a94d7}} 
+\index{IAnalyzeClient@{IAnalyzeClient}!AnalyzeUrl@{AnalyzeUrl}}
+\index{AnalyzeUrl@{AnalyzeUrl}!IAnalyzeClient@{IAnalyzeClient}}
+\doxysubsubsection{\texorpdfstring{AnalyzeUrl()}{AnalyzeUrl()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}}$>$ IAnalyze\+Client.\+Analyze\+Url (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{PreRecorded_2v1_2UrlSource_8cs_a7b28b72460d7597a2d6d7666c7a585c6}{Url\+Source}}}]{source,  }\item[{\mbox{\hyperlink{classAnalyzeSchema}{Analyze\+Schema}}?}]{analyze\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Analyze a file by providing a url 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Url to the file that is to be analyzed \mbox{\hyperlink{PreRecorded_2v1_2UrlSource_8cs_a7b28b72460d7597a2d6d7666c7a585c6}{Url\+Source}} 
+\begin{DoxyParams}{Parameters}
+{\em analyze\+Schema} & Options for the transcription \mbox{\hyperlink{classAnalyzeSchema}{Analyze\+Schema}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}}
+\end{DoxyReturn}
+\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceIAnalyzeClient_ae852b63477cd3a8a0a61d8fd256363f4}\label{interfaceIAnalyzeClient_ae852b63477cd3a8a0a61d8fd256363f4}} 
+\index{IAnalyzeClient@{IAnalyzeClient}!AnalyzeUrlCallBack@{AnalyzeUrlCallBack}}
+\index{AnalyzeUrlCallBack@{AnalyzeUrlCallBack}!IAnalyzeClient@{IAnalyzeClient}}
+\doxysubsubsection{\texorpdfstring{AnalyzeUrlCallBack()}{AnalyzeUrlCallBack()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}}$>$ IAnalyze\+Client.\+Analyze\+Url\+Call\+Back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{PreRecorded_2v1_2UrlSource_8cs_a7b28b72460d7597a2d6d7666c7a585c6}{Url\+Source}}}]{source,  }\item[{string?}]{call\+Back,  }\item[{\mbox{\hyperlink{classAnalyzeSchema}{Analyze\+Schema}}?}]{analyze\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Analyze a file by providing a url and a Call\+Back 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Url to the file that is to be analyzed \mbox{\hyperlink{PreRecorded_2v1_2UrlSource_8cs_a7b28b72460d7597a2d6d7666c7a585c6}{Url\+Source}}\\
+\hline
+{\em call\+Back} & Call\+Back url\\
+\hline
+\end{DoxyParams}
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em analyze\+Schema} & Options for the transcription\mbox{\hyperlink{classAnalyzeSchema}{Analyze\+Schema}} \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}}
+\end{DoxyReturn}
+\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Deepgram/\+Clients/\+Interfaces/v1/\mbox{\hyperlink{IAnalyzeClient_8cs}{IAnalyze\+Client.\+cs}}\end{DoxyCompactItemize}

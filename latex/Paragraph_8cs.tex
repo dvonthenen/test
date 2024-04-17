@@ -1,0 +1,49 @@
+\hypertarget{Paragraph_8cs}{}\doxysection{Deepgram/\+Models/\+Pre\+Recorded/v1/\+Paragraph.cs File Reference}
+\label{Paragraph_8cs}\index{Deepgram/Models/PreRecorded/v1/Paragraph.cs@{Deepgram/Models/PreRecorded/v1/Paragraph.cs}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+record?????? \mbox{\hyperlink{Paragraph_8cs_a9f7afc7dba2a564dfb05510de11dd0dc}{Paragraph}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{Paragraph_8cs_a9f7afc7dba2a564dfb05510de11dd0dc}\label{Paragraph_8cs_a9f7afc7dba2a564dfb05510de11dd0dc}} 
+\index{Paragraph.cs@{Paragraph.cs}!Paragraph@{Paragraph}}
+\index{Paragraph@{Paragraph}!Paragraph.cs@{Paragraph.cs}}
+\doxysubsubsection{\texorpdfstring{Paragraph}{Paragraph}}
+{\footnotesize\ttfamily record?????? Paragraph}
+
+
+
+Definition at line 7 of file Paragraph.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{12     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{13     [JsonPropertyName(\textcolor{stringliteral}{"{}sentences"{}})]}
+\DoxyCodeLine{14     \textcolor{keyword}{public} IReadOnlyList<Sentence>? Sentences \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{19     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{20     [JsonPropertyName(\textcolor{stringliteral}{"{}num\_words"{}})]}
+\DoxyCodeLine{21     \textcolor{keyword}{internal} \textcolor{keywordtype}{int}? NumWords \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{26     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{27     [JsonPropertyName(\textcolor{stringliteral}{"{}start"{}})]}
+\DoxyCodeLine{28     \textcolor{keyword}{public} decimal? Start \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{33     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{34     [JsonPropertyName(\textcolor{stringliteral}{"{}end"{}})]}
+\DoxyCodeLine{35     \textcolor{keyword}{public} decimal? End \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{40     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{41     [JsonPropertyName(\textcolor{stringliteral}{"{}sentiment"{}})]}
+\DoxyCodeLine{42     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? Sentiment \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{47     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{48     [JsonPropertyName(\textcolor{stringliteral}{"{}sentiment\_score"{}})]}
+\DoxyCodeLine{49     \textcolor{keyword}{public} \textcolor{keywordtype}{double}? SentimentScore \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{50 \}}
+
+\end{DoxyCode}

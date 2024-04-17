@@ -1,0 +1,38 @@
+\hypertarget{UtteranceEndResponse_8cs}{}\doxysection{Deepgram/\+Models/\+Live/v1/\+Utterance\+End\+Response.cs File Reference}
+\label{UtteranceEndResponse_8cs}\index{Deepgram/Models/Live/v1/UtteranceEndResponse.cs@{Deepgram/Models/Live/v1/UtteranceEndResponse.cs}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+record??? \mbox{\hyperlink{UtteranceEndResponse_8cs_ab5a43e6b046cc446c5392fb7b9cda060}{Utterance\+End\+Response}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{UtteranceEndResponse_8cs_ab5a43e6b046cc446c5392fb7b9cda060}\label{UtteranceEndResponse_8cs_ab5a43e6b046cc446c5392fb7b9cda060}} 
+\index{UtteranceEndResponse.cs@{UtteranceEndResponse.cs}!UtteranceEndResponse@{UtteranceEndResponse}}
+\index{UtteranceEndResponse@{UtteranceEndResponse}!UtteranceEndResponse.cs@{UtteranceEndResponse.cs}}
+\doxysubsubsection{\texorpdfstring{UtteranceEndResponse}{UtteranceEndResponse}}
+{\footnotesize\ttfamily record??? Utterance\+End\+Response}
+
+
+
+Definition at line 7 of file Utterance\+End\+Response.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{12     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{13     [JsonPropertyName(\textcolor{stringliteral}{"{}type"{}})]}
+\DoxyCodeLine{14     [JsonConverter(typeof(JsonStringEnumConverter))]}
+\DoxyCodeLine{15     \textcolor{keyword}{public} \mbox{\hyperlink{LiveType_8cs_a005fe194a3c2c010b732adef72942a0f}{LiveType}}? Type \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = \mbox{\hyperlink{LiveType_8cs_a005fe194a3c2c010b732adef72942a0f}{LiveType}}.UtteranceEnd;}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{20     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{21     [JsonPropertyName(\textcolor{stringliteral}{"{}channel\_index"{}})]}
+\DoxyCodeLine{22     \textcolor{keyword}{public} \textcolor{keywordtype}{int}[]? \mbox{\hyperlink{Live_2v1_2Channel_8cs_a38dc211d973db40c75729426ac776fe0}{Channel}} \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{27     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{28     [JsonPropertyName(\textcolor{stringliteral}{"{}last\_word\_end"{}})]}
+\DoxyCodeLine{29     \textcolor{keyword}{public} decimal? LastWordEnd \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{30 \}}
+
+\end{DoxyCode}

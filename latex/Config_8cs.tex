@@ -1,0 +1,90 @@
+\hypertarget{Config_8cs}{}\doxysection{Deepgram/\+Models/\+Manage/v1/\+Config.cs File Reference}
+\label{Config_8cs}\index{Deepgram/Models/Manage/v1/Config.cs@{Deepgram/Models/Manage/v1/Config.cs}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+record???????????????? \mbox{\hyperlink{Config_8cs_a36c50a7a0aa47f6ed782de5ca46e4801}{Config}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{Config_8cs_a36c50a7a0aa47f6ed782de5ca46e4801}\label{Config_8cs_a36c50a7a0aa47f6ed782de5ca46e4801}} 
+\index{Config.cs@{Config.cs}!Config@{Config}}
+\index{Config@{Config}!Config.cs@{Config.cs}}
+\doxysubsubsection{\texorpdfstring{Config}{Config}}
+{\footnotesize\ttfamily record???????????????? Config}
+
+
+
+Definition at line 7 of file Config.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{12     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{13     [JsonPropertyName(\textcolor{stringliteral}{"{}alternatives"{}})]}
+\DoxyCodeLine{14     \textcolor{keyword}{public} \textcolor{keywordtype}{int}? Alternatives \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{19     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{20     [JsonPropertyName(\textcolor{stringliteral}{"{}callback"{}})]}
+\DoxyCodeLine{21     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? \mbox{\hyperlink{Callback_8cs_a0de0756a66f486eccd9c18dc31eb7607}{Callback}} \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{26     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{27     [JsonPropertyName(\textcolor{stringliteral}{"{}detect\_topics"{}})]}
+\DoxyCodeLine{28     \textcolor{keyword}{public} \textcolor{keywordtype}{bool}? DetectTopics \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{33     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{34     [JsonPropertyName(\textcolor{stringliteral}{"{}diarize"{}})]}
+\DoxyCodeLine{35     \textcolor{keyword}{public} \textcolor{keywordtype}{bool}? Diarize \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{40     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{41     [JsonPropertyName(\textcolor{stringliteral}{"{}keywords"{}})]}
+\DoxyCodeLine{42     \textcolor{keyword}{public} IReadOnlyList<string>? Keywords \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{47     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{48     [JsonPropertyName(\textcolor{stringliteral}{"{}interim\_results"{}})]}
+\DoxyCodeLine{49     \textcolor{keyword}{public} \textcolor{keywordtype}{bool}? InterimResults \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{54     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{55     [JsonPropertyName(\textcolor{stringliteral}{"{}language"{}})]}
+\DoxyCodeLine{56     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? Language \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{61     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{62     [JsonPropertyName(\textcolor{stringliteral}{"{}model"{}})]}
+\DoxyCodeLine{63     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? \mbox{\hyperlink{Model_8cs_adbabfbf842dfca51e71da73c9d751ee4}{Model}} \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{68     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{69     [JsonPropertyName(\textcolor{stringliteral}{"{}multichannel"{}})]}
+\DoxyCodeLine{70     \textcolor{keyword}{public} \textcolor{keywordtype}{bool}? Multichannel \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{75     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{76     [JsonPropertyName(\textcolor{stringliteral}{"{}profanity\_filter"{}})]}
+\DoxyCodeLine{77     \textcolor{keyword}{public} \textcolor{keywordtype}{bool}? ProfanityFilter \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{82     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{83     [JsonPropertyName(\textcolor{stringliteral}{"{}punctuate"{}})]}
+\DoxyCodeLine{84     \textcolor{keyword}{public} \textcolor{keywordtype}{bool}? Punctuate \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{89     \textcolor{comment}{// Redact is a list of strings}}
+\DoxyCodeLine{90     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{91     [JsonPropertyName(\textcolor{stringliteral}{"{}redact"{}})]}
+\DoxyCodeLine{92     \textcolor{keyword}{public} IReadOnlyList<string>? Redact \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{97     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{98     [JsonPropertyName(\textcolor{stringliteral}{"{}search"{}})]}
+\DoxyCodeLine{99     \textcolor{keyword}{public} IReadOnlyList<string>? \mbox{\hyperlink{Search_8cs_a05729af15813d0282c049d4383bd6791}{Search}} \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{104     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{105     [JsonPropertyName(\textcolor{stringliteral}{"{}smart\_format"{}})]}
+\DoxyCodeLine{106     \textcolor{keyword}{public} \textcolor{keywordtype}{bool}? SmartFormat \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{111     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{112     [JsonPropertyName(\textcolor{stringliteral}{"{}translation"{}})]}
+\DoxyCodeLine{113     \textcolor{keyword}{public} IReadOnlyList<string>? \mbox{\hyperlink{Translation_8cs_a543cf45e9431216f6f8c0c3c274b5b93}{Translation}} \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{118     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{119     [JsonPropertyName(\textcolor{stringliteral}{"{}utterances"{}})]}
+\DoxyCodeLine{120     \textcolor{keyword}{public} \textcolor{keywordtype}{bool}? Utterances \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{121 \}}
+
+\end{DoxyCode}

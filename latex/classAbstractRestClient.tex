@@ -1,0 +1,857 @@
+\hypertarget{classAbstractRestClient}{}\doxysection{Abstract\+Rest\+Client Class Reference}
+\label{classAbstractRestClient}\index{AbstractRestClient@{AbstractRestClient}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1a0df93e34273b367bb63bad28c94c78d5}{async}} Task$<$ T $>$ \mbox{\hyperlink{classAbstractRestClient_a6a5f2ead1d7ac321b9bfa994396f352d}{Get\+Async$<$ T $>$}} (string uri\+Segment, Cancellation\+Token\+Source? cancellation\+Token=null, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em GET Rest Request \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1a0df93e34273b367bb63bad28c94c78d5}{async}} Task$<$ T $>$ \mbox{\hyperlink{classAbstractRestClient_a4abba813898472958dbc1341be7a26e0}{Get\+Async$<$ S, T $>$}} (string uri\+Segment, S? parameter, Cancellation\+Token\+Source? cancellation\+Token=null, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\item 
+virtual \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1a0df93e34273b367bb63bad28c94c78d5}{async}} Task$<$ \mbox{\hyperlink{classLocalFileWithMetadata}{Local\+File\+With\+Metadata}} $>$ \mbox{\hyperlink{classAbstractRestClient_af00690acbb05e0820f7de8d4678e5e2e}{Post\+Retrieve\+Local\+File\+Async$<$ R, S, T $>$}} (string uri\+Segment, S? parameter, R? content, List$<$ string $>$? keys=null, Cancellation\+Token\+Source? cancellation\+Token=null, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Post method \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1a0df93e34273b367bb63bad28c94c78d5}{async}} Task$<$ T $>$ \mbox{\hyperlink{classAbstractRestClient_a6bb1fecdac943ff28b2051cf45385f5f}{Post\+Async$<$ S, T $>$}} (string uri\+Segment, S? parameter, Cancellation\+Token\+Source? cancellation\+Token=null, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Post method \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1a0df93e34273b367bb63bad28c94c78d5}{async}} Task$<$ T $>$ \mbox{\hyperlink{classAbstractRestClient_ae99a5c6ddcdaeee38b8a2f911855b0e5}{Post\+Async$<$ R, S, T $>$}} (string uri\+Segment, S? parameter, R? content, Cancellation\+Token\+Source? cancellation\+Token=null, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\item 
+virtual \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1a0df93e34273b367bb63bad28c94c78d5}{async}} Task$<$ T $>$ \mbox{\hyperlink{classAbstractRestClient_a9626e94e5572f140fa470e831735b03c}{Patch\+Async$<$ S, T $>$}} (string uri\+Segment, S? parameter, Cancellation\+Token\+Source? cancellation\+Token=null, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Patch method call that takes a body object \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1a0df93e34273b367bb63bad28c94c78d5}{async}} Task$<$ T $>$ \mbox{\hyperlink{classAbstractRestClient_adf266862e712caff8436aea670f8c15d}{Put\+Async$<$ S, T $>$}} (string uri\+Segment, S? parameter, Cancellation\+Token\+Source? cancellation\+Token=null, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Put method call that takes a body object \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1a0df93e34273b367bb63bad28c94c78d5}{async}} Task$<$ T $>$ \mbox{\hyperlink{classAbstractRestClient_ad6b8ddd4392f1c4029b0a6d972bcad37}{Delete\+Async$<$ T $>$}} (string uri\+Segment, Cancellation\+Token\+Source? cancellation\+Token=null, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Delete Method for use with calls that do not expect a response \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1a0df93e34273b367bb63bad28c94c78d5}{async}} Task$<$ T $>$ \mbox{\hyperlink{classAbstractRestClient_ac15839d5af1e72381a69557a95d44db0}{Delete\+Async$<$ S, T $>$}} (string uri\+Segment, S? parameter, Cancellation\+Token\+Source? cancellation\+Token=null, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Delete method that returns the type of response specified \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 10 of file Abstract\+Rest\+Client.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAbstractRestClient_ac15839d5af1e72381a69557a95d44db0}\label{classAbstractRestClient_ac15839d5af1e72381a69557a95d44db0}} 
+\index{AbstractRestClient@{AbstractRestClient}!DeleteAsync$<$ S, T $>$@{DeleteAsync$<$ S, T $>$}}
+\index{DeleteAsync$<$ S, T $>$@{DeleteAsync$<$ S, T $>$}!AbstractRestClient@{AbstractRestClient}}
+\doxysubsubsection{\texorpdfstring{DeleteAsync$<$ S, T $>$()}{DeleteAsync< S, T >()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1a0df93e34273b367bb63bad28c94c78d5}{async}} Task$<$T$>$ Abstract\+Rest\+Client.\+Delete\+Async$<$ S, T $>$ (\begin{DoxyParamCaption}\item[{string}]{uri\+Segment,  }\item[{S?}]{parameter,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Delete method that returns the type of response specified 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Class Type of expected response\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em uri\+Segment} & Uri for the api including the query parameters\\
+\hline
+\end{DoxyParams}
+~\newline
+ \begin{DoxyReturn}{Returns}
+Instance of T or throws Exception
+\end{DoxyReturn}
+
+
+Definition at line 630 of file Abstract\+Rest\+Client.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{632     \{}
+\DoxyCodeLine{633         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.DeleteAsync<S, T>"{}}, \textcolor{stringliteral}{"{}ENTER"{}});}
+\DoxyCodeLine{634         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}DeleteAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}uriSegment: \{uriSegment\}"{}});}
+\DoxyCodeLine{635         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}DeleteAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}addons: \{addons\}"{}});}
+\DoxyCodeLine{636 }
+\DoxyCodeLine{637         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{638         \{}
+\DoxyCodeLine{639             \textcolor{comment}{// if not defined, use default timeout}}
+\DoxyCodeLine{640             \textcolor{keywordflow}{if} (cancellationToken == \textcolor{keyword}{null})}
+\DoxyCodeLine{641             \{}
+\DoxyCodeLine{642                 \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}DeleteAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Using default timeout: \{Constants.DefaultRESTTimeout\}"{}});}
+\DoxyCodeLine{643                 cancellationToken = \textcolor{keyword}{new} CancellationTokenSource();}
+\DoxyCodeLine{644                 cancellationToken.CancelAfter(Constants.DefaultRESTTimeout);}
+\DoxyCodeLine{645             \}}
+\DoxyCodeLine{646 }
+\DoxyCodeLine{647             \textcolor{comment}{// create request message and add custom query parameters}}
+\DoxyCodeLine{648             var request = \textcolor{keyword}{new} HttpRequestMessage(HttpMethod.Delete, QueryParameterUtil.FormatURL(uriSegment, parameter, addons));}
+\DoxyCodeLine{649 }
+\DoxyCodeLine{650             \textcolor{comment}{// add custom headers}}
+\DoxyCodeLine{651             \textcolor{keywordflow}{if} (headers != \textcolor{keyword}{null})}
+\DoxyCodeLine{652             \{}
+\DoxyCodeLine{653                 \textcolor{keywordflow}{foreach} (var header \textcolor{keywordflow}{in} headers)}
+\DoxyCodeLine{654                 \{}
+\DoxyCodeLine{655                     \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}DeleteAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Add Header \{header.Key\}=\{header.Value\}"{}});}
+\DoxyCodeLine{656                     request.Headers.Add(header.Key, header.Value);}
+\DoxyCodeLine{657                 \}}
+\DoxyCodeLine{658             \}}
+\DoxyCodeLine{659 }
+\DoxyCodeLine{660             \textcolor{comment}{// do the request}}
+\DoxyCodeLine{661             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}DeleteAsync<S, T>"{}}, \textcolor{stringliteral}{"{}Calling \_httpClient.SendAsync..."{}});}
+\DoxyCodeLine{662             var response = await \_httpClient.SendAsync(request, cancellationToken.Token);}
+\DoxyCodeLine{663             response.EnsureSuccessStatusCode();}
+\DoxyCodeLine{664             var result = await HttpRequestUtil.DeserializeAsync<T>(response);}
+\DoxyCodeLine{665 }
+\DoxyCodeLine{666             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}DeleteAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Succeeded. Result: \{result\}"{}});}
+\DoxyCodeLine{667             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.DeleteAsync<S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{668 }
+\DoxyCodeLine{669             \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{670         \}}
+\DoxyCodeLine{671         \textcolor{keywordflow}{catch} (OperationCanceledException ex)}
+\DoxyCodeLine{672         \{}
+\DoxyCodeLine{673             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}DeleteAsync<S, T>"{}}, \textcolor{stringliteral}{"{}Task was cancelled."{}});}
+\DoxyCodeLine{674             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}DeleteAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Connect cancelled. Info: \{ex\}"{}});}
+\DoxyCodeLine{675             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.DeleteAsync<S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{676             \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{677         \}}
+\DoxyCodeLine{678         \textcolor{keywordflow}{catch} (Exception ex)}
+\DoxyCodeLine{679         \{}
+\DoxyCodeLine{680             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a2103a15a44d6c5ae80563cce05a89abe}{Error}}(\textcolor{stringliteral}{"{}DeleteAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}\{ex.GetType()\} thrown \{ex.Message\}"{}});}
+\DoxyCodeLine{681             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}DeleteAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Excepton: \{ex\}"{}});}
+\DoxyCodeLine{682             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.DeleteAsync<S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{683             \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{684         \}}
+\DoxyCodeLine{685     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAbstractRestClient_ad6b8ddd4392f1c4029b0a6d972bcad37}\label{classAbstractRestClient_ad6b8ddd4392f1c4029b0a6d972bcad37}} 
+\index{AbstractRestClient@{AbstractRestClient}!DeleteAsync$<$ T $>$@{DeleteAsync$<$ T $>$}}
+\index{DeleteAsync$<$ T $>$@{DeleteAsync$<$ T $>$}!AbstractRestClient@{AbstractRestClient}}
+\doxysubsubsection{\texorpdfstring{DeleteAsync$<$ T $>$()}{DeleteAsync< T >()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1a0df93e34273b367bb63bad28c94c78d5}{async}} Task$<$T$>$ Abstract\+Rest\+Client.\+Delete\+Async$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{uri\+Segment,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Delete Method for use with calls that do not expect a response 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uri\+Segment} & Uri for the api including the query parameters\\
+\hline
+\end{DoxyParams}
+~\newline
+ 
+
+Definition at line 567 of file Abstract\+Rest\+Client.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{569     \{}
+\DoxyCodeLine{570         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.DeleteAsync<T>"{}}, \textcolor{stringliteral}{"{}ENTER"{}});}
+\DoxyCodeLine{571         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}DeleteAsync<T>"{}}, \$\textcolor{stringliteral}{"{}uriSegment: \{uriSegment\}"{}});}
+\DoxyCodeLine{572         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}DeleteAsync<T>"{}}, \$\textcolor{stringliteral}{"{}addons: \{addons\}"{}});}
+\DoxyCodeLine{573 }
+\DoxyCodeLine{574         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{575         \{}
+\DoxyCodeLine{576             \textcolor{comment}{// if not defined, use default timeout}}
+\DoxyCodeLine{577             \textcolor{keywordflow}{if} (cancellationToken == \textcolor{keyword}{null})}
+\DoxyCodeLine{578             \{}
+\DoxyCodeLine{579                 \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}DeleteAsync<T>"{}}, \$\textcolor{stringliteral}{"{}Using default timeout: \{Constants.DefaultRESTTimeout\}"{}});}
+\DoxyCodeLine{580                 cancellationToken = \textcolor{keyword}{new} CancellationTokenSource();}
+\DoxyCodeLine{581                 cancellationToken.CancelAfter(Constants.DefaultRESTTimeout);}
+\DoxyCodeLine{582             \}}
+\DoxyCodeLine{583 }
+\DoxyCodeLine{584             \textcolor{comment}{// create request message and add custom query parameters}}
+\DoxyCodeLine{585             var request = \textcolor{keyword}{new} HttpRequestMessage(HttpMethod.Delete, QueryParameterUtil.FormatURL(uriSegment, \textcolor{keyword}{new} \mbox{\hyperlink{classNoopSchema}{NoopSchema}}(), addons));}
+\DoxyCodeLine{586 }
+\DoxyCodeLine{587             \textcolor{comment}{// add custom headers}}
+\DoxyCodeLine{588             \textcolor{keywordflow}{if} (headers != \textcolor{keyword}{null})}
+\DoxyCodeLine{589             \{}
+\DoxyCodeLine{590                 \textcolor{keywordflow}{foreach} (var header \textcolor{keywordflow}{in} headers)}
+\DoxyCodeLine{591                 \{}
+\DoxyCodeLine{592                     \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}DeleteAsync<T>"{}}, \$\textcolor{stringliteral}{"{}Add Header \{header.Key\}=\{header.Value\}"{}});}
+\DoxyCodeLine{593                     request.Headers.Add(header.Key, header.Value);}
+\DoxyCodeLine{594                 \}}
+\DoxyCodeLine{595             \}}
+\DoxyCodeLine{596 }
+\DoxyCodeLine{597             \textcolor{comment}{// do the request}}
+\DoxyCodeLine{598             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}DeleteAsync<T>"{}}, \textcolor{stringliteral}{"{}Calling \_httpClient.SendAsync..."{}});}
+\DoxyCodeLine{599             var response = await \_httpClient.SendAsync(request, cancellationToken.Token);}
+\DoxyCodeLine{600             response.EnsureSuccessStatusCode();}
+\DoxyCodeLine{601             var result = await HttpRequestUtil.DeserializeAsync<T>(response);}
+\DoxyCodeLine{602 }
+\DoxyCodeLine{603             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}DeleteAsync<T>"{}}, \$\textcolor{stringliteral}{"{}Succeeded. Result: \{result\}"{}});}
+\DoxyCodeLine{604             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.DeleteAsync<T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{605 }
+\DoxyCodeLine{606             \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{607         \}}
+\DoxyCodeLine{608         \textcolor{keywordflow}{catch} (OperationCanceledException ex)}
+\DoxyCodeLine{609         \{}
+\DoxyCodeLine{610             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}DeleteAsync<T>"{}}, \textcolor{stringliteral}{"{}Task was cancelled."{}});}
+\DoxyCodeLine{611             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}DeleteAsync<T>"{}}, \$\textcolor{stringliteral}{"{}Connect cancelled. Info: \{ex\}"{}});}
+\DoxyCodeLine{612             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.DeleteAsync<T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{613             \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{614         \}}
+\DoxyCodeLine{615         \textcolor{keywordflow}{catch} (Exception ex)}
+\DoxyCodeLine{616         \{}
+\DoxyCodeLine{617             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a2103a15a44d6c5ae80563cce05a89abe}{Error}}(\textcolor{stringliteral}{"{}DeleteAsync<T>"{}}, \$\textcolor{stringliteral}{"{}\{ex.GetType()\} thrown \{ex.Message\}"{}});}
+\DoxyCodeLine{618             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}DeleteAsync<T>"{}}, \$\textcolor{stringliteral}{"{}Excepton: \{ex\}"{}});}
+\DoxyCodeLine{619             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.DeleteAsync<T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{620             \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{621         \}}
+\DoxyCodeLine{622     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAbstractRestClient_a4abba813898472958dbc1341be7a26e0}\label{classAbstractRestClient_a4abba813898472958dbc1341be7a26e0}} 
+\index{AbstractRestClient@{AbstractRestClient}!GetAsync$<$ S, T $>$@{GetAsync$<$ S, T $>$}}
+\index{GetAsync$<$ S, T $>$@{GetAsync$<$ S, T $>$}!AbstractRestClient@{AbstractRestClient}}
+\doxysubsubsection{\texorpdfstring{GetAsync$<$ S, T $>$()}{GetAsync< S, T >()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1a0df93e34273b367bb63bad28c94c78d5}{async}} Task$<$T$>$ Abstract\+Rest\+Client.\+Get\+Async$<$ S, T $>$ (\begin{DoxyParamCaption}\item[{string}]{uri\+Segment,  }\item[{S?}]{parameter,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 107 of file Abstract\+Rest\+Client.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{109     \{}
+\DoxyCodeLine{110         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.GetAsync<S, T>"{}}, \textcolor{stringliteral}{"{}ENTER"{}});}
+\DoxyCodeLine{111         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}GetAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}uriSegment: \{uriSegment\}"{}});}
+\DoxyCodeLine{112         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}GetAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}addons: \{addons\}"{}});}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{115         \{}
+\DoxyCodeLine{116             \textcolor{comment}{// if not defined, use default timeout}}
+\DoxyCodeLine{117             \textcolor{keywordflow}{if} (cancellationToken == \textcolor{keyword}{null})}
+\DoxyCodeLine{118             \{}
+\DoxyCodeLine{119                 \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}GetAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Using default timeout: \{Constants.DefaultRESTTimeout\}"{}});}
+\DoxyCodeLine{120                 cancellationToken = \textcolor{keyword}{new} CancellationTokenSource();}
+\DoxyCodeLine{121                 cancellationToken.CancelAfter(Constants.DefaultRESTTimeout);}
+\DoxyCodeLine{122             \}}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124             \textcolor{comment}{// create request message and add custom query parameters}}
+\DoxyCodeLine{125             var request = \textcolor{keyword}{new} HttpRequestMessage(HttpMethod.Get, QueryParameterUtil.FormatURL(uriSegment, parameter, addons));}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{127             \textcolor{comment}{// add custom headers}}
+\DoxyCodeLine{128             \textcolor{keywordflow}{if} (headers != \textcolor{keyword}{null})}
+\DoxyCodeLine{129             \{}
+\DoxyCodeLine{130                 \textcolor{keywordflow}{foreach} (var header \textcolor{keywordflow}{in} headers)}
+\DoxyCodeLine{131                 \{}
+\DoxyCodeLine{132                     \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}GetAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Add Header \{header.Key\}=\{header.Value\}"{}});}
+\DoxyCodeLine{133                     request.Headers.Add(header.Key, header.Value);}
+\DoxyCodeLine{134                 \}}
+\DoxyCodeLine{135             \}}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{137             \textcolor{comment}{// do the request}}
+\DoxyCodeLine{138             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}GetAsync<S, T>"{}}, \textcolor{stringliteral}{"{}Calling \_httpClient.SendAsync..."{}});}
+\DoxyCodeLine{139             var response = await \_httpClient.SendAsync(request, cancellationToken.Token);}
+\DoxyCodeLine{140             response.EnsureSuccessStatusCode();}
+\DoxyCodeLine{141             var result = await HttpRequestUtil.DeserializeAsync<T>(response);}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}GetAsync<S, T>"{}}, \textcolor{stringliteral}{"{}Succeeded"{}});}
+\DoxyCodeLine{144             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.GetAsync<S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146             \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{147         \}}
+\DoxyCodeLine{148         \textcolor{keywordflow}{catch} (OperationCanceledException ex)}
+\DoxyCodeLine{149         \{}
+\DoxyCodeLine{150             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}GetAsync<S, T>"{}}, \textcolor{stringliteral}{"{}Task was cancelled."{}});}
+\DoxyCodeLine{151             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}GetAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Connect cancelled. Info: \{ex\}"{}});}
+\DoxyCodeLine{152             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.GetAsync<S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{153             \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{154         \}}
+\DoxyCodeLine{155         \textcolor{keywordflow}{catch} (Exception ex)}
+\DoxyCodeLine{156         \{}
+\DoxyCodeLine{157             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a2103a15a44d6c5ae80563cce05a89abe}{Error}}(\textcolor{stringliteral}{"{}GetAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}\{ex.GetType()\} thrown \{ex.Message\}"{}});}
+\DoxyCodeLine{158             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}GetAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Excepton: \{ex\}"{}});}
+\DoxyCodeLine{159             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.GetAsync<S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{160             \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{161         \}}
+\DoxyCodeLine{162     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAbstractRestClient_a6a5f2ead1d7ac321b9bfa994396f352d}\label{classAbstractRestClient_a6a5f2ead1d7ac321b9bfa994396f352d}} 
+\index{AbstractRestClient@{AbstractRestClient}!GetAsync$<$ T $>$@{GetAsync$<$ T $>$}}
+\index{GetAsync$<$ T $>$@{GetAsync$<$ T $>$}!AbstractRestClient@{AbstractRestClient}}
+\doxysubsubsection{\texorpdfstring{GetAsync$<$ T $>$()}{GetAsync< T >()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1a0df93e34273b367bb63bad28c94c78d5}{async}} Task$<$T$>$ Abstract\+Rest\+Client.\+Get\+Async$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{uri\+Segment,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+GET Rest Request 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of class of response expected\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em uri\+Segment} & request uri Endpoint\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instance of T
+\end{DoxyReturn}
+
+
+Definition at line 50 of file Abstract\+Rest\+Client.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52     \{}
+\DoxyCodeLine{53         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.GetAsync<T>"{}}, \textcolor{stringliteral}{"{}ENTER"{}});}
+\DoxyCodeLine{54         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}GetAsync<T>"{}}, \$\textcolor{stringliteral}{"{}uriSegment: \{uriSegment\}"{}});}
+\DoxyCodeLine{55         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}GetAsync<T>"{}}, \$\textcolor{stringliteral}{"{}addons: \{addons\}"{}});}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{58         \{}
+\DoxyCodeLine{59             \textcolor{comment}{// if not defined, use default timeout}}
+\DoxyCodeLine{60             \textcolor{keywordflow}{if} (cancellationToken == \textcolor{keyword}{null})}
+\DoxyCodeLine{61             \{}
+\DoxyCodeLine{62                 \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}GetAsync"{}}, \$\textcolor{stringliteral}{"{}Using default timeout: \{Constants.DefaultRESTTimeout\}"{}});}
+\DoxyCodeLine{63                 cancellationToken = \textcolor{keyword}{new} CancellationTokenSource();}
+\DoxyCodeLine{64                 cancellationToken.CancelAfter(Constants.DefaultRESTTimeout);}
+\DoxyCodeLine{65             \}}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67             \textcolor{comment}{// create request message and add custom query parameters}}
+\DoxyCodeLine{68             \mbox{\hyperlink{classNoopSchema}{NoopSchema}}? parameter = \textcolor{keyword}{null};}
+\DoxyCodeLine{69             var request = \textcolor{keyword}{new} HttpRequestMessage(HttpMethod.Get, QueryParameterUtil.FormatURL(uriSegment, parameter, addons));}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71             \textcolor{comment}{// add custom headers}}
+\DoxyCodeLine{72             \textcolor{keywordflow}{if} (headers != \textcolor{keyword}{null})}
+\DoxyCodeLine{73             \{}
+\DoxyCodeLine{74                 \textcolor{keywordflow}{foreach} (var header \textcolor{keywordflow}{in} headers)}
+\DoxyCodeLine{75                 \{}
+\DoxyCodeLine{76                     \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}GetAsync<T>"{}}, \$\textcolor{stringliteral}{"{}Add Header \{header.Key\}=\{header.Value\}"{}});}
+\DoxyCodeLine{77                     request.Headers.Add(header.Key, header.Value);}
+\DoxyCodeLine{78                 \}}
+\DoxyCodeLine{79             \}}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81             \textcolor{comment}{// do the request}}
+\DoxyCodeLine{82             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}GetAsync<T>"{}}, \textcolor{stringliteral}{"{}Calling \_httpClient.SendAsync..."{}});}
+\DoxyCodeLine{83             var response = await \_httpClient.SendAsync(request, cancellationToken.Token);}
+\DoxyCodeLine{84             response.EnsureSuccessStatusCode();}
+\DoxyCodeLine{85             var result = await HttpRequestUtil.DeserializeAsync<T>(response);}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}GetAsync<T>"{}}, \textcolor{stringliteral}{"{}Succeeded"{}});}
+\DoxyCodeLine{88             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.GetAsync<T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{89             \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{90         \}}
+\DoxyCodeLine{91         \textcolor{keywordflow}{catch} (OperationCanceledException ex)}
+\DoxyCodeLine{92         \{}
+\DoxyCodeLine{93             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}GetAsync<T>"{}}, \textcolor{stringliteral}{"{}Task was cancelled."{}});}
+\DoxyCodeLine{94             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}GetAsync<T>"{}}, \$\textcolor{stringliteral}{"{}Connect cancelled. Info: \{ex\}"{}});}
+\DoxyCodeLine{95             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.GetAsync<T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{96             \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{97         \}}
+\DoxyCodeLine{98         \textcolor{keywordflow}{catch} (Exception ex)}
+\DoxyCodeLine{99         \{}
+\DoxyCodeLine{100             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a2103a15a44d6c5ae80563cce05a89abe}{Error}}(\textcolor{stringliteral}{"{}GetAsync<T>"{}}, \$\textcolor{stringliteral}{"{}\{ex.GetType()\} thrown \{ex.Message\}"{}});}
+\DoxyCodeLine{101             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}GetAsync<T>"{}}, \$\textcolor{stringliteral}{"{}Excepton: \{ex\}"{}});}
+\DoxyCodeLine{102             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.GetAsync<T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{103             \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{104         \}}
+\DoxyCodeLine{105     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAbstractRestClient_a9626e94e5572f140fa470e831735b03c}\label{classAbstractRestClient_a9626e94e5572f140fa470e831735b03c}} 
+\index{AbstractRestClient@{AbstractRestClient}!PatchAsync$<$ S, T $>$@{PatchAsync$<$ S, T $>$}}
+\index{PatchAsync$<$ S, T $>$@{PatchAsync$<$ S, T $>$}!AbstractRestClient@{AbstractRestClient}}
+\doxysubsubsection{\texorpdfstring{PatchAsync$<$ S, T $>$()}{PatchAsync< S, T >()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1a0df93e34273b367bb63bad28c94c78d5}{async}} Task$<$T$>$ Abstract\+Rest\+Client.\+Patch\+Async$<$ S, T $>$ (\begin{DoxyParamCaption}\item[{string}]{uri\+Segment,  }\item[{S?}]{parameter,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Patch method call that takes a body object 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Class type of what return type is expected\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em uri\+Segment} & Uri for the api including the query parameters\\
+\hline
+\end{DoxyParams}
+~\newline
+ \begin{DoxyReturn}{Returns}
+Instance of T
+\end{DoxyReturn}
+
+
+Definition at line 425 of file Abstract\+Rest\+Client.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{427     \{}
+\DoxyCodeLine{428         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PatchAsync<S, T>"{}}, \textcolor{stringliteral}{"{}ENTER"{}});}
+\DoxyCodeLine{429         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PatchAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}uriSegment: \{uriSegment\}"{}});}
+\DoxyCodeLine{430         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PatchAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}addons: \{addons\}"{}});}
+\DoxyCodeLine{431 }
+\DoxyCodeLine{432         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{433         \{}
+\DoxyCodeLine{434             \textcolor{comment}{// if not defined, use default timeout}}
+\DoxyCodeLine{435             \textcolor{keywordflow}{if} (cancellationToken == \textcolor{keyword}{null})}
+\DoxyCodeLine{436             \{}
+\DoxyCodeLine{437                 \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}PatchAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Using default timeout: \{Constants.DefaultRESTTimeout\}"{}});}
+\DoxyCodeLine{438                 cancellationToken = \textcolor{keyword}{new} CancellationTokenSource();}
+\DoxyCodeLine{439                 cancellationToken.CancelAfter(Constants.DefaultRESTTimeout);}
+\DoxyCodeLine{440             \}}
+\DoxyCodeLine{441 }
+\DoxyCodeLine{442             \textcolor{comment}{// create request message and add custom query parameters}}
+\DoxyCodeLine{443 \textcolor{preprocessor}{\#if NETSTANDARD2\_0 }}
+\DoxyCodeLine{444             var request = \textcolor{keyword}{new} HttpRequestMessage(\textcolor{keyword}{new} HttpMethod(\textcolor{stringliteral}{"{}PATCH"{}}), QueryParameterUtil.FormatURL(uriSegment, parameter, addons)) }
+\DoxyCodeLine{445             \{}
+\DoxyCodeLine{446                 Content = HttpRequestUtil.CreatePayload(parameter)}
+\DoxyCodeLine{447             \};}
+\DoxyCodeLine{448 \textcolor{preprocessor}{\#else }}
+\DoxyCodeLine{449             var request = \textcolor{keyword}{new} HttpRequestMessage(HttpMethod.Patch, QueryParameterUtil.FormatURL(uriSegment, parameter, addons)) }
+\DoxyCodeLine{450             \{}
+\DoxyCodeLine{451                 Content = HttpRequestUtil.CreatePayload(parameter)}
+\DoxyCodeLine{452             \};}
+\DoxyCodeLine{453 \textcolor{preprocessor}{\#endif }}
+\DoxyCodeLine{454 }
+\DoxyCodeLine{455             \textcolor{comment}{// add custom headers}}
+\DoxyCodeLine{456             \textcolor{keywordflow}{if} (headers != \textcolor{keyword}{null})}
+\DoxyCodeLine{457             \{}
+\DoxyCodeLine{458                 \textcolor{keywordflow}{foreach} (var header \textcolor{keywordflow}{in} headers)}
+\DoxyCodeLine{459                 \{}
+\DoxyCodeLine{460                     \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PatchAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Add Header \{header.Key\}=\{header.Value\}"{}});}
+\DoxyCodeLine{461                     request.Headers.Add(header.Key, header.Value);}
+\DoxyCodeLine{462                 \}}
+\DoxyCodeLine{463             \}}
+\DoxyCodeLine{464 }
+\DoxyCodeLine{465             \textcolor{comment}{// do the request}}
+\DoxyCodeLine{466             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}PatchAsync<S, T>"{}}, \textcolor{stringliteral}{"{}Calling \_httpClient.SendAsync..."{}});}
+\DoxyCodeLine{467             var response = await \_httpClient.SendAsync(request, cancellationToken.Token);}
+\DoxyCodeLine{468             response.EnsureSuccessStatusCode();}
+\DoxyCodeLine{469             var result = await HttpRequestUtil.DeserializeAsync<T>(response);}
+\DoxyCodeLine{470 }
+\DoxyCodeLine{471             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PatchAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Succeeded. Result: \{result\}"{}});}
+\DoxyCodeLine{472             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PatchAsync<S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{473 }
+\DoxyCodeLine{474             \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{475 }
+\DoxyCodeLine{476         \}}
+\DoxyCodeLine{477         \textcolor{keywordflow}{catch} (OperationCanceledException ex)}
+\DoxyCodeLine{478         \{}
+\DoxyCodeLine{479             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}PatchAsync<S, T>"{}}, \textcolor{stringliteral}{"{}Task was cancelled."{}});}
+\DoxyCodeLine{480             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}PatchAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Connect cancelled. Info: \{ex\}"{}});}
+\DoxyCodeLine{481             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PatchAsync<S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{482             \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{483         \}}
+\DoxyCodeLine{484         \textcolor{keywordflow}{catch} (Exception ex)}
+\DoxyCodeLine{485         \{}
+\DoxyCodeLine{486             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a2103a15a44d6c5ae80563cce05a89abe}{Error}}(\textcolor{stringliteral}{"{}PatchAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}\{ex.GetType()\} thrown \{ex.Message\}"{}});}
+\DoxyCodeLine{487             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}PatchAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Excepton: \{ex\}"{}});}
+\DoxyCodeLine{488             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PatchAsync<S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{489             \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{490         \}}
+\DoxyCodeLine{491     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAbstractRestClient_ae99a5c6ddcdaeee38b8a2f911855b0e5}\label{classAbstractRestClient_ae99a5c6ddcdaeee38b8a2f911855b0e5}} 
+\index{AbstractRestClient@{AbstractRestClient}!PostAsync$<$ R, S, T $>$@{PostAsync$<$ R, S, T $>$}}
+\index{PostAsync$<$ R, S, T $>$@{PostAsync$<$ R, S, T $>$}!AbstractRestClient@{AbstractRestClient}}
+\doxysubsubsection{\texorpdfstring{PostAsync$<$ R, S, T $>$()}{PostAsync< R, S, T >()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1a0df93e34273b367bb63bad28c94c78d5}{async}} Task$<$T$>$ Abstract\+Rest\+Client.\+Post\+Async$<$ R, S, T $>$ (\begin{DoxyParamCaption}\item[{string}]{uri\+Segment,  }\item[{S?}]{parameter,  }\item[{R?}]{content,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 349 of file Abstract\+Rest\+Client.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{351     \{}
+\DoxyCodeLine{352         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PostAsync<R, S, T>"{}}, \textcolor{stringliteral}{"{}ENTER"{}});}
+\DoxyCodeLine{353         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PostAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}uriSegment: \{uriSegment\}"{}});}
+\DoxyCodeLine{354         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PostAsync<R, S, T>"{}}, \$\textcolor{stringliteral}{"{}addons: \{addons\}"{}});}
+\DoxyCodeLine{355 }
+\DoxyCodeLine{356         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{357         \{}
+\DoxyCodeLine{358             \textcolor{comment}{// if not defined, use default timeout}}
+\DoxyCodeLine{359             \textcolor{keywordflow}{if} (cancellationToken == \textcolor{keyword}{null})}
+\DoxyCodeLine{360             \{}
+\DoxyCodeLine{361                 \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}PostAsync<R, S, T>"{}}, \$\textcolor{stringliteral}{"{}Using default timeout: \{Constants.DefaultRESTTimeout\}"{}});}
+\DoxyCodeLine{362                 cancellationToken = \textcolor{keyword}{new} CancellationTokenSource();}
+\DoxyCodeLine{363                 cancellationToken.CancelAfter(Constants.DefaultRESTTimeout);}
+\DoxyCodeLine{364             \}}
+\DoxyCodeLine{365 }
+\DoxyCodeLine{366             \textcolor{comment}{// create request message and add custom query parameters}}
+\DoxyCodeLine{367             var request = \textcolor{keyword}{new} HttpRequestMessage(HttpMethod.Post, QueryParameterUtil.FormatURL(uriSegment, parameter, addons));}
+\DoxyCodeLine{368             \textcolor{keywordflow}{if} (typeof(R) == typeof(Stream))}
+\DoxyCodeLine{369             \{}
+\DoxyCodeLine{370                 Stream? stream = content as Stream;}
+\DoxyCodeLine{371                 \textcolor{keywordflow}{if} (stream == \textcolor{keyword}{null})}
+\DoxyCodeLine{372                 \{}
+\DoxyCodeLine{373                     stream = \textcolor{keyword}{new} MemoryStream();}
+\DoxyCodeLine{374                 \}}
+\DoxyCodeLine{375                 request.Content = HttpRequestUtil.CreateStreamPayload(stream);}
+\DoxyCodeLine{376             \}}
+\DoxyCodeLine{377             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{378             \{}
+\DoxyCodeLine{379                 request.Content = HttpRequestUtil.CreatePayload(content);}
+\DoxyCodeLine{380             \}}
+\DoxyCodeLine{381 }
+\DoxyCodeLine{382             \textcolor{comment}{// add custom headers}}
+\DoxyCodeLine{383             \textcolor{keywordflow}{if} (headers != \textcolor{keyword}{null})}
+\DoxyCodeLine{384             \{}
+\DoxyCodeLine{385                 \textcolor{keywordflow}{foreach} (var header \textcolor{keywordflow}{in} headers)}
+\DoxyCodeLine{386                 \{}
+\DoxyCodeLine{387                     \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PostAsync<R, S, T>"{}}, \$\textcolor{stringliteral}{"{}Add Header \{header.Key\}=\{header.Value\}"{}});}
+\DoxyCodeLine{388                     request.Headers.Add(header.Key, header.Value);}
+\DoxyCodeLine{389                 \}}
+\DoxyCodeLine{390             \}}
+\DoxyCodeLine{391 }
+\DoxyCodeLine{392             \textcolor{comment}{// do the request}}
+\DoxyCodeLine{393             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}PostAsync<R, S, T>"{}}, \textcolor{stringliteral}{"{}Calling \_httpClient.SendAsync..."{}});}
+\DoxyCodeLine{394             var response = await \_httpClient.SendAsync(request, cancellationToken.Token);}
+\DoxyCodeLine{395             response.EnsureSuccessStatusCode();}
+\DoxyCodeLine{396             var result = await HttpRequestUtil.DeserializeAsync<T>(response);}
+\DoxyCodeLine{397 }
+\DoxyCodeLine{398             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PostAsync<R, S, T>"{}}, \$\textcolor{stringliteral}{"{}Succeeded. Result: \{result\}"{}});}
+\DoxyCodeLine{399             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PostAsync<R, S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{400 }
+\DoxyCodeLine{401             \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{402         \}}
+\DoxyCodeLine{403         \textcolor{keywordflow}{catch} (OperationCanceledException ex)}
+\DoxyCodeLine{404         \{}
+\DoxyCodeLine{405             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}PostAsync<R, S, T>"{}}, \textcolor{stringliteral}{"{}Task was cancelled."{}});}
+\DoxyCodeLine{406             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}PostAsync<R, S, T>"{}}, \$\textcolor{stringliteral}{"{}Connect cancelled. Info: \{ex\}"{}});}
+\DoxyCodeLine{407             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PostAsync<R, S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{408             \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{409         \}}
+\DoxyCodeLine{410         \textcolor{keywordflow}{catch} (Exception ex)}
+\DoxyCodeLine{411         \{}
+\DoxyCodeLine{412             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a2103a15a44d6c5ae80563cce05a89abe}{Error}}(\textcolor{stringliteral}{"{}PostAsync<R, S, T>"{}}, \$\textcolor{stringliteral}{"{}\{ex.GetType()\} thrown \{ex.Message\}"{}});}
+\DoxyCodeLine{413             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}PostAsync<R, S, T>"{}}, \$\textcolor{stringliteral}{"{}Excepton: \{ex\}"{}});}
+\DoxyCodeLine{414             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PostAsync<R, S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{415             \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{416         \}}
+\DoxyCodeLine{417     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAbstractRestClient_a6bb1fecdac943ff28b2051cf45385f5f}\label{classAbstractRestClient_a6bb1fecdac943ff28b2051cf45385f5f}} 
+\index{AbstractRestClient@{AbstractRestClient}!PostAsync$<$ S, T $>$@{PostAsync$<$ S, T $>$}}
+\index{PostAsync$<$ S, T $>$@{PostAsync$<$ S, T $>$}!AbstractRestClient@{AbstractRestClient}}
+\doxysubsubsection{\texorpdfstring{PostAsync$<$ S, T $>$()}{PostAsync< S, T >()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1a0df93e34273b367bb63bad28c94c78d5}{async}} Task$<$T$>$ Abstract\+Rest\+Client.\+Post\+Async$<$ S, T $>$ (\begin{DoxyParamCaption}\item[{string}]{uri\+Segment,  }\item[{S?}]{parameter,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Post method 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Class type of what return type is expected\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em uri\+Segment} & Uri for the api including the query parameters\\
+\hline
+{\em content} & Http\+Content as content for Http\+Request\+Message\\
+\hline
+\end{DoxyParams}
+~\newline
+ \begin{DoxyReturn}{Returns}
+Instance of T
+\end{DoxyReturn}
+
+
+Definition at line 289 of file Abstract\+Rest\+Client.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{291     \{}
+\DoxyCodeLine{292         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PostAsync<S, T>"{}}, \textcolor{stringliteral}{"{}ENTER"{}});}
+\DoxyCodeLine{293         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PostAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}uriSegment: \{uriSegment\}"{}});}
+\DoxyCodeLine{294         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PostAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}addons: \{addons\}"{}});}
+\DoxyCodeLine{295 }
+\DoxyCodeLine{296         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{297         \{}
+\DoxyCodeLine{298             \textcolor{comment}{// if not defined, use default timeout}}
+\DoxyCodeLine{299             \textcolor{keywordflow}{if} (cancellationToken == \textcolor{keyword}{null})}
+\DoxyCodeLine{300             \{}
+\DoxyCodeLine{301                 \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}PostAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Using default timeout: \{Constants.DefaultRESTTimeout\}"{}});}
+\DoxyCodeLine{302                 cancellationToken = \textcolor{keyword}{new} CancellationTokenSource();}
+\DoxyCodeLine{303                 cancellationToken.CancelAfter(Constants.DefaultRESTTimeout);}
+\DoxyCodeLine{304             \}}
+\DoxyCodeLine{305 }
+\DoxyCodeLine{306             \textcolor{comment}{// create request message and add custom query parameters}}
+\DoxyCodeLine{307             var request = \textcolor{keyword}{new} HttpRequestMessage(HttpMethod.Post, QueryParameterUtil.FormatURL(uriSegment, parameter, addons)) }
+\DoxyCodeLine{308             \{}
+\DoxyCodeLine{309                 Content = HttpRequestUtil.CreatePayload(parameter)}
+\DoxyCodeLine{310             \};}
+\DoxyCodeLine{311 }
+\DoxyCodeLine{312             \textcolor{comment}{// add custom headers}}
+\DoxyCodeLine{313             \textcolor{keywordflow}{if} (headers != \textcolor{keyword}{null})}
+\DoxyCodeLine{314             \{}
+\DoxyCodeLine{315                 \textcolor{keywordflow}{foreach} (var header \textcolor{keywordflow}{in} headers)}
+\DoxyCodeLine{316                 \{}
+\DoxyCodeLine{317                     \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PostAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Add Header \{header.Key\}=\{header.Value\}"{}});}
+\DoxyCodeLine{318                     request.Headers.Add(header.Key, header.Value);}
+\DoxyCodeLine{319                 \}}
+\DoxyCodeLine{320             \}}
+\DoxyCodeLine{321 }
+\DoxyCodeLine{322             \textcolor{comment}{// do the request}}
+\DoxyCodeLine{323             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}PostAsync<S, T>"{}}, \textcolor{stringliteral}{"{}Calling \_httpClient.SendAsync..."{}});}
+\DoxyCodeLine{324             var response = await \_httpClient.SendAsync(request, cancellationToken.Token);}
+\DoxyCodeLine{325             response.EnsureSuccessStatusCode();}
+\DoxyCodeLine{326             var result = await HttpRequestUtil.DeserializeAsync<T>(response);}
+\DoxyCodeLine{327 }
+\DoxyCodeLine{328             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PostAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Succeeded. Result: \{result\}"{}});}
+\DoxyCodeLine{329             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PostAsync<S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{330 }
+\DoxyCodeLine{331             \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{332         \}}
+\DoxyCodeLine{333         \textcolor{keywordflow}{catch} (OperationCanceledException ex)}
+\DoxyCodeLine{334         \{}
+\DoxyCodeLine{335             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}PostAsync<S, T>"{}}, \textcolor{stringliteral}{"{}Task was cancelled."{}});}
+\DoxyCodeLine{336             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}PostAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Connect cancelled. Info: \{ex\}"{}});}
+\DoxyCodeLine{337             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PostAsync<S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{338             \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{339         \}}
+\DoxyCodeLine{340         \textcolor{keywordflow}{catch} (Exception ex)}
+\DoxyCodeLine{341         \{}
+\DoxyCodeLine{342             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a2103a15a44d6c5ae80563cce05a89abe}{Error}}(\textcolor{stringliteral}{"{}PostAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}\{ex.GetType()\} thrown \{ex.Message\}"{}});}
+\DoxyCodeLine{343             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}PostAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Excepton: \{ex\}"{}});}
+\DoxyCodeLine{344             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PostAsync<S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{345             \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{346         \}}
+\DoxyCodeLine{347     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAbstractRestClient_af00690acbb05e0820f7de8d4678e5e2e}\label{classAbstractRestClient_af00690acbb05e0820f7de8d4678e5e2e}} 
+\index{AbstractRestClient@{AbstractRestClient}!PostRetrieveLocalFileAsync$<$ R, S, T $>$@{PostRetrieveLocalFileAsync$<$ R, S, T $>$}}
+\index{PostRetrieveLocalFileAsync$<$ R, S, T $>$@{PostRetrieveLocalFileAsync$<$ R, S, T $>$}!AbstractRestClient@{AbstractRestClient}}
+\doxysubsubsection{\texorpdfstring{PostRetrieveLocalFileAsync$<$ R, S, T $>$()}{PostRetrieveLocalFileAsync< R, S, T >()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1a0df93e34273b367bb63bad28c94c78d5}{async}} Task$<$\mbox{\hyperlink{classLocalFileWithMetadata}{Local\+File\+With\+Metadata}}$>$ Abstract\+Rest\+Client.\+Post\+Retrieve\+Local\+File\+Async$<$ R, S, T $>$ (\begin{DoxyParamCaption}\item[{string}]{uri\+Segment,  }\item[{S?}]{parameter,  }\item[{R?}]{content,  }\item[{List$<$ string $>$?}]{keys = {\ttfamily null},  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Post method 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Class type of what return type is expected\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em uri\+Segment} & Uri for the api including the query parameters\\
+\hline
+{\em content} & Http\+Content as content for Http\+Request\+Message\\
+\hline
+\end{DoxyParams}
+~\newline
+ \begin{DoxyReturn}{Returns}
+Instance of T
+\end{DoxyReturn}
+
+
+Definition at line 171 of file Abstract\+Rest\+Client.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{175     \{}
+\DoxyCodeLine{176         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PostRetrieveLocalFileAsync<R, S, T>"{}}, \textcolor{stringliteral}{"{}ENTER"{}});}
+\DoxyCodeLine{177         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PostRetrieveLocalFileAsync<R, S, T>"{}}, \$\textcolor{stringliteral}{"{}uriSegment: \{uriSegment\}"{}});}
+\DoxyCodeLine{178         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PostRetrieveLocalFileAsync<R, S, T>"{}}, \$\textcolor{stringliteral}{"{}keys: \{keys\}"{}});}
+\DoxyCodeLine{179         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PostRetrieveLocalFileAsync<R, S, T>"{}}, \$\textcolor{stringliteral}{"{}addons: \{addons\}"{}});}
+\DoxyCodeLine{180 }
+\DoxyCodeLine{181         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{182         \{}
+\DoxyCodeLine{183             \textcolor{comment}{// if not defined, use default timeout}}
+\DoxyCodeLine{184             \textcolor{keywordflow}{if} (cancellationToken == \textcolor{keyword}{null})}
+\DoxyCodeLine{185             \{}
+\DoxyCodeLine{186                 \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}PostRetrieveLocalFileAsync<R, S, T>"{}}, \$\textcolor{stringliteral}{"{}Using default timeout: \{Constants.DefaultRESTTimeout\}"{}});}
+\DoxyCodeLine{187                 cancellationToken = \textcolor{keyword}{new} CancellationTokenSource();}
+\DoxyCodeLine{188                 cancellationToken.CancelAfter(Constants.DefaultRESTTimeout);}
+\DoxyCodeLine{189             \}}
+\DoxyCodeLine{190 }
+\DoxyCodeLine{191             \textcolor{comment}{// create request message and add custom query parameters}}
+\DoxyCodeLine{192             var request = \textcolor{keyword}{new} HttpRequestMessage(HttpMethod.Post, QueryParameterUtil.FormatURL(uriSegment, parameter, addons)) }
+\DoxyCodeLine{193             \{}
+\DoxyCodeLine{194                 Content = HttpRequestUtil.CreatePayload(content)}
+\DoxyCodeLine{195             \};}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{197             \textcolor{comment}{// add custom headers}}
+\DoxyCodeLine{198             \textcolor{keywordflow}{if} (headers != \textcolor{keyword}{null})}
+\DoxyCodeLine{199             \{}
+\DoxyCodeLine{200                 \textcolor{keywordflow}{foreach} (var header \textcolor{keywordflow}{in} headers)}
+\DoxyCodeLine{201                 \{}
+\DoxyCodeLine{202                     \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PostRetrieveLocalFileAsync<R, S, T>"{}}, \$\textcolor{stringliteral}{"{}Add Header \{header.Key\}=\{header.Value\}"{}});}
+\DoxyCodeLine{203                     request.Headers.Add(header.Key, header.Value);}
+\DoxyCodeLine{204                 \}}
+\DoxyCodeLine{205             \}}
+\DoxyCodeLine{206 }
+\DoxyCodeLine{207             \textcolor{comment}{// do the request}}
+\DoxyCodeLine{208             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}PostRetrieveLocalFileAsync<R, S, T>"{}}, \textcolor{stringliteral}{"{}Calling \_httpClient.SendAsync..."{}});}
+\DoxyCodeLine{209             var response = await \_httpClient.SendAsync(request, cancellationToken.Token);}
+\DoxyCodeLine{210             response.EnsureSuccessStatusCode();}
+\DoxyCodeLine{211 }
+\DoxyCodeLine{212             var result = \textcolor{keyword}{new} Dictionary<string, string>();}
+\DoxyCodeLine{213 }
+\DoxyCodeLine{214             \textcolor{keywordflow}{if} (keys != \textcolor{keyword}{null})}
+\DoxyCodeLine{215             \{}
+\DoxyCodeLine{216                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < response.Headers.Count(); i++)}
+\DoxyCodeLine{217                 \{}
+\DoxyCodeLine{218                     var key = response.Headers.ElementAt(i).Key.ToLower();}
+\DoxyCodeLine{219                     var value = response.Headers.GetValues(key).FirstOrDefault() ?? \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{220 }
+\DoxyCodeLine{221                     var index = key.IndexOf(\textcolor{stringliteral}{"{}x-\/dg-\/"{}});}
+\DoxyCodeLine{222                     \textcolor{keywordflow}{if} (index == 0)}
+\DoxyCodeLine{223                     \{}
+\DoxyCodeLine{224                         var newKey = key.Substring(5);}
+\DoxyCodeLine{225                         \textcolor{keywordflow}{if} (keys.Contains(newKey))}
+\DoxyCodeLine{226                         \{}
+\DoxyCodeLine{227                             result.Add(newKey, value);}
+\DoxyCodeLine{228                             \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{229                         \}}
+\DoxyCodeLine{230                     \}}
+\DoxyCodeLine{231                     index = key.IndexOf(\textcolor{stringliteral}{"{}dg-\/"{}});}
+\DoxyCodeLine{232                     \textcolor{keywordflow}{if} (index == 0)}
+\DoxyCodeLine{233                     \{}
+\DoxyCodeLine{234                         var newKey = key.Substring(3);}
+\DoxyCodeLine{235                         \textcolor{keywordflow}{if} (keys.Contains(newKey))}
+\DoxyCodeLine{236                         \{}
+\DoxyCodeLine{237                             result.Add(newKey, value);}
+\DoxyCodeLine{238                             \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{239                         \}}
+\DoxyCodeLine{240                     \}}
+\DoxyCodeLine{241                     \textcolor{keywordflow}{if} (keys.Contains(key))}
+\DoxyCodeLine{242                     \{}
+\DoxyCodeLine{243                         result.Add(key, value);}
+\DoxyCodeLine{244                     \}}
+\DoxyCodeLine{245                 \}}
+\DoxyCodeLine{246 }
+\DoxyCodeLine{247                 \textcolor{keywordflow}{if} (keys.Contains(\textcolor{stringliteral}{"{}content-\/type"{}}))}
+\DoxyCodeLine{248                 \{}
+\DoxyCodeLine{249                     result.Add(\textcolor{stringliteral}{"{}content-\/type"{}}, response.Content.Headers.ContentType?.MediaType ?? \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{250                 \}}
+\DoxyCodeLine{251             \}}
+\DoxyCodeLine{252 }
+\DoxyCodeLine{253             MemoryStream stream = \textcolor{keyword}{new} MemoryStream();}
+\DoxyCodeLine{254             await response.Content.CopyToAsync(stream);}
+\DoxyCodeLine{255 }
+\DoxyCodeLine{256             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}PostRetrieveLocalFileAsync<R, S, T>"{}}, \textcolor{stringliteral}{"{}Succeeded"{}});}
+\DoxyCodeLine{257             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PostRetrieveLocalFileAsync<R, S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{258 }
+\DoxyCodeLine{259             \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classLocalFileWithMetadata}{LocalFileWithMetadata}}() }
+\DoxyCodeLine{260                         \{}
+\DoxyCodeLine{261                             \mbox{\hyperlink{LiveType_8cs_a005fe194a3c2c010b732adef72942a0face21470ab49d1d1976bc3dc72438c183}{Metadata}} = result,}
+\DoxyCodeLine{262                             Content = stream,}
+\DoxyCodeLine{263                         \};}
+\DoxyCodeLine{264 }
+\DoxyCodeLine{265         \}}
+\DoxyCodeLine{266         \textcolor{keywordflow}{catch} (OperationCanceledException ex)}
+\DoxyCodeLine{267         \{}
+\DoxyCodeLine{268             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}PostRetrieveLocalFileAsync<R, S, T>"{}}, \textcolor{stringliteral}{"{}Task was cancelled."{}});}
+\DoxyCodeLine{269             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}PostRetrieveLocalFileAsync<R, S, T>"{}}, \$\textcolor{stringliteral}{"{}Connect cancelled. Info: \{ex\}"{}});}
+\DoxyCodeLine{270             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PostRetrieveLocalFileAsync<R, S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{271             \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{272         \}}
+\DoxyCodeLine{273         \textcolor{keywordflow}{catch} (Exception ex)}
+\DoxyCodeLine{274         \{}
+\DoxyCodeLine{275             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a2103a15a44d6c5ae80563cce05a89abe}{Error}}(\textcolor{stringliteral}{"{}PostRetrieveLocalFileAsync<R, S, T>"{}}, \$\textcolor{stringliteral}{"{}\{ex.GetType()\} thrown \{ex.Message\}"{}});}
+\DoxyCodeLine{276             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}PostRetrieveLocalFileAsync<R, S, T>"{}}, \$\textcolor{stringliteral}{"{}Excepton: \{ex\}"{}});}
+\DoxyCodeLine{277             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PostRetrieveLocalFileAsync<R, S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{278             \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{279         \}}
+\DoxyCodeLine{280     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAbstractRestClient_adf266862e712caff8436aea670f8c15d}\label{classAbstractRestClient_adf266862e712caff8436aea670f8c15d}} 
+\index{AbstractRestClient@{AbstractRestClient}!PutAsync$<$ S, T $>$@{PutAsync$<$ S, T $>$}}
+\index{PutAsync$<$ S, T $>$@{PutAsync$<$ S, T $>$}!AbstractRestClient@{AbstractRestClient}}
+\doxysubsubsection{\texorpdfstring{PutAsync$<$ S, T $>$()}{PutAsync< S, T >()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1a0df93e34273b367bb63bad28c94c78d5}{async}} Task$<$T$>$ Abstract\+Rest\+Client.\+Put\+Async$<$ S, T $>$ (\begin{DoxyParamCaption}\item[{string}]{uri\+Segment,  }\item[{S?}]{parameter,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Put method call that takes a body object 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Class type of what return type is expected\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em uri\+Segment} & Uri for the api\\
+\hline
+\end{DoxyParams}
+~\newline
+ \begin{DoxyReturn}{Returns}
+Instance of T
+\end{DoxyReturn}
+
+
+Definition at line 499 of file Abstract\+Rest\+Client.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{501     \{}
+\DoxyCodeLine{502         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PutAsync<S, T>"{}}, \textcolor{stringliteral}{"{}ENTER"{}});}
+\DoxyCodeLine{503         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PutAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}uriSegment: \{uriSegment\}"{}});}
+\DoxyCodeLine{504         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PutAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}addons: \{addons\}"{}});}
+\DoxyCodeLine{505 }
+\DoxyCodeLine{506         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{507         \{}
+\DoxyCodeLine{508             \textcolor{comment}{// if not defined, use default timeout}}
+\DoxyCodeLine{509             \textcolor{keywordflow}{if} (cancellationToken == \textcolor{keyword}{null})}
+\DoxyCodeLine{510             \{}
+\DoxyCodeLine{511                 \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}PutAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Using default timeout: \{Constants.DefaultRESTTimeout\}"{}});}
+\DoxyCodeLine{512                 cancellationToken = \textcolor{keyword}{new} CancellationTokenSource();}
+\DoxyCodeLine{513                 cancellationToken.CancelAfter(Constants.DefaultRESTTimeout);}
+\DoxyCodeLine{514             \}}
+\DoxyCodeLine{515 }
+\DoxyCodeLine{516             \textcolor{comment}{// create request message and add custom query parameters}}
+\DoxyCodeLine{517             var request = \textcolor{keyword}{new} HttpRequestMessage(HttpMethod.Put, QueryParameterUtil.FormatURL(uriSegment, parameter, addons)) }
+\DoxyCodeLine{518             \{}
+\DoxyCodeLine{519                 Content = HttpRequestUtil.CreatePayload(parameter)}
+\DoxyCodeLine{520             \};}
+\DoxyCodeLine{521 }
+\DoxyCodeLine{522             \textcolor{comment}{// add custom headers}}
+\DoxyCodeLine{523             \textcolor{keywordflow}{if} (headers != \textcolor{keyword}{null})}
+\DoxyCodeLine{524             \{}
+\DoxyCodeLine{525                 \textcolor{keywordflow}{foreach} (var header \textcolor{keywordflow}{in} headers)}
+\DoxyCodeLine{526                 \{}
+\DoxyCodeLine{527                     var tmp = header.Key.ToLower();}
+\DoxyCodeLine{528                     \textcolor{keywordflow}{if} ( !(tmp.Contains(\textcolor{stringliteral}{"{}password"{}}) || tmp.Contains(\textcolor{stringliteral}{"{}token"{}}) || tmp.Contains(\textcolor{stringliteral}{"{}authorization"{}}) || tmp.Contains(\textcolor{stringliteral}{"{}auth"{}})) )}
+\DoxyCodeLine{529                     \{}
+\DoxyCodeLine{530                         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PutAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Add Header \{header.Key\}=\{header.Value\}"{}});}
+\DoxyCodeLine{531                     \}}
+\DoxyCodeLine{532                     request.Headers.Add(header.Key, header.Value);}
+\DoxyCodeLine{533                 \}}
+\DoxyCodeLine{534             \}}
+\DoxyCodeLine{535 }
+\DoxyCodeLine{536             \textcolor{comment}{// do the request}}
+\DoxyCodeLine{537             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}PutAsync<S, T>"{}}, \textcolor{stringliteral}{"{}Calling \_httpClient.SendAsync..."{}});}
+\DoxyCodeLine{538             var response = await \_httpClient.SendAsync(request, cancellationToken.Token);}
+\DoxyCodeLine{539             response.EnsureSuccessStatusCode();}
+\DoxyCodeLine{540             var result = await HttpRequestUtil.DeserializeAsync<T>(response);}
+\DoxyCodeLine{541 }
+\DoxyCodeLine{542             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}PutAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Succeeded. Result: \{result\}"{}});}
+\DoxyCodeLine{543             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PutAsync<S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{544 }
+\DoxyCodeLine{545             \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{546         \}}
+\DoxyCodeLine{547         \textcolor{keywordflow}{catch} (OperationCanceledException ex)}
+\DoxyCodeLine{548         \{}
+\DoxyCodeLine{549             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}PutAsync<S, T>"{}}, \textcolor{stringliteral}{"{}Task was cancelled."{}});}
+\DoxyCodeLine{550             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}PutAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Connect cancelled. Info: \{ex\}"{}});}
+\DoxyCodeLine{551             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PutAsync<S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{552             \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{553         \}}
+\DoxyCodeLine{554         \textcolor{keywordflow}{catch} (Exception ex)}
+\DoxyCodeLine{555         \{}
+\DoxyCodeLine{556             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a2103a15a44d6c5ae80563cce05a89abe}{Error}}(\textcolor{stringliteral}{"{}PutAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}\{ex.GetType()\} thrown \{ex.Message\}"{}});}
+\DoxyCodeLine{557             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}PutAsync<S, T>"{}}, \$\textcolor{stringliteral}{"{}Excepton: \{ex\}"{}});}
+\DoxyCodeLine{558             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}AbstractRestClient.PutAsync<S, T>"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{559             \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{560         \}}
+\DoxyCodeLine{561     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Deepgram/\+Abstractions/\mbox{\hyperlink{AbstractRestClient_8cs}{Abstract\+Rest\+Client.\+cs}}\end{DoxyCompactItemize}

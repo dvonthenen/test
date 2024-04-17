@@ -1,0 +1,41 @@
+\hypertarget{Live_2v1_2Metadata_8cs}{}\doxysection{Deepgram/\+Models/\+Live/v1/\+Metadata.cs File Reference}
+\label{Live_2v1_2Metadata_8cs}\index{Deepgram/Models/Live/v1/Metadata.cs@{Deepgram/Models/Live/v1/Metadata.cs}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+record???? \mbox{\hyperlink{Live_2v1_2Metadata_8cs_a1ac7270346422c8d92cbc1b33c13e5b0}{Meta\+Data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{Live_2v1_2Metadata_8cs_a1ac7270346422c8d92cbc1b33c13e5b0}\label{Live_2v1_2Metadata_8cs_a1ac7270346422c8d92cbc1b33c13e5b0}} 
+\index{Metadata.cs@{Metadata.cs}!MetaData@{MetaData}}
+\index{MetaData@{MetaData}!Metadata.cs@{Metadata.cs}}
+\doxysubsubsection{\texorpdfstring{MetaData}{MetaData}}
+{\footnotesize\ttfamily record???? Meta\+Data}
+
+
+
+Definition at line 7 of file Metadata.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{12     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{13     [JsonPropertyName(\textcolor{stringliteral}{"{}request\_id"{}})]}
+\DoxyCodeLine{14     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? RequestId \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{19     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{20     [JsonPropertyName(\textcolor{stringliteral}{"{}model\_uuid"{}})]}
+\DoxyCodeLine{21     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? ModelUUID \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{26     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{27     [JsonPropertyName(\textcolor{stringliteral}{"{}model\_info"{}})]}
+\DoxyCodeLine{28     \textcolor{keyword}{public} \mbox{\hyperlink{Live_2v1_2ModelInfo_8cs_a8cf19ba4a81526699080776b667338a5}{ModelInfo}}? \mbox{\hyperlink{Live_2v1_2ModelInfo_8cs_a8cf19ba4a81526699080776b667338a5}{ModelInfo}} \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{35     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{36     [JsonPropertyName(\textcolor{stringliteral}{"{}extra"{}})]}
+\DoxyCodeLine{37     \textcolor{keyword}{public} Dictionary<string, string>? Extra \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{38 \}}
+
+\end{DoxyCode}

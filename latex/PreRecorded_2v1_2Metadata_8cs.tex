@@ -1,0 +1,82 @@
+\hypertarget{PreRecorded_2v1_2Metadata_8cs}{}\doxysection{Deepgram/\+Models/\+Pre\+Recorded/v1/\+Metadata.cs File Reference}
+\label{PreRecorded_2v1_2Metadata_8cs}\index{Deepgram/Models/PreRecorded/v1/Metadata.cs@{Deepgram/Models/PreRecorded/v1/Metadata.cs}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+record?????????????? \mbox{\hyperlink{PreRecorded_2v1_2Metadata_8cs_a6375e8310ab051b331d5cce91867c54f}{Metadata}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{PreRecorded_2v1_2Metadata_8cs_a6375e8310ab051b331d5cce91867c54f}\label{PreRecorded_2v1_2Metadata_8cs_a6375e8310ab051b331d5cce91867c54f}} 
+\index{Metadata.cs@{Metadata.cs}!Metadata@{Metadata}}
+\index{Metadata@{Metadata}!Metadata.cs@{Metadata.cs}}
+\doxysubsubsection{\texorpdfstring{Metadata}{Metadata}}
+{\footnotesize\ttfamily record?????????????? Metadata}
+
+
+
+Definition at line 7 of file Metadata.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{12     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{13     [JsonPropertyName(\textcolor{stringliteral}{"{}channels"{}})]}
+\DoxyCodeLine{14     \textcolor{keyword}{public} \textcolor{keywordtype}{int}? Channels \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{19     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{20     [JsonPropertyName(\textcolor{stringliteral}{"{}created"{}})]}
+\DoxyCodeLine{21     \textcolor{keyword}{public} DateTime? Created \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{26     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{27     [JsonPropertyName(\textcolor{stringliteral}{"{}duration"{}})]}
+\DoxyCodeLine{28     \textcolor{keyword}{public} \textcolor{keywordtype}{double}? Duration \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{35     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{36     [JsonPropertyName(\textcolor{stringliteral}{"{}extra"{}})]}
+\DoxyCodeLine{37     \textcolor{keyword}{public} Dictionary<string, string>? Extra \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{42     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{43     [JsonPropertyName(\textcolor{stringliteral}{"{}intents\_info"{}})]}
+\DoxyCodeLine{44     \textcolor{keyword}{public} \mbox{\hyperlink{Analyze_2v1_2IntentsInfo_8cs_abdcd34073994552895387a4f99e33203}{IntentsInfo}}? \mbox{\hyperlink{Analyze_2v1_2IntentsInfo_8cs_abdcd34073994552895387a4f99e33203}{IntentsInfo}} \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{49     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{50     [JsonPropertyName(\textcolor{stringliteral}{"{}model\_info"{}})]}
+\DoxyCodeLine{51     \textcolor{keyword}{public} Dictionary<string, ModelInfo>? \mbox{\hyperlink{Live_2v1_2ModelInfo_8cs_a8cf19ba4a81526699080776b667338a5}{ModelInfo}} \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{56     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{57     [JsonPropertyName(\textcolor{stringliteral}{"{}models"{}})]}
+\DoxyCodeLine{58     \textcolor{keyword}{public} List<string>? Models \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{63     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{64     [JsonPropertyName(\textcolor{stringliteral}{"{}request\_id"{}})]}
+\DoxyCodeLine{65     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? RequestId \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{70     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{71     [JsonPropertyName(\textcolor{stringliteral}{"{}sentiment\_info"{}})]}
+\DoxyCodeLine{72     \textcolor{keyword}{public} \mbox{\hyperlink{Analyze_2v1_2SentimentInfo_8cs_a96663f48745f2accf4fb77fee4e0b410}{SentimentInfo}}? \mbox{\hyperlink{Analyze_2v1_2SentimentInfo_8cs_a96663f48745f2accf4fb77fee4e0b410}{SentimentInfo}} \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{77     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{78     [JsonPropertyName(\textcolor{stringliteral}{"{}sha256"{}})]}
+\DoxyCodeLine{79     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? Sha256 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{84     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{85     [JsonPropertyName(\textcolor{stringliteral}{"{}summary\_info"{}})]}
+\DoxyCodeLine{86     \textcolor{keyword}{public} \mbox{\hyperlink{Analyze_2v1_2SummaryInfo_8cs_a5230b626998b5094a540268ef6470c92}{SummaryInfo}}? \mbox{\hyperlink{Analyze_2v1_2SummaryInfo_8cs_a5230b626998b5094a540268ef6470c92}{SummaryInfo}} \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{91     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{92     [JsonPropertyName(\textcolor{stringliteral}{"{}topics\_info"{}})]}
+\DoxyCodeLine{93     \textcolor{keyword}{public} \mbox{\hyperlink{Analyze_2v1_2TopicsInfo_8cs_a3d3270741b41b73dc8140dc2134d5ec1}{TopicsInfo}}? \mbox{\hyperlink{Analyze_2v1_2TopicsInfo_8cs_a3d3270741b41b73dc8140dc2134d5ec1}{TopicsInfo}} \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{98     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{99     [JsonPropertyName(\textcolor{stringliteral}{"{}transaction\_key"{}})]}
+\DoxyCodeLine{100     [Obsolete(\textcolor{stringliteral}{"{}phasing out"{}})]}
+\DoxyCodeLine{101     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? TransactionKey \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{106     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{107     [JsonPropertyName(\textcolor{stringliteral}{"{}warnings"{}})]}
+\DoxyCodeLine{108     \textcolor{keyword}{public} List<Warning>? Warnings \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{109 \}}
+
+\end{DoxyCode}

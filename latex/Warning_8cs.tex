@@ -1,0 +1,38 @@
+\hypertarget{Warning_8cs}{}\doxysection{Deepgram/\+Models/\+Pre\+Recorded/v1/\+Warning.cs File Reference}
+\label{Warning_8cs}\index{Deepgram/Models/PreRecorded/v1/Warning.cs@{Deepgram/Models/PreRecorded/v1/Warning.cs}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+record??? \mbox{\hyperlink{Warning_8cs_a3dab72eefdaea74f207ab45277abfd6f}{Warning}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{Warning_8cs_a3dab72eefdaea74f207ab45277abfd6f}\label{Warning_8cs_a3dab72eefdaea74f207ab45277abfd6f}} 
+\index{Warning.cs@{Warning.cs}!Warning@{Warning}}
+\index{Warning@{Warning}!Warning.cs@{Warning.cs}}
+\doxysubsubsection{\texorpdfstring{Warning}{Warning}}
+{\footnotesize\ttfamily record??? Warning}
+
+
+
+Definition at line 7 of file Warning.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{12     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{13     [JsonPropertyName(\textcolor{stringliteral}{"{}parameter"{}})]}
+\DoxyCodeLine{14     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? Parameter \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{19     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{20     [JsonPropertyName(\textcolor{stringliteral}{"{}type"{}})]}
+\DoxyCodeLine{21     [JsonConverter(typeof(JsonStringEnumConverter))]}
+\DoxyCodeLine{22     \textcolor{keyword}{public} \mbox{\hyperlink{WarningType_8cs_aa278aa207bdeddc8432b560d1e1312ae}{WarningType}}? Type \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{27     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{28     [JsonPropertyName(\textcolor{stringliteral}{"{}message"{}})]}
+\DoxyCodeLine{29     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? Message \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{30 \}}
+
+\end{DoxyCode}

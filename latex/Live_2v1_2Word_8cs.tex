@@ -1,0 +1,49 @@
+\hypertarget{Live_2v1_2Word_8cs}{}\doxysection{Deepgram/\+Models/\+Live/v1/\+Word.cs File Reference}
+\label{Live_2v1_2Word_8cs}\index{Deepgram/Models/Live/v1/Word.cs@{Deepgram/Models/Live/v1/Word.cs}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+record?????? \mbox{\hyperlink{Live_2v1_2Word_8cs_a4b5b482a23cb5d8eb053a929673655ab}{Word}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{Live_2v1_2Word_8cs_a4b5b482a23cb5d8eb053a929673655ab}\label{Live_2v1_2Word_8cs_a4b5b482a23cb5d8eb053a929673655ab}} 
+\index{Word.cs@{Word.cs}!Word@{Word}}
+\index{Word@{Word}!Word.cs@{Word.cs}}
+\doxysubsubsection{\texorpdfstring{Word}{Word}}
+{\footnotesize\ttfamily record?????? Word}
+
+
+
+Definition at line 7 of file Word.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{12     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{13     [JsonPropertyName(\textcolor{stringliteral}{"{}word"{}})]}
+\DoxyCodeLine{14     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? HeardWord \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{19     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{20     [JsonPropertyName(\textcolor{stringliteral}{"{}start"{}})]}
+\DoxyCodeLine{21     \textcolor{keyword}{public} decimal? Start \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{26     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{27     [JsonPropertyName(\textcolor{stringliteral}{"{}end"{}})]}
+\DoxyCodeLine{28     \textcolor{keyword}{public} decimal? End \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{33     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{34     [JsonPropertyName(\textcolor{stringliteral}{"{}confidence"{}})]}
+\DoxyCodeLine{35     \textcolor{keyword}{public} \textcolor{keywordtype}{double}? Confidence \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{40     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{41     [JsonPropertyName(\textcolor{stringliteral}{"{}punctuated\_word"{}})]}
+\DoxyCodeLine{42     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? PunctuatedWord \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{47     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{48     [JsonPropertyName(\textcolor{stringliteral}{"{}speaker"{}})]}
+\DoxyCodeLine{49     \textcolor{keyword}{public} \textcolor{keywordtype}{int}? Speaker \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{50 \}}
+
+\end{DoxyCode}

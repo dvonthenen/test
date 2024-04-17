@@ -1,0 +1,66 @@
+\hypertarget{MetadataResponse_8cs}{}\doxysection{Deepgram/\+Models/\+Live/v1/\+Metadata\+Response.cs File Reference}
+\label{MetadataResponse_8cs}\index{Deepgram/Models/Live/v1/MetadataResponse.cs@{Deepgram/Models/Live/v1/MetadataResponse.cs}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+record?????????? \mbox{\hyperlink{MetadataResponse_8cs_a87d2b18796783486a51da66753845f67}{Metadata\+Response}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{MetadataResponse_8cs_a87d2b18796783486a51da66753845f67}\label{MetadataResponse_8cs_a87d2b18796783486a51da66753845f67}} 
+\index{MetadataResponse.cs@{MetadataResponse.cs}!MetadataResponse@{MetadataResponse}}
+\index{MetadataResponse@{MetadataResponse}!MetadataResponse.cs@{MetadataResponse.cs}}
+\doxysubsubsection{\texorpdfstring{MetadataResponse}{MetadataResponse}}
+{\footnotesize\ttfamily record?????????? Metadata\+Response}
+
+
+
+Definition at line 7 of file Metadata\+Response.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{12     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{13     [JsonPropertyName(\textcolor{stringliteral}{"{}channels"{}})]}
+\DoxyCodeLine{14     \textcolor{keyword}{public} \textcolor{keywordtype}{int}? Channels \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{19     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{20     [JsonPropertyName(\textcolor{stringliteral}{"{}created"{}})]}
+\DoxyCodeLine{21     \textcolor{keyword}{public} DateTime? Created \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{26     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{27     [JsonPropertyName(\textcolor{stringliteral}{"{}duration"{}})]}
+\DoxyCodeLine{28     \textcolor{keyword}{public} \textcolor{keywordtype}{double}? Duration \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{33     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{34     [JsonPropertyName(\textcolor{stringliteral}{"{}model\_info"{}})]}
+\DoxyCodeLine{35     \textcolor{keyword}{public} IReadOnlyDictionary<string, ModelInfo>? \mbox{\hyperlink{Live_2v1_2ModelInfo_8cs_a8cf19ba4a81526699080776b667338a5}{ModelInfo}} \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{40     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{41     [JsonPropertyName(\textcolor{stringliteral}{"{}models"{}})]}
+\DoxyCodeLine{42     \textcolor{keyword}{public} IReadOnlyList<string>? Models \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{47     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{48     [JsonPropertyName(\textcolor{stringliteral}{"{}request\_id"{}})]}
+\DoxyCodeLine{49     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? RequestId \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{54     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{55     [JsonPropertyName(\textcolor{stringliteral}{"{}sha256"{}})]}
+\DoxyCodeLine{56     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? Sha256 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{61     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{62     [JsonPropertyName(\textcolor{stringliteral}{"{}transaction\_key"{}})]}
+\DoxyCodeLine{63     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? TransactionKey \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{68     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{69     [JsonPropertyName(\textcolor{stringliteral}{"{}type"{}})]}
+\DoxyCodeLine{70     [JsonConverter(typeof(JsonStringEnumConverter))]}
+\DoxyCodeLine{71     \textcolor{keyword}{public} \mbox{\hyperlink{LiveType_8cs_a005fe194a3c2c010b732adef72942a0f}{LiveType}}? Type \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = \mbox{\hyperlink{LiveType_8cs_a005fe194a3c2c010b732adef72942a0f}{LiveType}}.Metadata;}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{78     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{79     [JsonPropertyName(\textcolor{stringliteral}{"{}extra"{}})]}
+\DoxyCodeLine{80     \textcolor{keyword}{public} Dictionary<string, string>? Extra \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{81 \}}
+
+\end{DoxyCode}

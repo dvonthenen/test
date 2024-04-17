@@ -1,0 +1,257 @@
+\hypertarget{classLog}{}\doxysection{Log Class Reference}
+\label{classLog}\index{Log@{Log}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Serilog.\+ILogger \mbox{\hyperlink{classLog_a94e6e27911db3a8a0d16566960690d49}{Initialize}} (\mbox{\hyperlink{Logger_2Constants_8cs_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}} level=\mbox{\hyperlink{Logger_2Constants_8cs_aca1fd1d8935433e6ba2e3918214e07f9aa82be0f551b8708bc08eb33cd9ded0cf}{Log\+Level.\+Information}}, string? filename=\char`\"{}log.\+txt\char`\"{})
+\begin{DoxyCompactList}\small\item\em Initializes the logger with the specified log level and filename. \end{DoxyCompactList}\item 
+static Serilog.\+ILogger \mbox{\hyperlink{classLog_aa7b41f6dc8d5db72152ab581979bdcb6}{Get\+Logger}} ()
+\begin{DoxyCompactList}\small\item\em Gets the logger instance \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}} (string identifier, string trace)
+\begin{DoxyCompactList}\small\item\em Logs a verbose message \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}} (string identifier, string trace)
+\begin{DoxyCompactList}\small\item\em Logs a debug message \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}} (string identifier, string trace)
+\begin{DoxyCompactList}\small\item\em Logs an information message \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classLog_a1645aa5c3e59424312de45552ed51ec3}{Warning}} (string identifier, string trace)
+\begin{DoxyCompactList}\small\item\em Logs an warning message \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classLog_a2103a15a44d6c5ae80563cce05a89abe}{Error}} (string identifier, string trace)
+\begin{DoxyCompactList}\small\item\em Logs an error message \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classLog_afadd6e7c722818e308134481e21515dc}{Fatal}} (string identifier, string trace)
+\begin{DoxyCompactList}\small\item\em Logs an fatal message \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 10 of file Log.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLog_a4abefae0218fc147ef0c6ea554770e65}\label{classLog_a4abefae0218fc147ef0c6ea554770e65}} 
+\index{Log@{Log}!Debug@{Debug}}
+\index{Debug@{Debug}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{Debug()}{Debug()}}
+{\footnotesize\ttfamily static void Log.\+Debug (\begin{DoxyParamCaption}\item[{string}]{identifier,  }\item[{string}]{trace }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Logs a debug message 
+
+
+
+Definition at line 72 of file Log.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73     \{}
+\DoxyCodeLine{74         \mbox{\hyperlink{classLog_aa7b41f6dc8d5db72152ab581979bdcb6}{GetLogger}}().Debug(\$\textcolor{stringliteral}{"{}\{identifier\}: \{trace\}"{}});}
+\DoxyCodeLine{75     \}}
+
+\end{DoxyCode}
+
+
+Referenced by Client.\+Client(), Client.\+Connect(), Deepgram\+Http\+Client\+Options.\+Deepgram\+Http\+Client\+Options(), Deepgram\+Ws\+Client\+Options.\+Deepgram\+Ws\+Client\+Options(), Abstract\+Rest\+Client.\+Delete\+Async$<$ S, T $>$(), Abstract\+Rest\+Client.\+Delete\+Async$<$ T $>$(), Abstract\+Rest\+Client.\+Get\+Async$<$ S, T $>$(), Abstract\+Rest\+Client.\+Get\+Async$<$ T $>$(), Abstract\+Rest\+Client.\+Patch\+Async$<$ S, T $>$(), Abstract\+Rest\+Client.\+Post\+Async$<$ R, S, T $>$(), Abstract\+Rest\+Client.\+Post\+Async$<$ S, T $>$(), Abstract\+Rest\+Client.\+Post\+Retrieve\+Local\+File\+Async$<$ R, S, T $>$(), Abstract\+Rest\+Client.\+Put\+Async$<$ S, T $>$(), and Client.\+Stop().
+
+\mbox{\Hypertarget{classLog_a2103a15a44d6c5ae80563cce05a89abe}\label{classLog_a2103a15a44d6c5ae80563cce05a89abe}} 
+\index{Log@{Log}!Error@{Error}}
+\index{Error@{Error}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{Error()}{Error()}}
+{\footnotesize\ttfamily static void Log.\+Error (\begin{DoxyParamCaption}\item[{string}]{identifier,  }\item[{string}]{trace }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Logs an error message 
+
+
+
+Definition at line 96 of file Log.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{97     \{}
+\DoxyCodeLine{98         \mbox{\hyperlink{classLog_aa7b41f6dc8d5db72152ab581979bdcb6}{GetLogger}}().Error(\$\textcolor{stringliteral}{"{}\{identifier\}: \{trace\}"{}});}
+\DoxyCodeLine{99     \}}
+
+\end{DoxyCode}
+
+
+Referenced by Client.\+Connect(), Deepgram\+Http\+Client\+Options.\+Deepgram\+Http\+Client\+Options(), Deepgram\+Ws\+Client\+Options.\+Deepgram\+Ws\+Client\+Options(), Abstract\+Rest\+Client.\+Delete\+Async$<$ S, T $>$(), Abstract\+Rest\+Client.\+Delete\+Async$<$ T $>$(), Abstract\+Rest\+Client.\+Get\+Async$<$ S, T $>$(), Abstract\+Rest\+Client.\+Get\+Async$<$ T $>$(), Abstract\+Rest\+Client.\+Patch\+Async$<$ S, T $>$(), Abstract\+Rest\+Client.\+Post\+Async$<$ R, S, T $>$(), Abstract\+Rest\+Client.\+Post\+Async$<$ S, T $>$(), Abstract\+Rest\+Client.\+Post\+Retrieve\+Local\+File\+Async$<$ R, S, T $>$(), Abstract\+Rest\+Client.\+Put\+Async$<$ S, T $>$(), and Client.\+Stop().
+
+\mbox{\Hypertarget{classLog_afadd6e7c722818e308134481e21515dc}\label{classLog_afadd6e7c722818e308134481e21515dc}} 
+\index{Log@{Log}!Fatal@{Fatal}}
+\index{Fatal@{Fatal}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{Fatal()}{Fatal()}}
+{\footnotesize\ttfamily static void Log.\+Fatal (\begin{DoxyParamCaption}\item[{string}]{identifier,  }\item[{string}]{trace }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Logs an fatal message 
+
+
+
+Definition at line 104 of file Log.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{105     \{}
+\DoxyCodeLine{106         \mbox{\hyperlink{classLog_aa7b41f6dc8d5db72152ab581979bdcb6}{GetLogger}}().Fatal(\$\textcolor{stringliteral}{"{}\{identifier\}: \{trace\}"{}});}
+\DoxyCodeLine{107     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLog_aa7b41f6dc8d5db72152ab581979bdcb6}\label{classLog_aa7b41f6dc8d5db72152ab581979bdcb6}} 
+\index{Log@{Log}!GetLogger@{GetLogger}}
+\index{GetLogger@{GetLogger}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{GetLogger()}{GetLogger()}}
+{\footnotesize\ttfamily static Serilog.\+ILogger Log.\+Get\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the logger instance 
+
+
+
+Definition at line 52 of file Log.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53     \{}
+\DoxyCodeLine{54         \textcolor{keywordflow}{if} (instance == \textcolor{keyword}{null})}
+\DoxyCodeLine{55         \{}
+\DoxyCodeLine{56             \textcolor{keywordflow}{return} \mbox{\hyperlink{classLog_a94e6e27911db3a8a0d16566960690d49}{Initialize}}();}
+\DoxyCodeLine{57         \}}
+\DoxyCodeLine{58         \textcolor{keywordflow}{return} instance;}
+\DoxyCodeLine{59     \}}
+
+\end{DoxyCode}
+
+
+Referenced by Debug(), Error(), Fatal(), Information(), Verbose(), and Warning().
+
+\mbox{\Hypertarget{classLog_ac222ef6b1df9735d43a1e61a11434928}\label{classLog_ac222ef6b1df9735d43a1e61a11434928}} 
+\index{Log@{Log}!Information@{Information}}
+\index{Information@{Information}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{Information()}{Information()}}
+{\footnotesize\ttfamily static void Log.\+Information (\begin{DoxyParamCaption}\item[{string}]{identifier,  }\item[{string}]{trace }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Logs an information message 
+
+
+
+Definition at line 80 of file Log.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{81     \{}
+\DoxyCodeLine{82         \mbox{\hyperlink{classLog_aa7b41f6dc8d5db72152ab581979bdcb6}{GetLogger}}().Information(\$\textcolor{stringliteral}{"{}\{identifier\}: \{trace\}"{}});}
+\DoxyCodeLine{83     \}}
+
+\end{DoxyCode}
+
+
+Referenced by Client.\+Connect(), Deepgram\+Http\+Client\+Options.\+Deepgram\+Http\+Client\+Options(), Deepgram\+Ws\+Client\+Options.\+Deepgram\+Ws\+Client\+Options(), Abstract\+Rest\+Client.\+Delete\+Async$<$ S, T $>$(), Abstract\+Rest\+Client.\+Delete\+Async$<$ T $>$(), Abstract\+Rest\+Client.\+Get\+Async$<$ S, T $>$(), Abstract\+Rest\+Client.\+Get\+Async$<$ T $>$(), Abstract\+Rest\+Client.\+Patch\+Async$<$ S, T $>$(), Abstract\+Rest\+Client.\+Post\+Async$<$ R, S, T $>$(), Abstract\+Rest\+Client.\+Post\+Async$<$ S, T $>$(), Abstract\+Rest\+Client.\+Post\+Retrieve\+Local\+File\+Async$<$ R, S, T $>$(), Abstract\+Rest\+Client.\+Put\+Async$<$ S, T $>$(), and Client.\+Stop().
+
+\mbox{\Hypertarget{classLog_a94e6e27911db3a8a0d16566960690d49}\label{classLog_a94e6e27911db3a8a0d16566960690d49}} 
+\index{Log@{Log}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily static Serilog.\+ILogger Log.\+Initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Logger_2Constants_8cs_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}}}]{level = {\ttfamily \mbox{\hyperlink{Logger_2Constants_8cs_aca1fd1d8935433e6ba2e3918214e07f9aa82be0f551b8708bc08eb33cd9ded0cf}{Log\+Level.\+Information}}},  }\item[{string?}]{filename = {\ttfamily \char`\"{}log.txt\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Initializes the logger with the specified log level and filename. 
+
+
+
+Definition at line 23 of file Log.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24     \{}
+\DoxyCodeLine{25         \textcolor{keywordflow}{if} (level == \mbox{\hyperlink{Logger_2Constants_8cs_aca1fd1d8935433e6ba2e3918214e07f9}{LogLevel}}.Disable)}
+\DoxyCodeLine{26         \{}
+\DoxyCodeLine{27             instance = \textcolor{keyword}{new} LoggerConfiguration()}
+\DoxyCodeLine{28                 .MinimumLevel.Is(((LogEventLevel)1 + (\textcolor{keywordtype}{int})LogEventLevel.Fatal))}
+\DoxyCodeLine{29                 .WriteTo.Console(outputTemplate: \textcolor{stringliteral}{"{}\{Timestamp:yyyy-\/MM-\/dd HH:mm:ss.fff\} [\{Level\}] \{Message\}\{NewLine\}\{Exception\}"{}})}
+\DoxyCodeLine{30                 .CreateLogger();}
+\DoxyCodeLine{31             \textcolor{keywordflow}{return} instance;}
+\DoxyCodeLine{32         \}}
+\DoxyCodeLine{33         \textcolor{keywordflow}{if} (filename != \textcolor{keyword}{null})}
+\DoxyCodeLine{34         \{}
+\DoxyCodeLine{35             instance = \textcolor{keyword}{new} LoggerConfiguration()}
+\DoxyCodeLine{36                 .MinimumLevel.Is((LogEventLevel) level)}
+\DoxyCodeLine{37                 .WriteTo.Console(outputTemplate: \textcolor{stringliteral}{"{}\{Timestamp:yyyy-\/MM-\/dd HH:mm:ss.fff\} [\{Level\}] \{Message\}\{NewLine\}\{Exception\}"{}})}
+\DoxyCodeLine{38                 .WriteTo.File(filename, outputTemplate: \textcolor{stringliteral}{"{}\{Timestamp:yyyy-\/MM-\/dd HH:mm:ss.fff\} [\{Level\}] \{Message\}\{NewLine\}\{Exception\}"{}})}
+\DoxyCodeLine{39                 .CreateLogger();}
+\DoxyCodeLine{40             \textcolor{keywordflow}{return} instance;}
+\DoxyCodeLine{41         \}}
+\DoxyCodeLine{42         instance = \textcolor{keyword}{new} LoggerConfiguration()}
+\DoxyCodeLine{43             .MinimumLevel.Is((LogEventLevel)level)}
+\DoxyCodeLine{44             .WriteTo.Console(outputTemplate: \textcolor{stringliteral}{"{}\{Timestamp:yyyy-\/MM-\/dd HH:mm:ss.fff\} [\{Level\}] \{Message\}\{NewLine\}\{Exception\}"{}})}
+\DoxyCodeLine{45             .CreateLogger();}
+\DoxyCodeLine{46         \textcolor{keywordflow}{return} instance;}
+\DoxyCodeLine{47     \}}
+
+\end{DoxyCode}
+
+
+Referenced by Get\+Logger(), and Library.\+Initialize().
+
+\mbox{\Hypertarget{classLog_a46391f0dc4e95096e2a7effb721ac1b8}\label{classLog_a46391f0dc4e95096e2a7effb721ac1b8}} 
+\index{Log@{Log}!Verbose@{Verbose}}
+\index{Verbose@{Verbose}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{Verbose()}{Verbose()}}
+{\footnotesize\ttfamily static void Log.\+Verbose (\begin{DoxyParamCaption}\item[{string}]{identifier,  }\item[{string}]{trace }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Logs a verbose message 
+
+
+
+Definition at line 64 of file Log.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65     \{}
+\DoxyCodeLine{66         \mbox{\hyperlink{classLog_aa7b41f6dc8d5db72152ab581979bdcb6}{GetLogger}}().Verbose(\$\textcolor{stringliteral}{"{}\{identifier\}: \{trace\}"{}});}
+\DoxyCodeLine{67     \}}
+
+\end{DoxyCode}
+
+
+Referenced by Client.\+Client(), Client.\+Connect(), Deepgram\+Http\+Client\+Options.\+Deepgram\+Http\+Client\+Options(), Deepgram\+Ws\+Client\+Options.\+Deepgram\+Ws\+Client\+Options(), Abstract\+Rest\+Client.\+Delete\+Async$<$ S, T $>$(), Abstract\+Rest\+Client.\+Delete\+Async$<$ T $>$(), Abstract\+Rest\+Client.\+Get\+Async$<$ S, T $>$(), Abstract\+Rest\+Client.\+Get\+Async$<$ T $>$(), Abstract\+Rest\+Client.\+Patch\+Async$<$ S, T $>$(), Abstract\+Rest\+Client.\+Post\+Async$<$ R, S, T $>$(), Abstract\+Rest\+Client.\+Post\+Async$<$ S, T $>$(), Abstract\+Rest\+Client.\+Post\+Retrieve\+Local\+File\+Async$<$ R, S, T $>$(), Abstract\+Rest\+Client.\+Put\+Async$<$ S, T $>$(), Client.\+Send\+Binary\+Immediately(), Client.\+Send\+Message\+Immediately(), and Client.\+Stop().
+
+\mbox{\Hypertarget{classLog_a1645aa5c3e59424312de45552ed51ec3}\label{classLog_a1645aa5c3e59424312de45552ed51ec3}} 
+\index{Log@{Log}!Warning@{Warning}}
+\index{Warning@{Warning}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{Warning()}{Warning()}}
+{\footnotesize\ttfamily static void Log.\+Warning (\begin{DoxyParamCaption}\item[{string}]{identifier,  }\item[{string}]{trace }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Logs an warning message 
+
+
+
+Definition at line 88 of file Log.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{89     \{}
+\DoxyCodeLine{90         \mbox{\hyperlink{classLog_aa7b41f6dc8d5db72152ab581979bdcb6}{GetLogger}}().Warning(\$\textcolor{stringliteral}{"{}\{identifier\}: \{trace\}"{}});}
+\DoxyCodeLine{91     \}}
+
+\end{DoxyCode}
+
+
+Referenced by Deepgram\+Http\+Client\+Options.\+Deepgram\+Http\+Client\+Options(), and Deepgram\+Ws\+Client\+Options.\+Deepgram\+Ws\+Client\+Options().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Deepgram/\+Logger/\mbox{\hyperlink{Log_8cs}{Log.\+cs}}\end{DoxyCompactItemize}

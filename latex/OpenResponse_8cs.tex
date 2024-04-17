@@ -1,0 +1,34 @@
+\hypertarget{OpenResponse_8cs}{}\doxysection{Deepgram/\+Models/\+Live/v1/\+Open\+Response.cs File Reference}
+\label{OpenResponse_8cs}\index{Deepgram/Models/Live/v1/OpenResponse.cs@{Deepgram/Models/Live/v1/OpenResponse.cs}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+record? \mbox{\hyperlink{OpenResponse_8cs_aa608fe17f63e97a14944d524e5ac925e}{Open\+Response}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{OpenResponse_8cs_aa608fe17f63e97a14944d524e5ac925e}\label{OpenResponse_8cs_aa608fe17f63e97a14944d524e5ac925e}} 
+\index{OpenResponse.cs@{OpenResponse.cs}!OpenResponse@{OpenResponse}}
+\index{OpenResponse@{OpenResponse}!OpenResponse.cs@{OpenResponse.cs}}
+\doxysubsubsection{\texorpdfstring{OpenResponse}{OpenResponse}}
+{\footnotesize\ttfamily record? Open\+Response}
+
+
+
+Definition at line 7 of file Open\+Response.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{12     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{13     [JsonPropertyName(\textcolor{stringliteral}{"{}type"{}})]}
+\DoxyCodeLine{14     [JsonConverter(typeof(JsonStringEnumConverter))]}
+\DoxyCodeLine{15     \textcolor{keyword}{public} \mbox{\hyperlink{LiveType_8cs_a005fe194a3c2c010b732adef72942a0f}{LiveType}}? Type \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = \mbox{\hyperlink{LiveType_8cs_a005fe194a3c2c010b732adef72942a0f}{LiveType}}.Open;}
+\DoxyCodeLine{16 \}}
+
+\end{DoxyCode}
+
+
+Referenced by Client.\+Connect().
+

@@ -1,0 +1,36 @@
+\hypertarget{Live_2v1_2Alternative_8cs}{}\doxysection{Deepgram/\+Models/\+Live/v1/\+Alternative.cs File Reference}
+\label{Live_2v1_2Alternative_8cs}\index{Deepgram/Models/Live/v1/Alternative.cs@{Deepgram/Models/Live/v1/Alternative.cs}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+record??? \mbox{\hyperlink{Live_2v1_2Alternative_8cs_abcc35fc16c1418f7bfac56633190662c}{Alternative}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{Live_2v1_2Alternative_8cs_abcc35fc16c1418f7bfac56633190662c}\label{Live_2v1_2Alternative_8cs_abcc35fc16c1418f7bfac56633190662c}} 
+\index{Alternative.cs@{Alternative.cs}!Alternative@{Alternative}}
+\index{Alternative@{Alternative}!Alternative.cs@{Alternative.cs}}
+\doxysubsubsection{\texorpdfstring{Alternative}{Alternative}}
+{\footnotesize\ttfamily record??? Alternative}
+
+
+
+Definition at line 7 of file Alternative.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{12     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{13     [JsonPropertyName(\textcolor{stringliteral}{"{}transcript"{}})]}
+\DoxyCodeLine{14     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? Transcript \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{18     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{19     [JsonPropertyName(\textcolor{stringliteral}{"{}confidence"{}})]}
+\DoxyCodeLine{20     \textcolor{keyword}{public} \textcolor{keywordtype}{double}? Confidence \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{25     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{26     [JsonPropertyName(\textcolor{stringliteral}{"{}words"{}})]}
+\DoxyCodeLine{27     \textcolor{keyword}{public} IReadOnlyList<Word>? Words \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{28 \}}
+
+\end{DoxyCode}

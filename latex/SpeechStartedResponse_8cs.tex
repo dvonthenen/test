@@ -1,0 +1,38 @@
+\hypertarget{SpeechStartedResponse_8cs}{}\doxysection{Deepgram/\+Models/\+Live/v1/\+Speech\+Started\+Response.cs File Reference}
+\label{SpeechStartedResponse_8cs}\index{Deepgram/Models/Live/v1/SpeechStartedResponse.cs@{Deepgram/Models/Live/v1/SpeechStartedResponse.cs}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+record??? \mbox{\hyperlink{SpeechStartedResponse_8cs_a14e8b427382264ae9dfda9fb837aa502}{Speech\+Started\+Response}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{SpeechStartedResponse_8cs_a14e8b427382264ae9dfda9fb837aa502}\label{SpeechStartedResponse_8cs_a14e8b427382264ae9dfda9fb837aa502}} 
+\index{SpeechStartedResponse.cs@{SpeechStartedResponse.cs}!SpeechStartedResponse@{SpeechStartedResponse}}
+\index{SpeechStartedResponse@{SpeechStartedResponse}!SpeechStartedResponse.cs@{SpeechStartedResponse.cs}}
+\doxysubsubsection{\texorpdfstring{SpeechStartedResponse}{SpeechStartedResponse}}
+{\footnotesize\ttfamily record??? Speech\+Started\+Response}
+
+
+
+Definition at line 7 of file Speech\+Started\+Response.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{12     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{13     [JsonPropertyName(\textcolor{stringliteral}{"{}type"{}})]}
+\DoxyCodeLine{14     [JsonConverter(typeof(JsonStringEnumConverter))]}
+\DoxyCodeLine{15     \textcolor{keyword}{public} \mbox{\hyperlink{LiveType_8cs_a005fe194a3c2c010b732adef72942a0f}{LiveType}}? Type \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = \mbox{\hyperlink{LiveType_8cs_a005fe194a3c2c010b732adef72942a0f}{LiveType}}.SpeechStarted;}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{20     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{21     [JsonPropertyName(\textcolor{stringliteral}{"{}channel\_index"{}})]}
+\DoxyCodeLine{22     \textcolor{keyword}{public} \textcolor{keywordtype}{int}[]? \mbox{\hyperlink{Live_2v1_2Channel_8cs_a38dc211d973db40c75729426ac776fe0}{Channel}} \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{27     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{28     [JsonPropertyName(\textcolor{stringliteral}{"{}timestamp"{}})]}
+\DoxyCodeLine{29     \textcolor{keyword}{public} decimal? Timestamp \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{30 \}}
+
+\end{DoxyCode}

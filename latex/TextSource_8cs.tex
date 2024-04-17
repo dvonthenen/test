@@ -1,0 +1,29 @@
+\hypertarget{TextSource_8cs}{}\doxysection{Deepgram/\+Models/\+Speak/v1/\+Text\+Source.cs File Reference}
+\label{TextSource_8cs}\index{Deepgram/Models/Speak/v1/TextSource.cs@{Deepgram/Models/Speak/v1/TextSource.cs}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{TextSource_8cs_adaa03ef66dc1ca990c099788f052d133}{Text\+Source}} (string text)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{TextSource_8cs_adaa03ef66dc1ca990c099788f052d133}\label{TextSource_8cs_adaa03ef66dc1ca990c099788f052d133}} 
+\index{TextSource.cs@{TextSource.cs}!TextSource@{TextSource}}
+\index{TextSource@{TextSource}!TextSource.cs@{TextSource.cs}}
+\doxysubsubsection{\texorpdfstring{TextSource()}{TextSource()}}
+{\footnotesize\ttfamily class Text\+Source (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})}
+
+Text of the words to speak 
+
+Definition at line 7 of file Text\+Source.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{12     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{13     [JsonPropertyName(\textcolor{stringliteral}{"{}text"{}})]}
+\DoxyCodeLine{14     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? Text \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = text;}
+\DoxyCodeLine{15 \}}
+
+\end{DoxyCode}

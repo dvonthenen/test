@@ -1,0 +1,33 @@
+\hypertarget{Search_8cs}{}\doxysection{Deepgram/\+Models/\+Pre\+Recorded/v1/\+Search.cs File Reference}
+\label{Search_8cs}\index{Deepgram/Models/PreRecorded/v1/Search.cs@{Deepgram/Models/PreRecorded/v1/Search.cs}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+record?? \mbox{\hyperlink{Search_8cs_a05729af15813d0282c049d4383bd6791}{Search}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{Search_8cs_a05729af15813d0282c049d4383bd6791}\label{Search_8cs_a05729af15813d0282c049d4383bd6791}} 
+\index{Search.cs@{Search.cs}!Search@{Search}}
+\index{Search@{Search}!Search.cs@{Search.cs}}
+\doxysubsubsection{\texorpdfstring{Search}{Search}}
+{\footnotesize\ttfamily record?? Search}
+
+
+
+Definition at line 7 of file Search.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{12     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{13     [JsonPropertyName(\textcolor{stringliteral}{"{}query"{}})]}
+\DoxyCodeLine{14     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? Query \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{19     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{20     [JsonPropertyName(\textcolor{stringliteral}{"{}hits"{}})]}
+\DoxyCodeLine{21     \textcolor{keyword}{public} IReadOnlyList<Hit>? Hits \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{22 \}}
+
+\end{DoxyCode}

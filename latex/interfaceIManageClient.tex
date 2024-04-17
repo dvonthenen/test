@@ -1,0 +1,489 @@
+\hypertarget{interfaceIManageClient}{}\doxysection{IManage\+Client Interface Reference}
+\label{interfaceIManageClient}\index{IManageClient@{IManageClient}}
+
+
+Implements version 1 of the Manage \mbox{\hyperlink{classClient}{Client}}.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ \mbox{\hyperlink{ProjectsResponse_8cs_a2b8d1c8b13ce9bd00d7298e30483d074}{Projects\+Response}} $>$ \mbox{\hyperlink{interfaceIManageClient_aee9fbb3ecd953771f8a336ad9f11541a}{Get\+Projects}} (Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Gets projects associated to Api\+Key \end{DoxyCompactList}\item 
+Task$<$ Project\+Response $>$ \mbox{\hyperlink{interfaceIManageClient_a32deeb9979965100c4afe18eaa742b57}{Get\+Project}} (string project\+Id, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Gets project associated with project Id \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}} $>$ \mbox{\hyperlink{interfaceIManageClient_a121e7d34a59028dc664110b9c2dc4d68}{Update\+Project}} (string project\+Id, \mbox{\hyperlink{classProjectSchema}{Project\+Schema}} update\+Project\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Update a project associated with the project\+ID \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}} $>$ \mbox{\hyperlink{interfaceIManageClient_aa2683786289b5a62c6a17e6b687c29d2}{Delete\+Project}} (string project\+Id, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Deletes a project, no response will be returned \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}} $>$ \mbox{\hyperlink{interfaceIManageClient_ac5e962d7d31d6efa0dd99f87f66d297c}{Leave\+Project}} (string project\+Id, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em leave project associated with the project Id \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{KeysResponse_8cs_aac84fd0b8b43c11bba90b0e31afc21d0}{Keys\+Response}} $>$ \mbox{\hyperlink{interfaceIManageClient_a052c6958f64d94e9b39969aeac19e400}{Get\+Keys}} (string project\+Id, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Get the keys associated with the project \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{KeyScopeResponse_8cs_a7ccc17320f18eed5867d779418701483}{Key\+Scope\+Response}} $>$ \mbox{\hyperlink{interfaceIManageClient_a39425733747080d45ec3f6f2ad313826}{Get\+Key}} (string project\+Id, string key\+Id, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Get details of key associated with the key ID \end{DoxyCompactList}\item 
+Task$<$ Key\+Response $>$ \mbox{\hyperlink{interfaceIManageClient_aa84b6dae62923ebff7fc00197c850472}{Create\+Key}} (string project\+Id, \mbox{\hyperlink{classKeySchema}{Key\+Schema}} key\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Create a key in the associated project \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}} $>$ \mbox{\hyperlink{interfaceIManageClient_a67101057997fb4dfa96207dbcc8051e0}{Delete\+Key}} (string project\+Id, string key\+Id, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Remove key from project, No response returned \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{InvitesResponse_8cs_a1a15a428770bbdc40783237948e02418}{Invites\+Response}} $>$ \mbox{\hyperlink{interfaceIManageClient_ae41798a43aff0c0e0170cf07a5a63aa7}{Get\+Invites}} (string project\+Id, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Get any invites that are associated with project \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}} $>$ \mbox{\hyperlink{interfaceIManageClient_a9970e8ab1c701ffb437e02bda5ddd17c}{Delete\+Invite}} (string project\+Id, string email, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Delete a project invite that has been sent \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}} $>$ \mbox{\hyperlink{interfaceIManageClient_ae305dc55b2566dbe6ab512ff7b45a619}{Send\+Invite}} (string project\+Id, \mbox{\hyperlink{classInviteSchema}{Invite\+Schema}} invite\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Send a invite to the associated project \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{MembersResponse_8cs_ad5df9f935c4e1c570cb237b37b078e20}{Members\+Response}} $>$ \mbox{\hyperlink{interfaceIManageClient_a37b9f006377276e6e4f01dd50e0c9c0b}{Get\+Members}} (string project\+Id, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Get the members associated with the project \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{MemberScopesResponse_8cs_aa5e478db6a685f743f777c37b740029d}{Member\+Scopes\+Response}} $>$ \mbox{\hyperlink{interfaceIManageClient_a5c55107cb7556e2cd0a172e7ca55caca}{Get\+Member\+Scopes}} (string project\+Id, string member\+Id, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Get the scopes associated with member \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}} $>$ \mbox{\hyperlink{interfaceIManageClient_ac3e7bb41df0deaae33d45398295d1f87}{Update\+Member\+Scope}} (string project\+Id, string member\+Id, \mbox{\hyperlink{classMemberScopeSchema}{Member\+Scope\+Schema}} scope\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Update the scopes fot the member \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}} $>$ \mbox{\hyperlink{interfaceIManageClient_a2755a058105e4ceb7fdd4b4a990dae74}{Remove\+Member}} (string project\+Id, string member\+Id, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Remove member from project, there is no response \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{UsageRequestsResponse_8cs_a5fee8ae6cffbf468525246804d3fbbb9}{Usage\+Requests\+Response}} $>$ \mbox{\hyperlink{interfaceIManageClient_ab3ed5b6a9e2d75895b82cd76a8d6665a}{Get\+Usage\+Requests}} (string project\+Id, \mbox{\hyperlink{classUsageRequestsSchema}{Usage\+Requests\+Schema}} usage\+Requests\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Get usage request associated with the project \end{DoxyCompactList}\item 
+Task$<$ Usage\+Request\+Response $>$ \mbox{\hyperlink{interfaceIManageClient_ac13c444a192c9439729bdc0a3ddadadc}{Get\+Usage\+Request}} (string project\+Id, string request\+Id, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Get the details associated with the request\+ID \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{UsageSummaryResponse_8cs_a911d63418b24e27f1c87075fa0e48212}{Usage\+Summary\+Response}} $>$ \mbox{\hyperlink{interfaceIManageClient_a9cfe6ab7ca30445e3af776c79cfec401}{Get\+Usage\+Summary}} (string project\+Id, \mbox{\hyperlink{classUsageSummarySchema}{Usage\+Summary\+Schema}} summary\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Gets a summary of usage \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{UsageFieldsResponse_8cs_aadb81842e0426cc2f723c638bc4a628d}{Usage\+Fields\+Response}} $>$ \mbox{\hyperlink{interfaceIManageClient_a4b9a6bb92e3214ac716cb13ac7158808}{Get\+Usage\+Fields}} (string project\+Id, \mbox{\hyperlink{classUsageFieldsSchema}{Usage\+Fields\+Schema}} fields\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Get usage fields \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{BalancesResponse_8cs_a7288bdc6ce393c3740d921bbbb3aa2a0}{Balances\+Response}} $>$ \mbox{\hyperlink{interfaceIManageClient_a7b7d8446764a9d72010c68a89e883808}{Get\+Balances}} (string project\+Id, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Gets a list of balances \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{BalanceResponse_8cs_ae25548468dea0165bc188a814e45f362}{Balance\+Response}} $>$ \mbox{\hyperlink{interfaceIManageClient_afc48f124e6c59cafa6d5c9789432b709}{Get\+Balance}} (string project\+Id, string balance\+Id, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Get the balance details associated with the balance id \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements version 1 of the Manage \mbox{\hyperlink{classClient}{Client}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & Required Deepgram\+Api\+Key\\
+\hline
+{\em deepgram\+Client\+Options} & \mbox{\hyperlink{classDeepgramHttpClientOptions}{Deepgram\+Http\+Client\+Options}} for Http\+Client Configuration\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file IManage\+Client.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceIManageClient_aa84b6dae62923ebff7fc00197c850472}\label{interfaceIManageClient_aa84b6dae62923ebff7fc00197c850472}} 
+\index{IManageClient@{IManageClient}!CreateKey@{CreateKey}}
+\index{CreateKey@{CreateKey}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{CreateKey()}{CreateKey()}}
+{\footnotesize\ttfamily Task$<$Key\+Response$>$ IManage\+Client.\+Create\+Key (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{\mbox{\hyperlink{classKeySchema}{Key\+Schema}}}]{key\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Create a key in the associated project 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+{\em create\+Project\+Key\+Schema} & \mbox{\hyperlink{classKeySchema}{Key\+Schema}} for the key to be created\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Key\+Response
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIManageClient_a9970e8ab1c701ffb437e02bda5ddd17c}\label{interfaceIManageClient_a9970e8ab1c701ffb437e02bda5ddd17c}} 
+\index{IManageClient@{IManageClient}!DeleteInvite@{DeleteInvite}}
+\index{DeleteInvite@{DeleteInvite}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{DeleteInvite()}{DeleteInvite()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}}$>$ IManage\+Client.\+Delete\+Invite (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{string}]{email,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Delete a project invite that has been sent 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+{\em email} & email of the invite to be removed\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceIManageClient_a67101057997fb4dfa96207dbcc8051e0}\label{interfaceIManageClient_a67101057997fb4dfa96207dbcc8051e0}} 
+\index{IManageClient@{IManageClient}!DeleteKey@{DeleteKey}}
+\index{DeleteKey@{DeleteKey}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{DeleteKey()}{DeleteKey()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}}$>$ IManage\+Client.\+Delete\+Key (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{string}]{key\+Id,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Remove key from project, No response returned 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+{\em key\+Id} & Id of key\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceIManageClient_aa2683786289b5a62c6a17e6b687c29d2}\label{interfaceIManageClient_aa2683786289b5a62c6a17e6b687c29d2}} 
+\index{IManageClient@{IManageClient}!DeleteProject@{DeleteProject}}
+\index{DeleteProject@{DeleteProject}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{DeleteProject()}{DeleteProject()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}}$>$ IManage\+Client.\+Delete\+Project (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Deletes a project, no response will be returned 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceIManageClient_afc48f124e6c59cafa6d5c9789432b709}\label{interfaceIManageClient_afc48f124e6c59cafa6d5c9789432b709}} 
+\index{IManageClient@{IManageClient}!GetBalance@{GetBalance}}
+\index{GetBalance@{GetBalance}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{GetBalance()}{GetBalance()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{BalanceResponse_8cs_ae25548468dea0165bc188a814e45f362}{Balance\+Response}}$>$ IManage\+Client.\+Get\+Balance (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{string}]{balance\+Id,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Get the balance details associated with the balance id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+{\em balance\+Id} & Id of balance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{BalanceResponse_8cs_ae25548468dea0165bc188a814e45f362}{Balance\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIManageClient_a7b7d8446764a9d72010c68a89e883808}\label{interfaceIManageClient_a7b7d8446764a9d72010c68a89e883808}} 
+\index{IManageClient@{IManageClient}!GetBalances@{GetBalances}}
+\index{GetBalances@{GetBalances}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{GetBalances()}{GetBalances()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{BalancesResponse_8cs_a7288bdc6ce393c3740d921bbbb3aa2a0}{Balances\+Response}}$>$ IManage\+Client.\+Get\+Balances (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Gets a list of balances 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{BalancesResponse_8cs_a7288bdc6ce393c3740d921bbbb3aa2a0}{Balances\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIManageClient_ae41798a43aff0c0e0170cf07a5a63aa7}\label{interfaceIManageClient_ae41798a43aff0c0e0170cf07a5a63aa7}} 
+\index{IManageClient@{IManageClient}!GetInvites@{GetInvites}}
+\index{GetInvites@{GetInvites}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{GetInvites()}{GetInvites()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{InvitesResponse_8cs_a1a15a428770bbdc40783237948e02418}{Invites\+Response}}$>$ IManage\+Client.\+Get\+Invites (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Get any invites that are associated with project 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{InvitesResponse_8cs_a1a15a428770bbdc40783237948e02418}{Invites\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIManageClient_a39425733747080d45ec3f6f2ad313826}\label{interfaceIManageClient_a39425733747080d45ec3f6f2ad313826}} 
+\index{IManageClient@{IManageClient}!GetKey@{GetKey}}
+\index{GetKey@{GetKey}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{GetKey()}{GetKey()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{KeyScopeResponse_8cs_a7ccc17320f18eed5867d779418701483}{Key\+Scope\+Response}}$>$ IManage\+Client.\+Get\+Key (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{string}]{key\+Id,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Get details of key associated with the key ID 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+{\em key\+Id} & Id of key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{KeyScopeResponse_8cs_a7ccc17320f18eed5867d779418701483}{Key\+Scope\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIManageClient_a052c6958f64d94e9b39969aeac19e400}\label{interfaceIManageClient_a052c6958f64d94e9b39969aeac19e400}} 
+\index{IManageClient@{IManageClient}!GetKeys@{GetKeys}}
+\index{GetKeys@{GetKeys}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{GetKeys()}{GetKeys()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{KeysResponse_8cs_aac84fd0b8b43c11bba90b0e31afc21d0}{Keys\+Response}}$>$ IManage\+Client.\+Get\+Keys (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Get the keys associated with the project 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{KeysResponse_8cs_aac84fd0b8b43c11bba90b0e31afc21d0}{Keys\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIManageClient_a37b9f006377276e6e4f01dd50e0c9c0b}\label{interfaceIManageClient_a37b9f006377276e6e4f01dd50e0c9c0b}} 
+\index{IManageClient@{IManageClient}!GetMembers@{GetMembers}}
+\index{GetMembers@{GetMembers}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{GetMembers()}{GetMembers()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{MembersResponse_8cs_ad5df9f935c4e1c570cb237b37b078e20}{Members\+Response}}$>$ IManage\+Client.\+Get\+Members (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Get the members associated with the project 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{MembersResponse_8cs_ad5df9f935c4e1c570cb237b37b078e20}{Members\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIManageClient_a5c55107cb7556e2cd0a172e7ca55caca}\label{interfaceIManageClient_a5c55107cb7556e2cd0a172e7ca55caca}} 
+\index{IManageClient@{IManageClient}!GetMemberScopes@{GetMemberScopes}}
+\index{GetMemberScopes@{GetMemberScopes}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{GetMemberScopes()}{GetMemberScopes()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{MemberScopesResponse_8cs_aa5e478db6a685f743f777c37b740029d}{Member\+Scopes\+Response}}$>$ IManage\+Client.\+Get\+Member\+Scopes (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{string}]{member\+Id,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Get the scopes associated with member 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+{\em member\+Id} & Id of member\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{MemberScopesResponse_8cs_aa5e478db6a685f743f777c37b740029d}{Member\+Scopes\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIManageClient_a32deeb9979965100c4afe18eaa742b57}\label{interfaceIManageClient_a32deeb9979965100c4afe18eaa742b57}} 
+\index{IManageClient@{IManageClient}!GetProject@{GetProject}}
+\index{GetProject@{GetProject}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{GetProject()}{GetProject()}}
+{\footnotesize\ttfamily Task$<$Project\+Response$>$ IManage\+Client.\+Get\+Project (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Gets project associated with project Id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of Project\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Project\+Response
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIManageClient_aee9fbb3ecd953771f8a336ad9f11541a}\label{interfaceIManageClient_aee9fbb3ecd953771f8a336ad9f11541a}} 
+\index{IManageClient@{IManageClient}!GetProjects@{GetProjects}}
+\index{GetProjects@{GetProjects}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{GetProjects()}{GetProjects()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{ProjectsResponse_8cs_a2b8d1c8b13ce9bd00d7298e30483d074}{Projects\+Response}}$>$ IManage\+Client.\+Get\+Projects (\begin{DoxyParamCaption}\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Gets projects associated to Api\+Key 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{ProjectsResponse_8cs_a2b8d1c8b13ce9bd00d7298e30483d074}{Projects\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIManageClient_a4b9a6bb92e3214ac716cb13ac7158808}\label{interfaceIManageClient_a4b9a6bb92e3214ac716cb13ac7158808}} 
+\index{IManageClient@{IManageClient}!GetUsageFields@{GetUsageFields}}
+\index{GetUsageFields@{GetUsageFields}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{GetUsageFields()}{GetUsageFields()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{UsageFieldsResponse_8cs_aadb81842e0426cc2f723c638bc4a628d}{Usage\+Fields\+Response}}$>$ IManage\+Client.\+Get\+Usage\+Fields (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{\mbox{\hyperlink{classUsageFieldsSchema}{Usage\+Fields\+Schema}}}]{fields\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Get usage fields 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+{\em get\+Usage\+Fields\+Schema} & Project usage request field options\mbox{\hyperlink{classUsageFieldsSchema}{Usage\+Fields\+Schema}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{UsageFieldsResponse_8cs_aadb81842e0426cc2f723c638bc4a628d}{Usage\+Fields\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIManageClient_ac13c444a192c9439729bdc0a3ddadadc}\label{interfaceIManageClient_ac13c444a192c9439729bdc0a3ddadadc}} 
+\index{IManageClient@{IManageClient}!GetUsageRequest@{GetUsageRequest}}
+\index{GetUsageRequest@{GetUsageRequest}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{GetUsageRequest()}{GetUsageRequest()}}
+{\footnotesize\ttfamily Task$<$Usage\+Request\+Response$>$ IManage\+Client.\+Get\+Usage\+Request (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{string}]{request\+Id,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Get the details associated with the request\+ID 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+{\em request\+Id} & Id of request\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Usage\+Request\+Response
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIManageClient_ab3ed5b6a9e2d75895b82cd76a8d6665a}\label{interfaceIManageClient_ab3ed5b6a9e2d75895b82cd76a8d6665a}} 
+\index{IManageClient@{IManageClient}!GetUsageRequests@{GetUsageRequests}}
+\index{GetUsageRequests@{GetUsageRequests}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{GetUsageRequests()}{GetUsageRequests()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{UsageRequestsResponse_8cs_a5fee8ae6cffbf468525246804d3fbbb9}{Usage\+Requests\+Response}}$>$ IManage\+Client.\+Get\+Usage\+Requests (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{\mbox{\hyperlink{classUsageRequestsSchema}{Usage\+Requests\+Schema}}}]{usage\+Requests\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Get usage request associated with the project 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+{\em \mbox{\hyperlink{classUsageRequestsSchema}{Usage\+Requests\+Schema}}} & Project usage request options\mbox{\hyperlink{classUsageRequestsSchema}{Usage\+Requests\+Schema}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{UsageRequestsResponse_8cs_a5fee8ae6cffbf468525246804d3fbbb9}{Usage\+Requests\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIManageClient_a9cfe6ab7ca30445e3af776c79cfec401}\label{interfaceIManageClient_a9cfe6ab7ca30445e3af776c79cfec401}} 
+\index{IManageClient@{IManageClient}!GetUsageSummary@{GetUsageSummary}}
+\index{GetUsageSummary@{GetUsageSummary}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{GetUsageSummary()}{GetUsageSummary()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{UsageSummaryResponse_8cs_a911d63418b24e27f1c87075fa0e48212}{Usage\+Summary\+Response}}$>$ IManage\+Client.\+Get\+Usage\+Summary (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{\mbox{\hyperlink{classUsageSummarySchema}{Usage\+Summary\+Schema}}}]{summary\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Gets a summary of usage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+{\em get\+Usage\+Summary\+Schema} & Usage summary options\mbox{\hyperlink{classUsageSummarySchema}{Usage\+Summary\+Schema}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{UsageSummaryResponse_8cs_a911d63418b24e27f1c87075fa0e48212}{Usage\+Summary\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIManageClient_ac5e962d7d31d6efa0dd99f87f66d297c}\label{interfaceIManageClient_ac5e962d7d31d6efa0dd99f87f66d297c}} 
+\index{IManageClient@{IManageClient}!LeaveProject@{LeaveProject}}
+\index{LeaveProject@{LeaveProject}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{LeaveProject()}{LeaveProject()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}}$>$ IManage\+Client.\+Leave\+Project (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+leave project associated with the project Id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIManageClient_a2755a058105e4ceb7fdd4b4a990dae74}\label{interfaceIManageClient_a2755a058105e4ceb7fdd4b4a990dae74}} 
+\index{IManageClient@{IManageClient}!RemoveMember@{RemoveMember}}
+\index{RemoveMember@{RemoveMember}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{RemoveMember()}{RemoveMember()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}}$>$ IManage\+Client.\+Remove\+Member (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{string}]{member\+Id,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Remove member from project, there is no response 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+{\em member\+Id} & Id of member\\
+\hline
+\end{DoxyParams}
+~\newline
+ \mbox{\Hypertarget{interfaceIManageClient_ae305dc55b2566dbe6ab512ff7b45a619}\label{interfaceIManageClient_ae305dc55b2566dbe6ab512ff7b45a619}} 
+\index{IManageClient@{IManageClient}!SendInvite@{SendInvite}}
+\index{SendInvite@{SendInvite}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{SendInvite()}{SendInvite()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}}$>$ IManage\+Client.\+Send\+Invite (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{\mbox{\hyperlink{classInviteSchema}{Invite\+Schema}}}]{invite\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Send a invite to the associated project 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+{\em invite\+Schema} & \mbox{\hyperlink{classInviteSchema}{Invite\+Schema}} for a invite to project\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIManageClient_ac3e7bb41df0deaae33d45398295d1f87}\label{interfaceIManageClient_ac3e7bb41df0deaae33d45398295d1f87}} 
+\index{IManageClient@{IManageClient}!UpdateMemberScope@{UpdateMemberScope}}
+\index{UpdateMemberScope@{UpdateMemberScope}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{UpdateMemberScope()}{UpdateMemberScope()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}}$>$ IManage\+Client.\+Update\+Member\+Scope (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{string}]{member\+Id,  }\item[{\mbox{\hyperlink{classMemberScopeSchema}{Member\+Scope\+Schema}}}]{scope\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Update the scopes fot the member 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+{\em member\+Id} & Id of member\\
+\hline
+{\em member\+Scope\+Schema} & updates scope options for member\mbox{\hyperlink{classMemberScopeSchema}{Member\+Scope\+Schema}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}}
+\end{DoxyReturn}
+~\newline
+ \mbox{\Hypertarget{interfaceIManageClient_a121e7d34a59028dc664110b9c2dc4d68}\label{interfaceIManageClient_a121e7d34a59028dc664110b9c2dc4d68}} 
+\index{IManageClient@{IManageClient}!UpdateProject@{UpdateProject}}
+\index{UpdateProject@{UpdateProject}!IManageClient@{IManageClient}}
+\doxysubsubsection{\texorpdfstring{UpdateProject()}{UpdateProject()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}}$>$ IManage\+Client.\+Update\+Project (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{\mbox{\hyperlink{classProjectSchema}{Project\+Schema}}}]{update\+Project\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Update a project associated with the project\+ID 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & ID of project\\
+\hline
+{\em update\+Project\+Schema} & \mbox{\hyperlink{classProjectSchema}{Project\+Schema}} for project\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}}
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Deepgram/\+Clients/\+Interfaces/v1/\mbox{\hyperlink{IManageClient_8cs}{IManage\+Client.\+cs}}\end{DoxyCompactItemize}

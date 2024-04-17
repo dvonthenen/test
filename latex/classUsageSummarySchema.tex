@@ -1,0 +1,629 @@
+\hypertarget{classUsageSummarySchema}{}\doxysection{Usage\+Summary\+Schema Class Reference}
+\label{classUsageSummarySchema}\index{UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ string $>$? \mbox{\hyperlink{classUsageSummarySchema_a2685d119038d043955e1f4798b7156c5}{Accessor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em List of Accessors, Limits results to the given API key(s) \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_ad4ae5d08c4fe1fed70ae89c5554055f0}{Alternatives}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Limits results to requests that include the alternatives feature. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_a834dc399ddc3432fccf5c391c2c4908f}{Detect\+Entities}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Limits results to requests fulfilled in either Deepgram hosted cloud or your onprem deployment environment. multiple deployments can be included in list \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_affd5a75965e64600afebbac5d04531aa}{Detect\+Topics}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Limits results to requests that include the topic detection feature. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_ade1f5d1336a79bee98c1c27831620956}{Diarize}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Limits results to requests that include the diarize feature. \end{DoxyCompactList}\item 
+Date\+Time? \mbox{\hyperlink{classUsageSummarySchema_aa022712c798f91fd8cdc09b51aebfd59}{End}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em End date of the requested date range. Formats accepted are YYYY-\/\+MM-\/\+DD, YYYY-\/\+MM-\/\+DDTHH\+:MM\+:SS, or YYYY-\/\+MM-\/\+DDTHH\+:MM\+:SS+\+HH\+:MM. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_a02cb2ed21cce0efd8bd7886b41d2ec71}{Interim\+Results}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Limits results to requests that include the interim\+\_\+results feature. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_adeaa491004d64e0426662a366a03ee60}{Keywords}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Limits results to requests that include the keywords feature. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1}{Request\+Method}}? \mbox{\hyperlink{classUsageSummarySchema_aa0fd3b0cfa92ea6c8f1f85f6b440c061}{Method}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Permitted values \char`\"{}sync\char`\"{} $\vert$ \char`\"{}async\char`\"{} $\vert$ \char`\"{}streaming\char`\"{} \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1}{Request\+Method}}\end{DoxyCompactList}\item 
+List$<$ string $>$? \mbox{\hyperlink{classUsageSummarySchema_a9c061fb29c352d70d11d3d09d8f41df8}{Model}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Limits results to requests run with the specified model UUID applied. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_a9429058781cc34b65e6750cc87d075ca}{Multi\+Channel}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Limits results to requests that include the multichannel feature. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_a0faa345c0a3630a16ffb77297f8f1ecc}{Ner}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Limits results to requests that include the ner feature. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_ac3c879d93cdcc090f6725352a0a3b522}{Numerals}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Limits results to requests that include the numerals feature. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_a247c9e052b03ee326922d9e10151adc2}{Numbers}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is the Number Feature being used \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_ac59caef3d82efa117166034ae9c4df2e}{Paragraphs}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is the Paragraphs Feature being used \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_a30a0364fe90a65ce31bb0300ed3f7a52}{Profanity\+Filter}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Limits results to requests that include the profanity\+\_\+filter feature. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_a12c304e18ed88f162a9c730473d6ad4a}{Punctuate}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Limits results to requests that include the punctuate feature. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_a02fe99288ba1a96331296e67bc1c17da}{Redact}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Limits results to requests that include the redact feature. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_a48ee116e0fa9c28524e1071f482a5bc1}{Replace}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Limits results to requests that include the replace feature. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_a833a6f4249b0268d670b75c6ec1b67a3}{Search}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Limits results to requests that include the search feature. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_a2323a490ecc02ca48491874299cd00fa}{Sentiment}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is the Sentiment Feature being used \end{DoxyCompactList}\item 
+double? \mbox{\hyperlink{classUsageSummarySchema_a18c50643beedf27b2fc255c0f0b55209}{Sentiment\+Threshold}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Limits results to requests that include the search feature. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_a282641d36f711945af02ea8f9baac42a}{Smart\+Format}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is the Smart\+Format Feature being used \end{DoxyCompactList}\item 
+Date\+Time? \mbox{\hyperlink{classUsageSummarySchema_ac1662cf14f2a002978322cdca30718ae}{Start}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Start date of the requested date range. Formats accepted are YYYY-\/\+MM-\/\+DD, YYYY-\/\+MM-\/\+DDTHH\+:MM\+:SS, or YYYY-\/\+MM-\/\+DDTHH\+:MM\+:SS+\+HH\+:MM. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_aae6622aaa7517018f8d9e1da5d449dbc}{Summarize}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is the Summarize Feature being used \end{DoxyCompactList}\item 
+List$<$ string $>$? \mbox{\hyperlink{classUsageSummarySchema_ae22c2faf587d02a46ea887f24048234a}{Tag}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em List of Tags, Limits results to requests associated with the specified tag(s). \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_a7bdf4af37d96e79725ac93694a2dbd4a}{translate}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is the Translate Feature being used \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_a2447fe1ac99c65a7a050f66a51814bf3}{Utterances}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Limits results to requests that include the utterances feature. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classUsageSummarySchema_a86f553d528d3c8fbb8384b21a2046cca}{Utt\+Split}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is the Utterance Split Feature being used \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 7 of file Usage\+Summary\+Schema.\+cs.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classUsageSummarySchema_a2685d119038d043955e1f4798b7156c5}\label{classUsageSummarySchema_a2685d119038d043955e1f4798b7156c5}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!Accessor@{Accessor}}
+\index{Accessor@{Accessor}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{Accessor}{Accessor}}
+{\footnotesize\ttfamily List$<$string$>$? Usage\+Summary\+Schema.\+Accessor\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+List of Accessors, Limits results to the given API key(s) 
+
+
+
+Definition at line 14 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_ad4ae5d08c4fe1fed70ae89c5554055f0}\label{classUsageSummarySchema_ad4ae5d08c4fe1fed70ae89c5554055f0}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!Alternatives@{Alternatives}}
+\index{Alternatives@{Alternatives}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{Alternatives}{Alternatives}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Alternatives\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Limits results to requests that include the alternatives feature. 
+
+
+
+Definition at line 21 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_a834dc399ddc3432fccf5c391c2c4908f}\label{classUsageSummarySchema_a834dc399ddc3432fccf5c391c2c4908f}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!DetectEntities@{DetectEntities}}
+\index{DetectEntities@{DetectEntities}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{DetectEntities}{DetectEntities}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Detect\+Entities\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Limits results to requests fulfilled in either Deepgram hosted cloud or your onprem deployment environment. multiple deployments can be included in list 
+
+
+
+Definition at line 29 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_affd5a75965e64600afebbac5d04531aa}\label{classUsageSummarySchema_affd5a75965e64600afebbac5d04531aa}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!DetectTopics@{DetectTopics}}
+\index{DetectTopics@{DetectTopics}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{DetectTopics}{DetectTopics}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Detect\+Topics\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Limits results to requests that include the topic detection feature. 
+
+
+
+Definition at line 36 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{36 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_ade1f5d1336a79bee98c1c27831620956}\label{classUsageSummarySchema_ade1f5d1336a79bee98c1c27831620956}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!Diarize@{Diarize}}
+\index{Diarize@{Diarize}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{Diarize}{Diarize}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Diarize\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Limits results to requests that include the diarize feature. 
+
+
+
+Definition at line 43 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_aa022712c798f91fd8cdc09b51aebfd59}\label{classUsageSummarySchema_aa022712c798f91fd8cdc09b51aebfd59}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!End@{End}}
+\index{End@{End}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{End}{End}}
+{\footnotesize\ttfamily Date\+Time? Usage\+Summary\+Schema.\+End\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+End date of the requested date range. Formats accepted are YYYY-\/\+MM-\/\+DD, YYYY-\/\+MM-\/\+DDTHH\+:MM\+:SS, or YYYY-\/\+MM-\/\+DDTHH\+:MM\+:SS+\+HH\+:MM. 
+
+
+
+Definition at line 50 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_a02cb2ed21cce0efd8bd7886b41d2ec71}\label{classUsageSummarySchema_a02cb2ed21cce0efd8bd7886b41d2ec71}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!InterimResults@{InterimResults}}
+\index{InterimResults@{InterimResults}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{InterimResults}{InterimResults}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Interim\+Results\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Limits results to requests that include the interim\+\_\+results feature. 
+
+
+
+Definition at line 57 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_adeaa491004d64e0426662a366a03ee60}\label{classUsageSummarySchema_adeaa491004d64e0426662a366a03ee60}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!Keywords@{Keywords}}
+\index{Keywords@{Keywords}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{Keywords}{Keywords}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Keywords\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Limits results to requests that include the keywords feature. 
+
+
+
+Definition at line 64 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_aa0fd3b0cfa92ea6c8f1f85f6b440c061}\label{classUsageSummarySchema_aa0fd3b0cfa92ea6c8f1f85f6b440c061}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!Method@{Method}}
+\index{Method@{Method}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{Method}{Method}}
+{\footnotesize\ttfamily \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1}{Request\+Method}}? Usage\+Summary\+Schema.\+Method\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Permitted values \char`\"{}sync\char`\"{} $\vert$ \char`\"{}async\char`\"{} $\vert$ \char`\"{}streaming\char`\"{} \mbox{\hyperlink{RequestMethod_8cs_a667255974fbff6d39bc2e840d46f47e1}{Request\+Method}}
+
+
+
+Definition at line 73 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_a9c061fb29c352d70d11d3d09d8f41df8}\label{classUsageSummarySchema_a9c061fb29c352d70d11d3d09d8f41df8}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!Model@{Model}}
+\index{Model@{Model}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{Model}{Model}}
+{\footnotesize\ttfamily List$<$string$>$? Usage\+Summary\+Schema.\+Model\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Limits results to requests run with the specified model UUID applied. 
+
+
+
+Definition at line 80 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{80 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_a9429058781cc34b65e6750cc87d075ca}\label{classUsageSummarySchema_a9429058781cc34b65e6750cc87d075ca}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!MultiChannel@{MultiChannel}}
+\index{MultiChannel@{MultiChannel}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{MultiChannel}{MultiChannel}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Multi\+Channel\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Limits results to requests that include the multichannel feature. 
+
+
+
+Definition at line 87 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{87 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_a0faa345c0a3630a16ffb77297f8f1ecc}\label{classUsageSummarySchema_a0faa345c0a3630a16ffb77297f8f1ecc}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!Ner@{Ner}}
+\index{Ner@{Ner}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{Ner}{Ner}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Ner\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Limits results to requests that include the ner feature. 
+
+
+
+Definition at line 94 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{94 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_a247c9e052b03ee326922d9e10151adc2}\label{classUsageSummarySchema_a247c9e052b03ee326922d9e10151adc2}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!Numbers@{Numbers}}
+\index{Numbers@{Numbers}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{Numbers}{Numbers}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Numbers\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Is the Number Feature being used 
+
+
+
+Definition at line 108 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{108 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_ac3c879d93cdcc090f6725352a0a3b522}\label{classUsageSummarySchema_ac3c879d93cdcc090f6725352a0a3b522}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!Numerals@{Numerals}}
+\index{Numerals@{Numerals}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{Numerals}{Numerals}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Numerals\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Limits results to requests that include the numerals feature. 
+
+
+
+Definition at line 101 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{101 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_ac59caef3d82efa117166034ae9c4df2e}\label{classUsageSummarySchema_ac59caef3d82efa117166034ae9c4df2e}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!Paragraphs@{Paragraphs}}
+\index{Paragraphs@{Paragraphs}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{Paragraphs}{Paragraphs}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Paragraphs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Is the Paragraphs Feature being used 
+
+
+
+Definition at line 115 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{115 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_a30a0364fe90a65ce31bb0300ed3f7a52}\label{classUsageSummarySchema_a30a0364fe90a65ce31bb0300ed3f7a52}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!ProfanityFilter@{ProfanityFilter}}
+\index{ProfanityFilter@{ProfanityFilter}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{ProfanityFilter}{ProfanityFilter}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Profanity\+Filter\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Limits results to requests that include the profanity\+\_\+filter feature. 
+
+
+
+Definition at line 122 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{122 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_a12c304e18ed88f162a9c730473d6ad4a}\label{classUsageSummarySchema_a12c304e18ed88f162a9c730473d6ad4a}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!Punctuate@{Punctuate}}
+\index{Punctuate@{Punctuate}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{Punctuate}{Punctuate}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Punctuate\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Limits results to requests that include the punctuate feature. 
+
+
+
+Definition at line 129 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{129 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_a02fe99288ba1a96331296e67bc1c17da}\label{classUsageSummarySchema_a02fe99288ba1a96331296e67bc1c17da}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!Redact@{Redact}}
+\index{Redact@{Redact}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{Redact}{Redact}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Redact\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Limits results to requests that include the redact feature. 
+
+
+
+Definition at line 136 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{136 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_a48ee116e0fa9c28524e1071f482a5bc1}\label{classUsageSummarySchema_a48ee116e0fa9c28524e1071f482a5bc1}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!Replace@{Replace}}
+\index{Replace@{Replace}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{Replace}{Replace}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Replace\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Limits results to requests that include the replace feature. 
+
+
+
+Definition at line 143 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{143 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_a833a6f4249b0268d670b75c6ec1b67a3}\label{classUsageSummarySchema_a833a6f4249b0268d670b75c6ec1b67a3}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!Search@{Search}}
+\index{Search@{Search}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{Search}{Search}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Search\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Limits results to requests that include the search feature. 
+
+
+
+Definition at line 150 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{150 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_a2323a490ecc02ca48491874299cd00fa}\label{classUsageSummarySchema_a2323a490ecc02ca48491874299cd00fa}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!Sentiment@{Sentiment}}
+\index{Sentiment@{Sentiment}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{Sentiment}{Sentiment}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Sentiment\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Is the Sentiment Feature being used 
+
+
+
+Definition at line 157 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{157 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_a18c50643beedf27b2fc255c0f0b55209}\label{classUsageSummarySchema_a18c50643beedf27b2fc255c0f0b55209}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!SentimentThreshold@{SentimentThreshold}}
+\index{SentimentThreshold@{SentimentThreshold}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{SentimentThreshold}{SentimentThreshold}}
+{\footnotesize\ttfamily double? Usage\+Summary\+Schema.\+Sentiment\+Threshold\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Limits results to requests that include the search feature. 
+
+
+
+Definition at line 164 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{164 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_a282641d36f711945af02ea8f9baac42a}\label{classUsageSummarySchema_a282641d36f711945af02ea8f9baac42a}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!SmartFormat@{SmartFormat}}
+\index{SmartFormat@{SmartFormat}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{SmartFormat}{SmartFormat}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Smart\+Format\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Is the Smart\+Format Feature being used 
+
+
+
+Definition at line 172 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{172 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_ac1662cf14f2a002978322cdca30718ae}\label{classUsageSummarySchema_ac1662cf14f2a002978322cdca30718ae}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!Start@{Start}}
+\index{Start@{Start}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{Start}{Start}}
+{\footnotesize\ttfamily Date\+Time? Usage\+Summary\+Schema.\+Start\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Start date of the requested date range. Formats accepted are YYYY-\/\+MM-\/\+DD, YYYY-\/\+MM-\/\+DDTHH\+:MM\+:SS, or YYYY-\/\+MM-\/\+DDTHH\+:MM\+:SS+\+HH\+:MM. 
+
+
+
+Definition at line 179 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{179 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_aae6622aaa7517018f8d9e1da5d449dbc}\label{classUsageSummarySchema_aae6622aaa7517018f8d9e1da5d449dbc}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!Summarize@{Summarize}}
+\index{Summarize@{Summarize}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{Summarize}{Summarize}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Summarize\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Is the Summarize Feature being used 
+
+
+
+Definition at line 186 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{186 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_ae22c2faf587d02a46ea887f24048234a}\label{classUsageSummarySchema_ae22c2faf587d02a46ea887f24048234a}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!Tag@{Tag}}
+\index{Tag@{Tag}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{Tag}{Tag}}
+{\footnotesize\ttfamily List$<$string$>$? Usage\+Summary\+Schema.\+Tag\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+List of Tags, Limits results to requests associated with the specified tag(s). 
+
+
+
+Definition at line 193 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{193 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_a7bdf4af37d96e79725ac93694a2dbd4a}\label{classUsageSummarySchema_a7bdf4af37d96e79725ac93694a2dbd4a}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!translate@{translate}}
+\index{translate@{translate}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{translate}{translate}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+translate\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Is the Translate Feature being used 
+
+
+
+Definition at line 200 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{200 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_a2447fe1ac99c65a7a050f66a51814bf3}\label{classUsageSummarySchema_a2447fe1ac99c65a7a050f66a51814bf3}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!Utterances@{Utterances}}
+\index{Utterances@{Utterances}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{Utterances}{Utterances}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Utterances\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Limits results to requests that include the utterances feature. 
+
+
+
+Definition at line 207 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{207 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classUsageSummarySchema_a86f553d528d3c8fbb8384b21a2046cca}\label{classUsageSummarySchema_a86f553d528d3c8fbb8384b21a2046cca}} 
+\index{UsageSummarySchema@{UsageSummarySchema}!UttSplit@{UttSplit}}
+\index{UttSplit@{UttSplit}!UsageSummarySchema@{UsageSummarySchema}}
+\doxysubsubsection{\texorpdfstring{UttSplit}{UttSplit}}
+{\footnotesize\ttfamily bool? Usage\+Summary\+Schema.\+Utt\+Split\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Is the Utterance Split Feature being used 
+
+
+
+Definition at line 214 of file Usage\+Summary\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{214 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Deepgram/\+Models/\+Manage/v1/\mbox{\hyperlink{UsageSummarySchema_8cs}{Usage\+Summary\+Schema.\+cs}}\end{DoxyCompactItemize}

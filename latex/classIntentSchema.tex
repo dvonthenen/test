@@ -1,0 +1,104 @@
+\hypertarget{classIntentSchema}{}\doxysection{Intent\+Schema Class Reference}
+\label{classIntentSchema}\index{IntentSchema@{IntentSchema}}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool? \mbox{\hyperlink{classIntentSchema_a22e7d2733f91de16321d37c3ce5b4dbd}{Intents}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enables intent recognition \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classIntentSchema_a9e5b11756b062be09113cb4bdcaac613}{Language}} = \char`\"{}en\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The language of your input audio (Only english is supported at this time) \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classIntentSchema_ae6724ead0c8e9ab1d0d11a3bef9bc2ce}{Custom\+Intent}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. A custom intent you want the model to detect within your input audio if present. Submit up to 100. \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classIntentSchema_ac4b44f47ec9e91262443aa4e3f8d2ac5}{Custom\+Intent\+Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. Sets how the model will interpret strings submitted to the custom\+\_\+intent param. When \char`\"{}strict\char`\"{}, the model will only return intents submitted using the custom\+\_\+intent param. When \char`\"{}extended\char`\"{}, the model will return it\textquotesingle{}s own detected intents in addition those submitted using the custom\+\_\+intents param. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 7 of file Intent\+Schema.\+cs.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classIntentSchema_ae6724ead0c8e9ab1d0d11a3bef9bc2ce}\label{classIntentSchema_ae6724ead0c8e9ab1d0d11a3bef9bc2ce}} 
+\index{IntentSchema@{IntentSchema}!CustomIntent@{CustomIntent}}
+\index{CustomIntent@{CustomIntent}!IntentSchema@{IntentSchema}}
+\doxysubsubsection{\texorpdfstring{CustomIntent}{CustomIntent}}
+{\footnotesize\ttfamily string? Intent\+Schema.\+Custom\+Intent\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. A custom intent you want the model to detect within your input audio if present. Submit up to 100. 
+
+
+
+Definition at line 28 of file Intent\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classIntentSchema_ac4b44f47ec9e91262443aa4e3f8d2ac5}\label{classIntentSchema_ac4b44f47ec9e91262443aa4e3f8d2ac5}} 
+\index{IntentSchema@{IntentSchema}!CustomIntentMode@{CustomIntentMode}}
+\index{CustomIntentMode@{CustomIntentMode}!IntentSchema@{IntentSchema}}
+\doxysubsubsection{\texorpdfstring{CustomIntentMode}{CustomIntentMode}}
+{\footnotesize\ttfamily string? Intent\+Schema.\+Custom\+Intent\+Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. Sets how the model will interpret strings submitted to the custom\+\_\+intent param. When \char`\"{}strict\char`\"{}, the model will only return intents submitted using the custom\+\_\+intent param. When \char`\"{}extended\char`\"{}, the model will return it\textquotesingle{}s own detected intents in addition those submitted using the custom\+\_\+intents param. 
+
+
+
+Definition at line 35 of file Intent\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classIntentSchema_a22e7d2733f91de16321d37c3ce5b4dbd}\label{classIntentSchema_a22e7d2733f91de16321d37c3ce5b4dbd}} 
+\index{IntentSchema@{IntentSchema}!Intents@{Intents}}
+\index{Intents@{Intents}!IntentSchema@{IntentSchema}}
+\doxysubsubsection{\texorpdfstring{Intents}{Intents}}
+{\footnotesize\ttfamily bool? Intent\+Schema.\+Intents\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Enables intent recognition 
+
+
+
+Definition at line 14 of file Intent\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classIntentSchema_a9e5b11756b062be09113cb4bdcaac613}\label{classIntentSchema_a9e5b11756b062be09113cb4bdcaac613}} 
+\index{IntentSchema@{IntentSchema}!Language@{Language}}
+\index{Language@{Language}!IntentSchema@{IntentSchema}}
+\doxysubsubsection{\texorpdfstring{Language}{Language}}
+{\footnotesize\ttfamily string? Intent\+Schema.\+Language = \char`\"{}en\char`\"{}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The language of your input audio (Only english is supported at this time) 
+
+
+
+Definition at line 21 of file Intent\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = \textcolor{stringliteral}{"{}en"{}};}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Deepgram/\+Models/\+Pre\+Recorded/v1/\mbox{\hyperlink{IntentSchema_8cs}{Intent\+Schema.\+cs}}\end{DoxyCompactItemize}

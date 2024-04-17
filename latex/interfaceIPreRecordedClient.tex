@@ -1,0 +1,195 @@
+\hypertarget{interfaceIPreRecordedClient}{}\doxysection{IPre\+Recorded\+Client Interface Reference}
+\label{interfaceIPreRecordedClient}\index{IPreRecordedClient@{IPreRecordedClient}}
+
+
+Implements version 1 of the Analyze \mbox{\hyperlink{classClient}{Client}}.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ \mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}} $>$ \mbox{\hyperlink{interfaceIPreRecordedClient_a3137a469e2d1e51af9ee73e90be03564}{Transcribe\+Url}} (\mbox{\hyperlink{PreRecorded_2v1_2UrlSource_8cs_a7b28b72460d7597a2d6d7666c7a585c6}{Url\+Source}} source, \mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}}? prerecorded\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Transcribe a file by providing a url \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}} $>$ \mbox{\hyperlink{interfaceIPreRecordedClient_a105fb53cb5d80805a800a08f358edbfa}{Transcribe\+File}} (byte\mbox{[}$\,$\mbox{]} source, \mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}}? prerecorded\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Transcribes a file using the provided byte array \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}} $>$ \mbox{\hyperlink{interfaceIPreRecordedClient_a8f68242ecc30efe15bb12bca0148640c}{Transcribe\+File}} (Stream source, \mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}}? prerecorded\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Transcribes a file using the provided stream \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}} $>$ \mbox{\hyperlink{interfaceIPreRecordedClient_acfcf076a1689036e4c142894f96de2b6}{Transcribe\+File\+Call\+Back}} (byte\mbox{[}$\,$\mbox{]} source, string? call\+Back, \mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}}? prerecorded\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Transcribes a file using the provided byte array and providing a Call\+Back \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}} $>$ \mbox{\hyperlink{interfaceIPreRecordedClient_ae790a07fd39d580bbb2d9f99a6a41480}{Transcribe\+File\+Call\+Back}} (Stream source, string? call\+Back, \mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}}? prerecorded\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Transcribes a file using the provided stream and providing a Call\+Back \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}} $>$ \mbox{\hyperlink{interfaceIPreRecordedClient_a6eff188b9605a9ab95b4a61496c6703d}{Transcribe\+Url\+Call\+Back}} (\mbox{\hyperlink{PreRecorded_2v1_2UrlSource_8cs_a7b28b72460d7597a2d6d7666c7a585c6}{Url\+Source}} source, string? call\+Back, \mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}}? prerecorded\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Transcribe a file by providing a url and a Call\+Back \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements version 1 of the Analyze \mbox{\hyperlink{classClient}{Client}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & Required Deepgram\+Api\+Key\\
+\hline
+{\em deepgram\+Client\+Options} & \mbox{\hyperlink{classDeepgramHttpClientOptions}{Deepgram\+Http\+Client\+Options}} for Http\+Client Configuration\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file IPre\+Recorded\+Client.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceIPreRecordedClient_a105fb53cb5d80805a800a08f358edbfa}\label{interfaceIPreRecordedClient_a105fb53cb5d80805a800a08f358edbfa}} 
+\index{IPreRecordedClient@{IPreRecordedClient}!TranscribeFile@{TranscribeFile}}
+\index{TranscribeFile@{TranscribeFile}!IPreRecordedClient@{IPreRecordedClient}}
+\doxysubsubsection{\texorpdfstring{TranscribeFile()}{TranscribeFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}}$>$ IPre\+Recorded\+Client.\+Transcribe\+File (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{source,  }\item[{\mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}}?}]{prerecorded\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Transcribes a file using the provided byte array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & file is the form of a byte\mbox{[}\mbox{]}\\
+\hline
+{\em prerecorded\+Schema} & Options for the transcription \mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIPreRecordedClient_a8f68242ecc30efe15bb12bca0148640c}\label{interfaceIPreRecordedClient_a8f68242ecc30efe15bb12bca0148640c}} 
+\index{IPreRecordedClient@{IPreRecordedClient}!TranscribeFile@{TranscribeFile}}
+\index{TranscribeFile@{TranscribeFile}!IPreRecordedClient@{IPreRecordedClient}}
+\doxysubsubsection{\texorpdfstring{TranscribeFile()}{TranscribeFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}}$>$ IPre\+Recorded\+Client.\+Transcribe\+File (\begin{DoxyParamCaption}\item[{Stream}]{source,  }\item[{\mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}}?}]{prerecorded\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Transcribes a file using the provided stream 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & file is the form of a streasm Stream\\
+\hline
+{\em prerecorded\+Schema} & Options for the transcription \mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIPreRecordedClient_acfcf076a1689036e4c142894f96de2b6}\label{interfaceIPreRecordedClient_acfcf076a1689036e4c142894f96de2b6}} 
+\index{IPreRecordedClient@{IPreRecordedClient}!TranscribeFileCallBack@{TranscribeFileCallBack}}
+\index{TranscribeFileCallBack@{TranscribeFileCallBack}!IPreRecordedClient@{IPreRecordedClient}}
+\doxysubsubsection{\texorpdfstring{TranscribeFileCallBack()}{TranscribeFileCallBack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}}$>$ IPre\+Recorded\+Client.\+Transcribe\+File\+Call\+Back (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{source,  }\item[{string?}]{call\+Back,  }\item[{\mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}}?}]{prerecorded\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Transcribes a file using the provided byte array and providing a Call\+Back 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & file is the form of a byte\mbox{[}\mbox{]}\\
+\hline
+\end{DoxyParams}
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Call\+Back url\\
+\hline
+\end{DoxyParams}
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em prerecorded\+Schema} & Options for the transcription\mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}} \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}}
+\end{DoxyReturn}
+\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceIPreRecordedClient_ae790a07fd39d580bbb2d9f99a6a41480}\label{interfaceIPreRecordedClient_ae790a07fd39d580bbb2d9f99a6a41480}} 
+\index{IPreRecordedClient@{IPreRecordedClient}!TranscribeFileCallBack@{TranscribeFileCallBack}}
+\index{TranscribeFileCallBack@{TranscribeFileCallBack}!IPreRecordedClient@{IPreRecordedClient}}
+\doxysubsubsection{\texorpdfstring{TranscribeFileCallBack()}{TranscribeFileCallBack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}}$>$ IPre\+Recorded\+Client.\+Transcribe\+File\+Call\+Back (\begin{DoxyParamCaption}\item[{Stream}]{source,  }\item[{string?}]{call\+Back,  }\item[{\mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}}?}]{prerecorded\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Transcribes a file using the provided stream and providing a Call\+Back 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & file is the form of a stream \mbox{\hyperlink{}{Stream}} ~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Call\+Back url\\
+\hline
+\end{DoxyParams}
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em prerecorded\+Schema} & Options for the transcription\mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}} \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}}
+\end{DoxyReturn}
+\\
+\hline
+\end{DoxyParams}
+\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceIPreRecordedClient_a3137a469e2d1e51af9ee73e90be03564}\label{interfaceIPreRecordedClient_a3137a469e2d1e51af9ee73e90be03564}} 
+\index{IPreRecordedClient@{IPreRecordedClient}!TranscribeUrl@{TranscribeUrl}}
+\index{TranscribeUrl@{TranscribeUrl}!IPreRecordedClient@{IPreRecordedClient}}
+\doxysubsubsection{\texorpdfstring{TranscribeUrl()}{TranscribeUrl()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}}$>$ IPre\+Recorded\+Client.\+Transcribe\+Url (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{PreRecorded_2v1_2UrlSource_8cs_a7b28b72460d7597a2d6d7666c7a585c6}{Url\+Source}}}]{source,  }\item[{\mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}}?}]{prerecorded\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Transcribe a file by providing a url 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Url to the file that is to be transcribed \mbox{\hyperlink{PreRecorded_2v1_2UrlSource_8cs_a7b28b72460d7597a2d6d7666c7a585c6}{Url\+Source}} 
+\begin{DoxyParams}{Parameters}
+{\em prerecorded\+Schema} & Options for the transcription \mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}}
+\end{DoxyReturn}
+\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceIPreRecordedClient_a6eff188b9605a9ab95b4a61496c6703d}\label{interfaceIPreRecordedClient_a6eff188b9605a9ab95b4a61496c6703d}} 
+\index{IPreRecordedClient@{IPreRecordedClient}!TranscribeUrlCallBack@{TranscribeUrlCallBack}}
+\index{TranscribeUrlCallBack@{TranscribeUrlCallBack}!IPreRecordedClient@{IPreRecordedClient}}
+\doxysubsubsection{\texorpdfstring{TranscribeUrlCallBack()}{TranscribeUrlCallBack()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}}$>$ IPre\+Recorded\+Client.\+Transcribe\+Url\+Call\+Back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{PreRecorded_2v1_2UrlSource_8cs_a7b28b72460d7597a2d6d7666c7a585c6}{Url\+Source}}}]{source,  }\item[{string?}]{call\+Back,  }\item[{\mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}}?}]{prerecorded\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Transcribe a file by providing a url and a Call\+Back 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Url to the file that is to be transcribed \mbox{\hyperlink{PreRecorded_2v1_2UrlSource_8cs_a7b28b72460d7597a2d6d7666c7a585c6}{Url\+Source}}\\
+\hline
+{\em call\+Back} & Call\+Back url\\
+\hline
+\end{DoxyParams}
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em prerecorded\+Schema} & Options for the transcription\mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}} \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}}
+\end{DoxyReturn}
+\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Deepgram/\+Clients/\+Interfaces/v1/\mbox{\hyperlink{IPreRecordedClient_8cs}{IPre\+Recorded\+Client.\+cs}}\end{DoxyCompactItemize}

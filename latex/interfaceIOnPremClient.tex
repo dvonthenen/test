@@ -1,0 +1,120 @@
+\hypertarget{interfaceIOnPremClient}{}\doxysection{IOn\+Prem\+Client Interface Reference}
+\label{interfaceIOnPremClient}\index{IOnPremClient@{IOnPremClient}}
+
+
+Implements version 1 of the On\+Prem \mbox{\hyperlink{classClient}{Client}}.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ \mbox{\hyperlink{CredentialsResponse_8cs_af5fcc1ad7a0c5b3184e3690ac6d36e4b}{Credentials\+Response}} $>$ \mbox{\hyperlink{interfaceIOnPremClient_a10d60c30db4a8b99e7becd20e098d338}{List\+Credentials}} (string project\+Id, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em get a list of credentials associated with project \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{CredentialResponse_8cs_ad2e398e790e9e563aad3df7690c85473}{Credential\+Response}} $>$ \mbox{\hyperlink{interfaceIOnPremClient_a066e37a875831c3387e1e1ecb0514beb}{Get\+Credentials}} (string project\+Id, string credentials\+Id, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Get credentials for the project that is associated with credential ID \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}} $>$ \mbox{\hyperlink{interfaceIOnPremClient_a6377d6e92882b76d8bc743c2ab9cea35}{Delete\+Credentials}} (string project\+Id, string credentials\+Id, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Remove credentials in the project associated with the credentials ID \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{CredentialResponse_8cs_ad2e398e790e9e563aad3df7690c85473}{Credential\+Response}} $>$ \mbox{\hyperlink{interfaceIOnPremClient_adbd17a2911a474ea8f6ae7a4ad74a181}{Create\+Credentials}} (string project\+Id, \mbox{\hyperlink{classCredentialsSchema}{Credentials\+Schema}} credentials\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Create credentials for the associated projects \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements version 1 of the On\+Prem \mbox{\hyperlink{classClient}{Client}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & Required Deepgram\+Api\+Key\\
+\hline
+{\em deepgram\+Client\+Options} & \mbox{\hyperlink{classDeepgramHttpClientOptions}{Deepgram\+Http\+Client\+Options}} for Http\+Client Configuration\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file IOn\+Prem\+Client.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceIOnPremClient_adbd17a2911a474ea8f6ae7a4ad74a181}\label{interfaceIOnPremClient_adbd17a2911a474ea8f6ae7a4ad74a181}} 
+\index{IOnPremClient@{IOnPremClient}!CreateCredentials@{CreateCredentials}}
+\index{CreateCredentials@{CreateCredentials}!IOnPremClient@{IOnPremClient}}
+\doxysubsubsection{\texorpdfstring{CreateCredentials()}{CreateCredentials()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{CredentialResponse_8cs_ad2e398e790e9e563aad3df7690c85473}{Credential\+Response}}$>$ IOn\+Prem\+Client.\+Create\+Credentials (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{\mbox{\hyperlink{classCredentialsSchema}{Credentials\+Schema}}}]{credentials\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Create credentials for the associated projects 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+{\em create\+On\+Prem\+Credentials\+Schema} & \mbox{\hyperlink{classCredentialsSchema}{Credentials\+Schema}} for credentials to be created\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{CredentialResponse_8cs_ad2e398e790e9e563aad3df7690c85473}{Credential\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIOnPremClient_a6377d6e92882b76d8bc743c2ab9cea35}\label{interfaceIOnPremClient_a6377d6e92882b76d8bc743c2ab9cea35}} 
+\index{IOnPremClient@{IOnPremClient}!DeleteCredentials@{DeleteCredentials}}
+\index{DeleteCredentials@{DeleteCredentials}!IOnPremClient@{IOnPremClient}}
+\doxysubsubsection{\texorpdfstring{DeleteCredentials()}{DeleteCredentials()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}}$>$ IOn\+Prem\+Client.\+Delete\+Credentials (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{string}]{credentials\+Id,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Remove credentials in the project associated with the credentials ID 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+{\em credentials\+Id} & Id of credentials\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{OnPrem_2v1_2MessageResponse_8cs_a594b3fb60e10f6c41c5bf405b3595810}{Message\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIOnPremClient_a066e37a875831c3387e1e1ecb0514beb}\label{interfaceIOnPremClient_a066e37a875831c3387e1e1ecb0514beb}} 
+\index{IOnPremClient@{IOnPremClient}!GetCredentials@{GetCredentials}}
+\index{GetCredentials@{GetCredentials}!IOnPremClient@{IOnPremClient}}
+\doxysubsubsection{\texorpdfstring{GetCredentials()}{GetCredentials()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{CredentialResponse_8cs_ad2e398e790e9e563aad3df7690c85473}{Credential\+Response}}$>$ IOn\+Prem\+Client.\+Get\+Credentials (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{string}]{credentials\+Id,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Get credentials for the project that is associated with credential ID 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+{\em credentials\+Id} & Id of credentials\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{CredentialResponse_8cs_ad2e398e790e9e563aad3df7690c85473}{Credential\+Response}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceIOnPremClient_a10d60c30db4a8b99e7becd20e098d338}\label{interfaceIOnPremClient_a10d60c30db4a8b99e7becd20e098d338}} 
+\index{IOnPremClient@{IOnPremClient}!ListCredentials@{ListCredentials}}
+\index{ListCredentials@{ListCredentials}!IOnPremClient@{IOnPremClient}}
+\doxysubsubsection{\texorpdfstring{ListCredentials()}{ListCredentials()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{CredentialsResponse_8cs_af5fcc1ad7a0c5b3184e3690ac6d36e4b}{Credentials\+Response}}$>$ IOn\+Prem\+Client.\+List\+Credentials (\begin{DoxyParamCaption}\item[{string}]{project\+Id,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+get a list of credentials associated with project 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & Id of project\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{CredentialsResponse_8cs_af5fcc1ad7a0c5b3184e3690ac6d36e4b}{Credentials\+Response}}
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Deepgram/\+Clients/\+Interfaces/v1/\mbox{\hyperlink{IOnPremClient_8cs}{IOn\+Prem\+Client.\+cs}}\end{DoxyCompactItemize}

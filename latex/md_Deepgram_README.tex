@@ -1,0 +1,785 @@
+\href{https://www.nuget.org/packages/Deepgram}{\texttt{ }} \href{https://github.com/deepgram-devs/deepgram-dotnet-sdk/actions?query=CI}{\texttt{ }} /home/runner/work/test/test/.github/\+CODE\+\_\+\+OF\+\_\+\+CONDUCT.\+md \char`\"{}!\mbox{[}\+Contributor Covenant\mbox{]}(https\+://img.\+shields.\+io/badge/\+Contributor\%20\+Covenant-\/v2.\+0\%20adopted-\/ff69b4.\+svg)\char`\"{} \href{https://discord.gg/xWRaCDBtW4}{\texttt{ }}
+
+Official .NET SDK for \href{https://www.deepgram.com/}{\texttt{ Deepgram}}. Power your apps with world-\/class speech and Language AI models.
+
+\begin{quote}
+This SDK only supports hosted usage of api.\+deepgram.\+com. \end{quote}
+
+\begin{DoxyItemize}
+\item \href{\#deepgram-net-sdk}{\texttt{ Deepgram .NET SDK}}
+\item \href{\#getting-an-api-key}{\texttt{ Getting an API Key}}
+\item \href{\#documentation}{\texttt{ Documentation}}
+\item \href{\#installation}{\texttt{ Installation}}
+\item \href{\#targeted-frameworks}{\texttt{ Targeted Frameworks}}
+\item \href{\#notes-regarding-cors}{\texttt{ Notes regarding Cors}} ~\newline
+
+\item \href{\#creating-a-rest-client}{\texttt{ Creating A Rest Client}}
+\begin{DoxyItemize}
+\item \href{\#default-client-creation}{\texttt{ Default Client Creation}} ~\newline
+
+\end{DoxyItemize}
+\item \href{\#examples}{\texttt{ Examples}}
+\item \href{\#http-client-timeout}{\texttt{ Http\+Client\+Timeout}}
+\item \href{\#transcription}{\texttt{ Transcription}}
+\begin{DoxyItemize}
+\item \href{\#remote-file}{\texttt{ Remote File}}
+\begin{DoxyItemize}
+\item \href{\#urlsource}{\texttt{ Url\+Source}}
+\end{DoxyItemize}
+\item \href{\#local-files}{\texttt{ Local files}} ~\newline
+
+\begin{DoxyItemize}
+\item \href{\#prerecordedschema}{\texttt{ Prerecorded\+Schema}}
+\end{DoxyItemize}
+\item \href{\#callbackasync-methods}{\texttt{ Call\+Back\+Async Methods}}
+\item \href{\#live-audio}{\texttt{ Live Audio}}
+\begin{DoxyItemize}
+\item \href{\#liveSchema}{\texttt{ Live\+Schema}}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item \href{\#projects}{\texttt{ Projects}}
+\begin{DoxyItemize}
+\item \href{\#get-projects}{\texttt{ Get Projects}}
+\item \href{\#get-project}{\texttt{ Get Project}}
+\item \href{\#update-project}{\texttt{ Update Project}}
+\item \href{\#delete-project}{\texttt{ Delete Project}}
+\item \href{\#leave-project}{\texttt{ Leave Project}}
+\end{DoxyItemize}
+\item \href{\#keys}{\texttt{ Keys}}
+\begin{DoxyItemize}
+\item \href{\#list-keys}{\texttt{ List Keys}}
+\item \href{\#get-key}{\texttt{ Get Key}}
+\item \href{\#create-key}{\texttt{ Create Key}}
+\item \href{\#delete-key}{\texttt{ Delete Key}}
+\end{DoxyItemize}
+\item \href{\#members}{\texttt{ Members}}
+\begin{DoxyItemize}
+\item \href{\#get-members}{\texttt{ Get Members}}
+\item \href{\#remove-member}{\texttt{ Remove Member}}
+\end{DoxyItemize}
+\item \href{\#scopes}{\texttt{ Scopes}}
+\begin{DoxyItemize}
+\item \href{\#get-member-scopes}{\texttt{ Get Member Scopes}}
+\item \href{\#update-scope}{\texttt{ Update Scope}}
+\end{DoxyItemize}
+\item \href{\#invitations}{\texttt{ Invitations}}
+\begin{DoxyItemize}
+\item \href{\#list-invites}{\texttt{ List Invites}}
+\item \href{\#send-invite}{\texttt{ Send Invite}}
+\item \href{\#delete-invite}{\texttt{ Delete Invite}}
+\item \href{\#leave-project}{\texttt{ Leave Project}}
+\end{DoxyItemize}
+\item \href{\#usage}{\texttt{ Usage}}
+\begin{DoxyItemize}
+\item \href{\#get-all-requests}{\texttt{ Get All Requests}}
+\begin{DoxyItemize}
+\item \href{\#listallrequestoptions}{\texttt{ List\+All\+Request\+Options}}
+\end{DoxyItemize}
+\item \href{\#get-request}{\texttt{ Get Request}}
+\item \href{\#summarize-usage}{\texttt{ Summarize Usage}}
+\begin{DoxyItemize}
+\item \href{\#getusagesummaryoptions}{\texttt{ Get\+Usage\+Summary\+Options}}
+\end{DoxyItemize}
+\item \href{\#get-fields}{\texttt{ Get Fields}}
+\begin{DoxyItemize}
+\item \href{\#getusagefieldsoptions}{\texttt{ Get\+Usage\+Fields\+Options}}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item \href{\#balances}{\texttt{ Balances}}
+\begin{DoxyItemize}
+\item \href{\#get-balances}{\texttt{ Get Balances}}
+\item \href{\#get-balance}{\texttt{ Get Balance}}
+\end{DoxyItemize}
+\item \href{\#onprem}{\texttt{ On\+Prem}}
+\begin{DoxyItemize}
+\item \href{\#list-credentials}{\texttt{ List Credentials}}
+\item \href{\#get-credentials}{\texttt{ Get Credentials}}
+\item \href{\#remove-credentials}{\texttt{ Remove Credentials}}
+\item \href{\#create-credentials}{\texttt{ Create Credentials}}
+\end{DoxyItemize}
+\item \href{\#logging}{\texttt{ Logging}}
+\item \href{\#development-and-contributing}{\texttt{ Development and Contributing}}
+\item \href{\#testing}{\texttt{ Testing}}
+\item \href{\#getting-help}{\texttt{ Getting Help}}
+\end{DoxyItemize}\hypertarget{md_Deepgram_README_autotoc_md1}{}\doxysection{Getting an API Key}\label{md_Deepgram_README_autotoc_md1}
+🔑 To access the Deepgram API you will need a \href{https://console.deepgram.com/signup?jump=keys}{\texttt{ free Deepgram API Key}}.\hypertarget{md_Deepgram_README_autotoc_md2}{}\doxysection{Documentation}\label{md_Deepgram_README_autotoc_md2}
+Complete documentation of the .NET SDK can be found on the \href{https://developers.deepgram.com/docs/dotnet-sdk}{\texttt{ Deepgram Docs}}.
+
+You can learn more about the full Deepgram API at \href{https://developers.deepgram.com}{\texttt{ https\+://developers.\+deepgram.\+com}}.\hypertarget{md_Deepgram_README_autotoc_md3}{}\doxysection{Installation}\label{md_Deepgram_README_autotoc_md3}
+To install the C\# SDK using Nu\+Get\+:
+
+Run the following command from your terminal in your projects directory\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{dotnet add package Deepgram}
+
+\end{DoxyCode}
+
+
+Or use the Nuget package Manager.
+
+Right click on project and select manage nuget packages\hypertarget{md_Deepgram_README_autotoc_md4}{}\doxysection{Targeted Frameworks}\label{md_Deepgram_README_autotoc_md4}
+
+\begin{DoxyItemize}
+\item 8.\+0.\+x
+\item 7.\+0.\+x
+\item 6.\+0.\+x
+\item Net\+Standard2.\+0
+\end{DoxyItemize}\hypertarget{md_Deepgram_README_autotoc_md5}{}\doxyparagraph{Notes Regarding CORS}\label{md_Deepgram_README_autotoc_md5}
+deepgram api does not support COR requests\hypertarget{md_Deepgram_README_autotoc_md6}{}\doxysubsubsection{Examples}\label{md_Deepgram_README_autotoc_md6}
+\hypertarget{md_Deepgram_README_autotoc_md7}{}\doxysubsubsection{Http\+Client Timeout}\label{md_Deepgram_README_autotoc_md7}
+Timeout can be set on calling the various Rest\+Clients Specify\+Time\+Out passing in a Timespan
+
+default Timout is set to 5 minutes. In general the default timeout will be all that you need. However, when using the prerecorded client to Transcibe you may find out that sending longer file to transcribe or choosing more Transcription options will increase the time it take to transcibe your content, in there cases you can either change the Http\+Clients\+Timeout or use one of the Callback approaches if you dont want to be waiting around for the response.\hypertarget{md_Deepgram_README_autotoc_md8}{}\doxysection{Creating a Client}\label{md_Deepgram_README_autotoc_md8}
+The Sdk is configure to support Dependency injection. But you can also creat client with new()\hypertarget{md_Deepgram_README_autotoc_md9}{}\doxysubsection{Create client with new()}\label{md_Deepgram_README_autotoc_md9}
+To create rest clients to communitcate with the deepgram apis, instantiate them directly. y\hypertarget{md_Deepgram_README_autotoc_md10}{}\doxysubsection{Default Client Creation}\label{md_Deepgram_README_autotoc_md10}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var manageClient = new ManageClient(apikey,deepgramClientOptions);}
+\DoxyCodeLine{    or}
+\DoxyCodeLine{    var manageClient = new ManageClient(apiKey);}
+
+\end{DoxyCode}
+\hypertarget{md_Deepgram_README_autotoc_md11}{}\doxysubsection{Customized \& On\+Prem Client Creation}\label{md_Deepgram_README_autotoc_md11}
+$>$If you need to customize the urlmset optional headers or change the deault Http\+Client timeout then you can when creating a client $>$passing in a instance of Deepgram\+Client\+Options. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ var options = new DeepgramOptions()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        BaseAddress  = "{}https://ScoobyDooDetectives.org"{}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{var manageClient = new ManageClient("{}apiKey"{},options);}
+
+\end{DoxyCode}
+\hypertarget{md_Deepgram_README_autotoc_md12}{}\doxysubsubsection{Deepgram\+Client\+Options}\label{md_Deepgram_README_autotoc_md12}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endhead
+Base\+Address   &string?   &\PBS\centering url of server, include protocol    \\\cline{1-3}
+Headers   &Dictionary$<$string, string$>$?   &\PBS\centering any headers that you want to add   \\\cline{1-3}
+\end{longtabu}
+
+
+$>$User\+Agent \& Authorization headers are added internally\hypertarget{md_Deepgram_README_autotoc_md13}{}\doxysection{Examples}\label{md_Deepgram_README_autotoc_md13}
+To quickly get started with examples for prerecorded and streaming, run the files in the example folder. See the README in that folder for more information on getting started.\hypertarget{md_Deepgram_README_autotoc_md14}{}\doxysection{Transcription}\label{md_Deepgram_README_autotoc_md14}
+\hypertarget{md_Deepgram_README_autotoc_md15}{}\doxysubsection{Remote File}\label{md_Deepgram_README_autotoc_md15}
+\begin{quote}
+for available options see \mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}} \end{quote}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var client = new PrerecordedClient(apiKey);}
+\DoxyCodeLine{var response = await client.TranscribeUrlAsync(}
+\DoxyCodeLine{    new UrlSource("{}https://static.deepgram.com/examples/Bueller-\/Life-\/moves-\/pretty-\/fast.wav"{}),}
+\DoxyCodeLine{    new PrerecordedSchema()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        Punctuate = true}
+\DoxyCodeLine{    \});}
+
+\end{DoxyCode}
+\hypertarget{md_Deepgram_README_autotoc_md16}{}\doxysubsubsection{Url\+Source}\label{md_Deepgram_README_autotoc_md16}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endhead
+Url   &string   &\PBS\centering Url of the file to transcribe   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md_Deepgram_README_autotoc_md17}{}\doxysubsection{Local files}\label{md_Deepgram_README_autotoc_md17}
+$>$There are 2 overloads for local files you can pass either a byte\mbox{[}\mbox{]} or a stream
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var client = new PrerecordedClient(apiKey);}
+\DoxyCodeLine{var response = await client.TranscribeFileAsync(}
+\DoxyCodeLine{    stream,}
+\DoxyCodeLine{     new PrerecordedSchema()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        Punctuate = true}
+\DoxyCodeLine{    \});}
+
+\end{DoxyCode}
+\hypertarget{md_Deepgram_README_autotoc_md18}{}\doxysubsubsection{Call\+Back\+Async Methods}\label{md_Deepgram_README_autotoc_md18}
+$>$Transcibe\+File\+Call\+Back\+Async and Transcibe\+Url\+Call\+Back\+Async are the methods to use if you want to use a Call\+Back url $>$you can either pass the the Call\+Back in the method or by setting the Call\+Back proeprty in the \mbox{\hyperlink{classPrerecordedSchema}{Prerecorded\+Schema}}, but NOT in both\hypertarget{md_Deepgram_README_autotoc_md19}{}\doxyparagraph{Prerecorded\+Schema}\label{md_Deepgram_README_autotoc_md19}
+also see \mbox{[}Transcribe\+Schema\mbox{]} which prerecored Schema is derived from for more options
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Value Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ reason for    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Value Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ reason for    }\\\cline{1-3}
+\endhead
+Detect\+Entities   &bool?   &\PBS\centering Entity Detection identifies and extracts key entities from content in submitted audio    \\\cline{1-3}
+Detect\+Language   &bool?   &\PBS\centering Language Detection identifies the dominant language spoken in submitted audio.    \\\cline{1-3}
+Detect\+Topics   &bool?   &\PBS\centering Topic Detection identifies and extracts key topics from content in submitted audio.    \\\cline{1-3}
+Dictation   &bool?   &\PBS\centering Spoken dictation commands will be converted to their corresponding punctuation marks. e.\+g., comma to    \\\cline{1-3}
+Measurements   &bool?   &\PBS\centering Spoken measurements will be converted to their corresponding abbreviations. e.\+g., milligram to mg    \\\cline{1-3}
+\multicolumn{3}{|l|}{Ner bool?    }\\\cline{1-3}
+Paragraphs   &bool?   &\PBS\centering Paragraphs splits audio into paragraphs to improve transcript readability.    \\\cline{1-3}
+Sentiment   &\multicolumn{2}{l|}{bool    }\\\cline{1-3}
+Sentiment\+Threshold   &\multicolumn{2}{l|}{double    }\\\cline{1-3}
+Summarize   &object?   &\PBS\centering Summarizes content of submitted audio    \\\cline{1-3}
+Utterances   &bool   &\PBS\centering Utterances segments speech into meaningful semantic units.    \\\cline{1-3}
+Utt\+Split   &double?   &\PBS\centering Utterance Split detects pauses between words in submitted audio.   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md_Deepgram_README_autotoc_md20}{}\doxysubsection{Live Audio}\label{md_Deepgram_README_autotoc_md20}
+\begin{quote}
+The example below demonstrates sending a pre-\/recorded audio to simulate a real-\/time stream of audio. In a real application, this type of audio is better handled using the pre-\/recorded transcription. \end{quote}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{using Deepgram.CustomEventArgs;}
+\DoxyCodeLine{using Deepgram.Models;}
+\DoxyCodeLine{using System.Net.WebSockets;}
+\DoxyCodeLine{}
+\DoxyCodeLine{var deepgramClient = new LiveClient(apiKey);}
+\DoxyCodeLine{}
+\DoxyCodeLine{using (var deepgramLive = deepgramClient.CreateLiveTranscriptionClient())}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    deepgramLive.EventResponseReceived += EventResponseReceived;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    // Connection opened so start sending audio.}
+\DoxyCodeLine{    async void HandleConnectionOpened(object? sender, ConnectionOpenEventArgs e)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        byte[] buffer;}
+\DoxyCodeLine{}
+\DoxyCodeLine{        using (FileStream fs = File.OpenRead("{}path\(\backslash\)\(\backslash\)to\(\backslash\)\(\backslash\)file"{}))}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            buffer = new byte[fs.Length];}
+\DoxyCodeLine{            fs.Read(buffer, 0, (int)fs.Length);}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        var chunks = buffer.Chunk(1000);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        foreach (var chunk in chunks)}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            deepgramLive.Send(chunk);}
+\DoxyCodeLine{            await Task.Delay(50);}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    private async void HandleEventResponseReceived(object? sender, ResponseEventArgs e)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        if (e.Response.Error is not null)}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            System.Console.WriteLine(e.Response.Error.Message);}
+\DoxyCodeLine{        \} }
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{        else if (e.Response.Transcription is not null)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        var transcripts = response.Transcription.Channel.Alternatives}
+\DoxyCodeLine{                .Where(a => a.Transcript.Length > 0);}
+\DoxyCodeLine{        if (transcripts.Any())}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            await HandleTranscription(transcripts.ToList()).ConfigureAwait(false);}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    var options = new LiveTranscriptionOptions() \{ Punctuate = true, Diarize = true, Encoding = Deepgram.Common.AudioEncoding.Linear16 \};}
+\DoxyCodeLine{    await deepgramLive.Connect(options);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    while (deepgramLive.State() == WebSocketState.Open) \{ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_Deepgram_README_autotoc_md21}{}\doxysubsubsection{Live\+Schema}\label{md_Deepgram_README_autotoc_md21}
+also see \mbox{[}Transcribe\+Schema\mbox{]} which \mbox{\hyperlink{classLiveSchema}{Live\+Schema}} is derived from for more options
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Type   }&\cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Type   }&\cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endhead
+Channels   &int?   &Number of independent audio channels contained in submitted streaming audio    \\\cline{1-3}
+Encoding   &string?   &Encoding allows you to specify the expected encoding of your submitted audio.    \\\cline{1-3}
+End\+Pointing   &string?   &Indicates whether Deepgram will detect whether a speaker has finished speaking    \\\cline{1-3}
+Interim\+Results   &bool?   &Indicates whether the streaming endpoint should send you updates to its transcription as more audio becomes available    \\\cline{1-3}
+Sample\+Rate   &int?   &Sample rate of submitted streaming audio. Required (and only read) when a value is provided for encoding    \\\cline{1-3}
+Utterance\+End   &string?   &Indicates how long Deepgram will wait to send a \{\char`\"{}type\char`\"{}\+: \char`\"{}\+Utterance\+End\char`\"{}\} message after a word has been transcribed   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md_Deepgram_README_autotoc_md22}{}\doxysubsubsection{Transcribe\+Schema}\label{md_Deepgram_README_autotoc_md22}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Type   }&\cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Type   }&\cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endhead
+Alternatives   &int?   &Number of transcripts to return per request    \\\cline{1-3}
+Callback   &string?   &Callback URL to provide if you would like your submitted audio to be processed asynchronously    \\\cline{1-3}
+Diarize   &bool?   &Indicates whether to recognize speaker changes    \\\cline{1-3}
+Diarize\+Version   &string?   &\\\cline{1-3}
+\end{longtabu}
+$\vert$ Extra $\vert$ Dictonary$<$string,string$>$? $\vert$ additonal values you want echoing bac $\vert$ $\vert$ $\vert$ Filler\+Words $\vert$ int? $\vert$ Whether to include words like \char`\"{}uh\char`\"{} and \char`\"{}um\char`\"{} in transcription output. $\vert$ $\vert$ Keywords $\vert$ List$<$string$>$? $\vert$ Keywords to which the model should pay particular attention to boosting or suppressing to help it understand context $\vert$ $\vert$ Language $\vert$ string? $\vert$ BCP-\/47 language tag that hints at the primary spoken language $\vert$ $\vert$ Model $\vert$ string? $\vert$ AI model used to process submitted audio $\vert$ $\vert$ Multi\+Channel $\vert$ bool? $\vert$ Indicates whether to transcribe each audio channel independently $\vert$ $\vert$ Numerals $\vert$ bool? $\vert$ Indicates whether to convert numbers from written format $\vert$ $\vert$ Profanity\+Filter $\vert$ bool? $\vert$ Indicates whether to remove profanity from the transcript $\vert$ $\vert$ Punctuate $\vert$ bool? $\vert$ Indicates whether to add punctuation and capitalization to the transcript $\vert$ $\vert$ Redact $\vert$ List$<$string$>$? $\vert$ Indicates whether to redact sensitive information $\vert$ $\vert$ Replace $\vert$ List$<$string$>$? $\vert$ Terms or phrases to search for in the submitted audio and replace $\vert$ $\vert$ Search $\vert$ List$<$string$>$? $\vert$ Terms or phrases to search for in the submitted audio $\vert$ $\vert$ Smart\+Format $\vert$ bool? $\vert$ Indicates whether to use Smart Format on the transcript $\vert$ $\vert$ Tag $\vert$ List$<$string$>$? $\vert$ $\vert$ $\vert$ Tier $\vert$ string? $\vert$ Level of model you would like to use in your request $\vert$ $\vert$ Version $\vert$ string? $\vert$ Version of the model to use $\vert$\hypertarget{md_Deepgram_README_autotoc_md23}{}\doxysection{Projects}\label{md_Deepgram_README_autotoc_md23}
+\begin{quote}
+project\+Id and member\+Id are of type {\ttfamily string} \end{quote}
+\hypertarget{md_Deepgram_README_autotoc_md24}{}\doxysubsection{Get Projects}\label{md_Deepgram_README_autotoc_md24}
+Returns all projects accessible by the API key.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var result = await manageClient.GetProjectsAsync();}
+
+\end{DoxyCode}
+
+
+\href{https://developers.deepgram.com/reference/get-projects}{\texttt{ See our API reference for more info}}.\hypertarget{md_Deepgram_README_autotoc_md25}{}\doxysubsection{Get Project}\label{md_Deepgram_README_autotoc_md25}
+Retrieves a specific project based on the provided project\+Id.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var result = await manageClient.GetProject(projectId);}
+
+\end{DoxyCode}
+
+
+\href{https://developers.deepgram.com/reference/get-project}{\texttt{ See our API reference for more info}}.\hypertarget{md_Deepgram_README_autotoc_md26}{}\doxysubsection{Update Project}\label{md_Deepgram_README_autotoc_md26}
+Update a project.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var updateProjectSchema = new ProjectSchema()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    Company = "{}Acme"{},}
+\DoxyCodeLine{    Name = "{}Mega Speech inc"{}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{var result = await manageClient.UpdateProjectAsync(projectid,updateProjectSchema);}
+
+\end{DoxyCode}
+
+
+{\bfseries{\mbox{\hyperlink{classProjectSchema}{Project\+Schema}} Type}}
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property Name   }&\cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property Name   }&\cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endhead
+Name   &string   &\PBS\centering Name of the project    \\\cline{1-3}
+Company   &string   &\PBS\centering Name of the company associated with the Deepgram project   \\\cline{1-3}
+\end{longtabu}
+
+
+\href{https://developers.deepgram.com/reference/update-project}{\texttt{ See our API reference for more info}}.\hypertarget{md_Deepgram_README_autotoc_md27}{}\doxysubsection{Delete Project}\label{md_Deepgram_README_autotoc_md27}
+Delete a project.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{manageClient.DeleteProject(projectId);}
+
+\end{DoxyCode}
+\hypertarget{md_Deepgram_README_autotoc_md28}{}\doxysubsection{Leave Project}\label{md_Deepgram_README_autotoc_md28}
+Leave a project.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var result = await manageClient.LeaveProjectAsync(projectId);}
+
+\end{DoxyCode}
+
+
+\href{https://developers.deepgram.com/reference/leave-project}{\texttt{ See our API reference for more info}}.\hypertarget{md_Deepgram_README_autotoc_md29}{}\doxysection{Keys}\label{md_Deepgram_README_autotoc_md29}
+\begin{quote}
+project\+Id,key\+Id and comment are of type{\ttfamily string} \end{quote}
+\hypertarget{md_Deepgram_README_autotoc_md30}{}\doxysubsection{List Keys}\label{md_Deepgram_README_autotoc_md30}
+Retrieves all keys associated with the provided project\+\_\+id.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var result = await manageClient.GetProjectAsync(projectId);}
+
+\end{DoxyCode}
+
+
+\href{https://developers.deepgram.com/reference/list-keys}{\texttt{ See our API reference for more info}}.\hypertarget{md_Deepgram_README_autotoc_md31}{}\doxysubsection{Get Key}\label{md_Deepgram_README_autotoc_md31}
+Retrieves a specific key associated with the provided project\+\_\+id.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var result = await manageClient.GetProjectKeyAsync(projectId,keyId);}
+
+\end{DoxyCode}
+
+
+\href{https://developers.deepgram.com/reference/get-key}{\texttt{ See our API reference for more info}}.\hypertarget{md_Deepgram_README_autotoc_md32}{}\doxysubsection{Create Key}\label{md_Deepgram_README_autotoc_md32}
+Creates an API key with the provided scopes.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var createProjectKeyWithExpirationSchema = new createProjectKeyWithExpirationSchema}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        Scopes= new List<string>\{"{}admin"{},"{}member"{}\},}
+\DoxyCodeLine{        Comment = "{}Yay a new key"{},}
+\DoxyCodeLine{        Tags = new List<string> \{"{}boss"{}\}}
+\DoxyCodeLine{        Expiration = DateTime.Now.AddDays(7);}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{var result = await manageClient.CreateProjectKey(projectId,createProjectKeyWithExpirationSchema);}
+
+\end{DoxyCode}
+ $>$Required -\/ Scopes, Comment \begin{quote}
+You can set Expiration\+Date or Time\+To\+Live or neither, but you cannot set both \end{quote}
+\href{https://developers.deepgram.com/reference/create-key}{\texttt{ See our API reference for more info}}.\hypertarget{md_Deepgram_README_autotoc_md33}{}\doxysubsubsection{Key\+Schema}\label{md_Deepgram_README_autotoc_md33}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Type   }&\cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Type   }&\cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-4}
+\endhead
+Scopes   &List$<$string$>$   &$\ast$   &\PBS\centering scopes for key    \\\cline{1-4}
+Comment   &Date\+Time   &$\ast$   &\PBS\centering comment description of key    \\\cline{1-4}
+Tags   &List$<$string$>$   &&\PBS\centering Tag for key    \\\cline{1-4}
+Expiration\+Date   &string   &&\PBS\centering Specfic data for key to expire    \\\cline{1-4}
+Time\+To\+Live\+In\+Seconds   &string   &&\PBS\centering time to live in seconds   \\\cline{1-4}
+\end{longtabu}
+\hypertarget{md_Deepgram_README_autotoc_md34}{}\doxysubsection{Delete Key}\label{md_Deepgram_README_autotoc_md34}
+Deletes a specific key associated with the provided project\+\_\+id.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{manageClient.DeleteKey(projectId, keyId);}
+
+\end{DoxyCode}
+
+
+\href{https://developers.deepgram.com/reference/delete-key}{\texttt{ See our API reference for more info}}.\hypertarget{md_Deepgram_README_autotoc_md35}{}\doxysection{Members}\label{md_Deepgram_README_autotoc_md35}
+\begin{quote}
+project\+Id and member\+Id are of type{\ttfamily string} \end{quote}
+\hypertarget{md_Deepgram_README_autotoc_md36}{}\doxysubsection{Get Members}\label{md_Deepgram_README_autotoc_md36}
+Retrieves account objects for all of the accounts in the specified project\+\_\+id.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var result = await manageClient.GetMembersAsync(projectId);}
+
+\end{DoxyCode}
+
+
+\href{https://developers.deepgram.com/reference/get-members}{\texttt{ See our API reference for more info}}.\hypertarget{md_Deepgram_README_autotoc_md37}{}\doxysubsection{Remove Member}\label{md_Deepgram_README_autotoc_md37}
+Removes member account for specified member\+\_\+id.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var result = manageClient.RemoveProjectMember(projectId,memberId);}
+
+\end{DoxyCode}
+
+
+\href{https://developers.deepgram.com/reference/remove-member}{\texttt{ See our API reference for more info}}.\hypertarget{md_Deepgram_README_autotoc_md38}{}\doxysection{Scopes}\label{md_Deepgram_README_autotoc_md38}
+\begin{quote}
+project\+Id and member\+Id are of type{\ttfamily string} \end{quote}
+\hypertarget{md_Deepgram_README_autotoc_md39}{}\doxysubsection{Get Member Scopes}\label{md_Deepgram_README_autotoc_md39}
+Retrieves scopes of the specified member in the specified project.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var result = await manageClient.GetProjectMemberScopesAsync(projectId,memberId);}
+
+\end{DoxyCode}
+
+
+\href{https://developers.deepgram.com/reference/get-member-scopes}{\texttt{ See our API reference for more info}}.\hypertarget{md_Deepgram_README_autotoc_md40}{}\doxysubsection{Update Scope}\label{md_Deepgram_README_autotoc_md40}
+Updates the scope for the specified member in the specified project.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var scopeOptions = new UpdateProjectMemeberScopeSchema()\{Scope = "{}admin"{}\};}
+\DoxyCodeLine{var result = await manageClient.UpdateProjectMemberScopeAsync(projectId,memberId,scopeOptions);}
+
+\end{DoxyCode}
+
+
+\href{https://developers.deepgram.com/reference/update-scope}{\texttt{ See our API reference for more info}}.\hypertarget{md_Deepgram_README_autotoc_md41}{}\doxysection{Invitations}\label{md_Deepgram_README_autotoc_md41}
+\hypertarget{md_Deepgram_README_autotoc_md42}{}\doxysubsection{List Invites}\label{md_Deepgram_README_autotoc_md42}
+Retrieves all invitations associated with the provided project\+\_\+id.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var result = await manageClient.GetProjectInvitesAsync(projectId);}
+
+\end{DoxyCode}
+
+
+\href{https://developers.deepgram.com/reference/list-invites}{\texttt{ See our API reference for more info}}.\hypertarget{md_Deepgram_README_autotoc_md43}{}\doxysubsection{Send Invite}\label{md_Deepgram_README_autotoc_md43}
+Sends an invitation to the provided email address.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var inviteSchema = new InviteSchema()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    Email = "{}awesome@person.com"{},}
+\DoxyCodeLine{    Scope = "{}fab"{}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{var result = manageClient.SendProjectInviteAsync(projectId,inviteSchema)}
+
+\end{DoxyCode}
+
+
+\href{https://developers.deepgram.com/reference/send-invites}{\texttt{ See our API reference for more info}}.\hypertarget{md_Deepgram_README_autotoc_md44}{}\doxysubsection{Delete Invite}\label{md_Deepgram_README_autotoc_md44}
+Removes the specified invitation from the project.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{manageClient.DeleteProjectInvite(projectId,emailOfInvite)}
+
+\end{DoxyCode}
+
+
+\href{https://developers.deepgram.com/reference/delete-invite}{\texttt{ See our API reference for more info}}.\hypertarget{md_Deepgram_README_autotoc_md45}{}\doxysection{Usage}\label{md_Deepgram_README_autotoc_md45}
+\begin{quote}
+project\+Id and request\+Id type{\ttfamily string} \end{quote}
+\hypertarget{md_Deepgram_README_autotoc_md46}{}\doxysubsection{Get All Requests}\label{md_Deepgram_README_autotoc_md46}
+Retrieves all requests associated with the provided project\+Id based on the provided options.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var UsageRequestsSchema = new UsageRequestsSchema ()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{     Start = DateTime.Now.AddDays(-\/7);}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{var result = await manageClient.ListAllRequestsAsync(projectId,UsageRequestsSchema);}
+
+\end{DoxyCode}
+\hypertarget{md_Deepgram_README_autotoc_md47}{}\doxysubsubsection{Usage\+Requests\+Schema}\label{md_Deepgram_README_autotoc_md47}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endhead
+Start   &Date\+Time   &\PBS\centering Start date of the requested date range   \\\cline{1-3}
+\end{longtabu}
+$\vert$ End $\vert$ Date\+Time $\vert$ End date of the requested date range $\vert$ required $\vert$ Limit $\vert$ int $\vert$ number of results per page $\vert$ $\vert$ Status $\vert$ string $\vert$ status of requests to search for $\vert$
+
+\href{https://developers.deepgram.com/reference/get-all-requests}{\texttt{ See our API reference for more info}}.\hypertarget{md_Deepgram_README_autotoc_md48}{}\doxysubsection{Get Request}\label{md_Deepgram_README_autotoc_md48}
+Retrieves a specific request associated with the provided project\+Id.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var result = await manageClient.GetProjectUsageRequestAsync(projectId,requestId);}
+
+\end{DoxyCode}
+
+
+\href{https://developers.deepgram.com/reference/get-request}{\texttt{ See our API reference for more info}}.\hypertarget{md_Deepgram_README_autotoc_md49}{}\doxysubsection{Summarize Usage}\label{md_Deepgram_README_autotoc_md49}
+Retrieves usage associated with the provided project\+\_\+id based on the provided options.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var getProjectUsageSummarySchema = new GetProjectUsageSummarySchema ()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    StartDateTime = DateTime.Now}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{var result = await manageClient.GetProjectUsageSummaryAsync(projectId,getProjectUsageSummarySchema);}
+
+\end{DoxyCode}
+\hypertarget{md_Deepgram_README_autotoc_md50}{}\doxysubsubsection{Get\+Project\+Usage\+Summary\+Schema}\label{md_Deepgram_README_autotoc_md50}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endhead
+Start   &Date\+Time   &\PBS\centering Start date of the requested date range    \\\cline{1-3}
+End   &Date\+Time   &\PBS\centering End date of the requested date range    \\\cline{1-3}
+Accessor   &\multicolumn{2}{l|}{string    }\\\cline{1-3}
+Model   &\multicolumn{2}{l|}{string    }\\\cline{1-3}
+Multi\+Channel   &\multicolumn{2}{l|}{bool    }\\\cline{1-3}
+Interim\+Results   &\multicolumn{2}{l|}{bool    }\\\cline{1-3}
+Punctuate   &\multicolumn{2}{l|}{bool    }\\\cline{1-3}
+Ner   &\multicolumn{2}{l|}{bool    }\\\cline{1-3}
+Utterances   &\multicolumn{2}{l|}{bool    }\\\cline{1-3}
+Replace   &\multicolumn{2}{l|}{bool    }\\\cline{1-3}
+Profanity\+Filter   &\multicolumn{2}{l|}{bool    }\\\cline{1-3}
+Keywords   &\multicolumn{2}{l|}{bool    }\\\cline{1-3}
+Detect\+Topics   &\multicolumn{2}{l|}{bool    }\\\cline{1-3}
+Diarize   &\multicolumn{2}{l|}{bool    }\\\cline{1-3}
+Search   &\multicolumn{2}{l|}{bool    }\\\cline{1-3}
+Redact   &\multicolumn{2}{l|}{bool    }\\\cline{1-3}
+Alternatives   &\multicolumn{2}{l|}{bool    }\\\cline{1-3}
+Numerals   &\multicolumn{2}{l|}{bool    }\\\cline{1-3}
+Smart\+Format   &\multicolumn{2}{l|}{bool   }\\\cline{1-3}
+\end{longtabu}
+
+
+\href{https://developers.deepgram.com/reference/summarize-usage}{\texttt{ See our API reference for more info}}.\hypertarget{md_Deepgram_README_autotoc_md51}{}\doxysubsection{Get Fields}\label{md_Deepgram_README_autotoc_md51}
+Lists the features, models, tags, languages, and processing method used for requests in the specified project.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var getProjectUsageFieldsSchema = new UsageFieldsSchema()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    Start = Datetime.Now}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{var result = await manageClient.GetProjectUsageFieldsAsync(projectId,getProjectUsageFieldsSchema);}
+
+\end{DoxyCode}
+\hypertarget{md_Deepgram_README_autotoc_md52}{}\doxysubsubsection{Usage\+Fields\+Schema}\label{md_Deepgram_README_autotoc_md52}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endhead
+Start   &Date\+Time   &\PBS\centering Start date of the requested date range    \\\cline{1-3}
+End   &Date\+Time   &\PBS\centering End date of the requested date range   \\\cline{1-3}
+\end{longtabu}
+
+
+\href{https://developers.deepgram.com/reference/get-fields}{\texttt{ See our API reference for more info}}.\hypertarget{md_Deepgram_README_autotoc_md53}{}\doxysection{Balances}\label{md_Deepgram_README_autotoc_md53}
+\hypertarget{md_Deepgram_README_autotoc_md54}{}\doxysubsection{Get Balances}\label{md_Deepgram_README_autotoc_md54}
+Get balances associated with project 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var result = await manageClient.GetProjectBalancesAsync(projectId)}
+
+\end{DoxyCode}
+ \hypertarget{md_Deepgram_README_autotoc_md55}{}\doxysubsection{Get Balance}\label{md_Deepgram_README_autotoc_md55}
+Get Balance associated with id 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var result = await manageClient.GetProjectBalanceAsync(projectId,balanceId)}
+
+\end{DoxyCode}
+\hypertarget{md_Deepgram_README_autotoc_md56}{}\doxysection{On\+Prem}\label{md_Deepgram_README_autotoc_md56}
+\mbox{\hyperlink{classOnPremClient}{On\+Prem\+Client}} methods\hypertarget{md_Deepgram_README_autotoc_md57}{}\doxysubsection{List Credentials}\label{md_Deepgram_README_autotoc_md57}
+list credenetials 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var result = onPremClient.ListCredentialsAsync(projectId);}
+
+\end{DoxyCode}
+\hypertarget{md_Deepgram_README_autotoc_md58}{}\doxysubsection{Get Credentials}\label{md_Deepgram_README_autotoc_md58}
+get the credentials associated with the credentials id 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var result = onPremClient.GetCredentialsASync(projectId,credentialsId);}
+
+\end{DoxyCode}
+\hypertarget{md_Deepgram_README_autotoc_md59}{}\doxysubsection{Remove Credentials}\label{md_Deepgram_README_autotoc_md59}
+remove credentials associated with the credentials id 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var result = onPremClient.DeleteCredentialsASync(projectId,credentialsId);}
+
+\end{DoxyCode}
+\hypertarget{md_Deepgram_README_autotoc_md60}{}\doxysubsection{Create Credentials}\label{md_Deepgram_README_autotoc_md60}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var createOnPremCredentialsSchema = new CredentialsSchema()}
+\DoxyCodeLine{ \{}
+\DoxyCodeLine{    Comment = "{}my new credentials"{},}
+\DoxyCodeLine{    Scopes = new  List<string>\{"{}team fab"{}\},}
+\DoxyCodeLine{    Provider = "{}Acme credential provider"{}}
+\DoxyCodeLine{ \}}
+\DoxyCodeLine{var result = onPremClientCreateCredentialsAsync(string projectId,  createOnPremCredentialsSchema)}
+
+\end{DoxyCode}
+\hypertarget{md_Deepgram_README_autotoc_md61}{}\doxysubsubsection{Credentials\+Schema}\label{md_Deepgram_README_autotoc_md61}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Property   }&\cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endhead
+Comment   &string?   &\PBS\centering comment to associate with credentials    \\\cline{1-3}
+Scopes   &List$<$string$>$?   &\PBS\centering scopes for the credentials    \\\cline{1-3}
+Provider   &string?   &\PBS\centering provider for the credentials   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md_Deepgram_README_autotoc_md62}{}\doxysection{Logging}\label{md_Deepgram_README_autotoc_md62}
+The \mbox{\hyperlink{classLibrary}{Library}} uses Microsoft.\+Extensions.\+Logging to preform all of its logging tasks. To configure logging for your app simply create a new {\ttfamily ILogger\+Factory} and call the {\ttfamily Log\+Provider.\+Set\+Log\+Factory()} method to tell the Deepgram library how to log. For example, to log to the console with Serilog, you\textquotesingle{}d need to install the Serilog package with {\ttfamily dotnet add package Serilog} and then do the following\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{using Microsoft.Extensions.Logging;}
+\DoxyCodeLine{using Microsoft.Extensions.Configuration;}
+\DoxyCodeLine{using Deepgram.Logger;}
+\DoxyCodeLine{using Serilog;}
+\DoxyCodeLine{}
+\DoxyCodeLine{var log = new LoggerConfiguration()}
+\DoxyCodeLine{    .MinimumLevel.Debug()}
+\DoxyCodeLine{    .WriteTo.Console(outputTemplate: "{}\{Timestamp:HH:mm\} [\{Level\}]: \{Message\}\(\backslash\)n"{})}
+\DoxyCodeLine{    .CreateLogger();}
+\DoxyCodeLine{var factory = new LoggerFactory();}
+\DoxyCodeLine{factory.AddSerilog(log);}
+\DoxyCodeLine{LogProvider.SetLogFactory(factory);}
+
+\end{DoxyCode}
+ The sdk will generate loggers with the caterory\+Name of the client being used for example to get the logger for the \mbox{\hyperlink{classManageClient}{Manage\+Client}} you would call
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{LogProvider.GetLogger(nameof(ManageClient));}
+
+\end{DoxyCode}
+\hypertarget{md_Deepgram_README_autotoc_md63}{}\doxysection{Development and Contributing}\label{md_Deepgram_README_autotoc_md63}
+Interested in contributing? We ❤️ pull requests!
+
+To make sure our community is safe for all, be sure to review and agree to our /home/runner/work/test/test/.github/\+CODE\+\_\+\+OF\+\_\+\+CONDUCT.\+md \char`\"{}\+Code of Conduct\char`\"{}. Then see the /home/runner/work/test/test/.github/\+CONTRIBUTING.\+md \char`\"{}\+Contribution\char`\"{} guidelines for more information.\hypertarget{md_Deepgram_README_autotoc_md64}{}\doxysection{Testing}\label{md_Deepgram_README_autotoc_md64}
+The test suite is located within {\ttfamily Deepgram.\+Tests/}. Run all tests with the following command from the top-\/level repository\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{dotnet test}
+
+\end{DoxyCode}
+
+
+Upon completion, a summary is printed\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Passed!  -\/ Failed:     0, Passed:    69, Skipped:     0, Total:    69, Duration: 906 ms -\/ Deepgram.Tests.dll (net7.0)}
+
+\end{DoxyCode}
+\hypertarget{md_Deepgram_README_autotoc_md65}{}\doxysection{Getting Help}\label{md_Deepgram_README_autotoc_md65}
+We love to hear from you so if you have questions, comments or find a bug in the project, let us know! You can either\+:
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/deepgram-devs/deepgram-dotnet-sdk/issues/new}{\texttt{ Open an issue in this repository}}
+\item \href{https://github.com/orgs/deepgram/discussions}{\texttt{ Join the Deepgram Github Discussions Community}}
+\item \href{https://dpgr.am/discord}{\texttt{ Join the Deepgram Discord Community}} 
+\end{DoxyItemize}

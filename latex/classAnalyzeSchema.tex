@@ -1,0 +1,251 @@
+\hypertarget{classAnalyzeSchema}{}\doxysection{Analyze\+Schema Class Reference}
+\label{classAnalyzeSchema}\index{AnalyzeSchema@{AnalyzeSchema}}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string? \mbox{\hyperlink{classAnalyzeSchema_a4a371c2478dd80547b10259dce6f7e53}{Call\+Back}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Callback URL to provide if you would like your submitted text to be processed. \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classAnalyzeSchema_af93f30f857313220c3078e3fd4ffffa2}{Callback\+Method}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enable a callback method \end{DoxyCompactList}\item 
+List$<$ string $>$? \mbox{\hyperlink{classAnalyzeSchema_ab644a1ad9f67292e5e789a2178e791d8}{Custom\+Intent}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Define custom intents. \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classAnalyzeSchema_a3991fed69c599b7b0002bd7ab7a67bbc}{Custom\+Intent\+Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em When strict, the model will only return intents submitted using the custom\+\_\+intent param. When extended, the model will return its own detected intents in addition to those submitted using the custom\+\_\+intent param. Default\+: extended \end{DoxyCompactList}\item 
+List$<$ string $>$? \mbox{\hyperlink{classAnalyzeSchema_a2dacb864240befef92d65b6eacd204d5}{Custom\+Topic}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Define custom topics. \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classAnalyzeSchema_a7c3566318be977447e70bf8fd86bad09}{Custom\+Topic\+Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em When strict, the model will only return topics submitted using the custom\+\_\+topic param. When extended, the model will return its own detected topics in addition to those submitted using the custom\+\_\+topic param. Default\+: extended \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classAnalyzeSchema_a3f14856babbcc521d4a9549a27a2d229}{Intents}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Recognizes speaker intent throughout an entire input text. Returns a list of text segments and the intents found within each segment \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classAnalyzeSchema_aadade18016b6b82dfd0707e167d22b8e}{Language}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Required\+: en. The language of your input text. (Only English language is supported at this time) \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classAnalyzeSchema_ace752b7b09b62753ef0bd7f9d4a93e7f}{Sentiment}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Recognizes the sentiment of the entire input text and detects a shift in sentiment throughout. Returns a list of text segments and the sentiment found within each segment. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classAnalyzeSchema_a5575c82574f61ef2dfc7d84685f592b8}{Summarize}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Provides a brief summary of the input text. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classAnalyzeSchema_a3d584c00c8175ec36e23185e1727ea8b}{Topics}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Detects topics throughout an entire input text. Returns a list of text segments and the topics found within each segment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 7 of file Analyze\+Schema.\+cs.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classAnalyzeSchema_a4a371c2478dd80547b10259dce6f7e53}\label{classAnalyzeSchema_a4a371c2478dd80547b10259dce6f7e53}} 
+\index{AnalyzeSchema@{AnalyzeSchema}!CallBack@{CallBack}}
+\index{CallBack@{CallBack}!AnalyzeSchema@{AnalyzeSchema}}
+\doxysubsubsection{\texorpdfstring{CallBack}{CallBack}}
+{\footnotesize\ttfamily string? Analyze\+Schema.\+Call\+Back\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Callback URL to provide if you would like your submitted text to be processed. 
+
+
+
+Definition at line 14 of file Analyze\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAnalyzeSchema_af93f30f857313220c3078e3fd4ffffa2}\label{classAnalyzeSchema_af93f30f857313220c3078e3fd4ffffa2}} 
+\index{AnalyzeSchema@{AnalyzeSchema}!CallbackMethod@{CallbackMethod}}
+\index{CallbackMethod@{CallbackMethod}!AnalyzeSchema@{AnalyzeSchema}}
+\doxysubsubsection{\texorpdfstring{CallbackMethod}{CallbackMethod}}
+{\footnotesize\ttfamily string? Analyze\+Schema.\+Callback\+Method\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Enable a callback method 
+
+
+
+Definition at line 21 of file Analyze\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAnalyzeSchema_ab644a1ad9f67292e5e789a2178e791d8}\label{classAnalyzeSchema_ab644a1ad9f67292e5e789a2178e791d8}} 
+\index{AnalyzeSchema@{AnalyzeSchema}!CustomIntent@{CustomIntent}}
+\index{CustomIntent@{CustomIntent}!AnalyzeSchema@{AnalyzeSchema}}
+\doxysubsubsection{\texorpdfstring{CustomIntent}{CustomIntent}}
+{\footnotesize\ttfamily List$<$string$>$? Analyze\+Schema.\+Custom\+Intent\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Define custom intents. 
+
+
+
+Definition at line 28 of file Analyze\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAnalyzeSchema_a3991fed69c599b7b0002bd7ab7a67bbc}\label{classAnalyzeSchema_a3991fed69c599b7b0002bd7ab7a67bbc}} 
+\index{AnalyzeSchema@{AnalyzeSchema}!CustomIntentMode@{CustomIntentMode}}
+\index{CustomIntentMode@{CustomIntentMode}!AnalyzeSchema@{AnalyzeSchema}}
+\doxysubsubsection{\texorpdfstring{CustomIntentMode}{CustomIntentMode}}
+{\footnotesize\ttfamily string? Analyze\+Schema.\+Custom\+Intent\+Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+When strict, the model will only return intents submitted using the custom\+\_\+intent param. When extended, the model will return its own detected intents in addition to those submitted using the custom\+\_\+intent param. Default\+: extended 
+
+
+
+Definition at line 35 of file Analyze\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAnalyzeSchema_a2dacb864240befef92d65b6eacd204d5}\label{classAnalyzeSchema_a2dacb864240befef92d65b6eacd204d5}} 
+\index{AnalyzeSchema@{AnalyzeSchema}!CustomTopic@{CustomTopic}}
+\index{CustomTopic@{CustomTopic}!AnalyzeSchema@{AnalyzeSchema}}
+\doxysubsubsection{\texorpdfstring{CustomTopic}{CustomTopic}}
+{\footnotesize\ttfamily List$<$string$>$? Analyze\+Schema.\+Custom\+Topic\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Define custom topics. 
+
+
+
+Definition at line 42 of file Analyze\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAnalyzeSchema_a7c3566318be977447e70bf8fd86bad09}\label{classAnalyzeSchema_a7c3566318be977447e70bf8fd86bad09}} 
+\index{AnalyzeSchema@{AnalyzeSchema}!CustomTopicMode@{CustomTopicMode}}
+\index{CustomTopicMode@{CustomTopicMode}!AnalyzeSchema@{AnalyzeSchema}}
+\doxysubsubsection{\texorpdfstring{CustomTopicMode}{CustomTopicMode}}
+{\footnotesize\ttfamily string? Analyze\+Schema.\+Custom\+Topic\+Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+When strict, the model will only return topics submitted using the custom\+\_\+topic param. When extended, the model will return its own detected topics in addition to those submitted using the custom\+\_\+topic param. Default\+: extended 
+
+
+
+Definition at line 49 of file Analyze\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAnalyzeSchema_a3f14856babbcc521d4a9549a27a2d229}\label{classAnalyzeSchema_a3f14856babbcc521d4a9549a27a2d229}} 
+\index{AnalyzeSchema@{AnalyzeSchema}!Intents@{Intents}}
+\index{Intents@{Intents}!AnalyzeSchema@{AnalyzeSchema}}
+\doxysubsubsection{\texorpdfstring{Intents}{Intents}}
+{\footnotesize\ttfamily bool? Analyze\+Schema.\+Intents\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Recognizes speaker intent throughout an entire input text. Returns a list of text segments and the intents found within each segment 
+
+
+
+Definition at line 56 of file Analyze\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAnalyzeSchema_aadade18016b6b82dfd0707e167d22b8e}\label{classAnalyzeSchema_aadade18016b6b82dfd0707e167d22b8e}} 
+\index{AnalyzeSchema@{AnalyzeSchema}!Language@{Language}}
+\index{Language@{Language}!AnalyzeSchema@{AnalyzeSchema}}
+\doxysubsubsection{\texorpdfstring{Language}{Language}}
+{\footnotesize\ttfamily string? Analyze\+Schema.\+Language\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Required\+: en. The language of your input text. (Only English language is supported at this time) 
+
+
+
+Definition at line 63 of file Analyze\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAnalyzeSchema_ace752b7b09b62753ef0bd7f9d4a93e7f}\label{classAnalyzeSchema_ace752b7b09b62753ef0bd7f9d4a93e7f}} 
+\index{AnalyzeSchema@{AnalyzeSchema}!Sentiment@{Sentiment}}
+\index{Sentiment@{Sentiment}!AnalyzeSchema@{AnalyzeSchema}}
+\doxysubsubsection{\texorpdfstring{Sentiment}{Sentiment}}
+{\footnotesize\ttfamily bool? Analyze\+Schema.\+Sentiment\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Recognizes the sentiment of the entire input text and detects a shift in sentiment throughout. Returns a list of text segments and the sentiment found within each segment. 
+
+
+
+Definition at line 70 of file Analyze\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAnalyzeSchema_a5575c82574f61ef2dfc7d84685f592b8}\label{classAnalyzeSchema_a5575c82574f61ef2dfc7d84685f592b8}} 
+\index{AnalyzeSchema@{AnalyzeSchema}!Summarize@{Summarize}}
+\index{Summarize@{Summarize}!AnalyzeSchema@{AnalyzeSchema}}
+\doxysubsubsection{\texorpdfstring{Summarize}{Summarize}}
+{\footnotesize\ttfamily bool? Analyze\+Schema.\+Summarize\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Provides a brief summary of the input text. 
+
+
+
+Definition at line 77 of file Analyze\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classAnalyzeSchema_a3d584c00c8175ec36e23185e1727ea8b}\label{classAnalyzeSchema_a3d584c00c8175ec36e23185e1727ea8b}} 
+\index{AnalyzeSchema@{AnalyzeSchema}!Topics@{Topics}}
+\index{Topics@{Topics}!AnalyzeSchema@{AnalyzeSchema}}
+\doxysubsubsection{\texorpdfstring{Topics}{Topics}}
+{\footnotesize\ttfamily bool? Analyze\+Schema.\+Topics\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Detects topics throughout an entire input text. Returns a list of text segments and the topics found within each segment. 
+
+
+
+Definition at line 84 of file Analyze\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{84 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Deepgram/\+Models/\+Analyze/v1/\mbox{\hyperlink{AnalyzeSchema_8cs}{Analyze\+Schema.\+cs}}\end{DoxyCompactItemize}

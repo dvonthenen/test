@@ -1,0 +1,96 @@
+\hypertarget{interfaceISpeakClient}{}\doxysection{ISpeak\+Client Interface Reference}
+\label{interfaceISpeakClient}\index{ISpeakClient@{ISpeakClient}}
+
+
+Implements version 1 of the Speak \mbox{\hyperlink{classClient}{Client}}.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ \mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}} $>$ \mbox{\hyperlink{interfaceISpeakClient_ad9f36cacd9fdc4bef762ee6e3e6c6bbe}{To\+Stream}} (\mbox{\hyperlink{TextSource_8cs_adaa03ef66dc1ca990c099788f052d133}{Text\+Source}} source, \mbox{\hyperlink{classSpeakSchema}{Speak\+Schema}}? speak\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Speaks a file using the provided stream \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}} $>$ \mbox{\hyperlink{interfaceISpeakClient_a33b5c7ff249da8d5d5a3a9ed476592c3}{To\+File}} (\mbox{\hyperlink{TextSource_8cs_adaa03ef66dc1ca990c099788f052d133}{Text\+Source}} source, string filename, \mbox{\hyperlink{classSpeakSchema}{Speak\+Schema}}? speak\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\item 
+Task$<$ \mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}} $>$ \mbox{\hyperlink{interfaceISpeakClient_a6f9aff0c6b211188e5a366e52260e839}{Stream\+Call\+Back}} (\mbox{\hyperlink{TextSource_8cs_adaa03ef66dc1ca990c099788f052d133}{Text\+Source}} source, string? call\+Back, \mbox{\hyperlink{classSpeakSchema}{Speak\+Schema}}? speak\+Schema, Cancellation\+Token\+Source? cancellation\+Token=default, Dictionary$<$ string, string $>$? addons=null, Dictionary$<$ string, string $>$? headers=null)
+\begin{DoxyCompactList}\small\item\em Speaks a file using the provided byte array and providing a Call\+Back \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements version 1 of the Speak \mbox{\hyperlink{classClient}{Client}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api\+Key} & Required Deepgram\+Api\+Key\\
+\hline
+{\em deepgram\+Client\+Options} & \mbox{\hyperlink{classDeepgramHttpClientOptions}{Deepgram\+Http\+Client\+Options}} for Http\+Client Configuration\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file ISpeak\+Client.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceISpeakClient_a6f9aff0c6b211188e5a366e52260e839}\label{interfaceISpeakClient_a6f9aff0c6b211188e5a366e52260e839}} 
+\index{ISpeakClient@{ISpeakClient}!StreamCallBack@{StreamCallBack}}
+\index{StreamCallBack@{StreamCallBack}!ISpeakClient@{ISpeakClient}}
+\doxysubsubsection{\texorpdfstring{StreamCallBack()}{StreamCallBack()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}}$>$ ISpeak\+Client.\+Stream\+Call\+Back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{TextSource_8cs_adaa03ef66dc1ca990c099788f052d133}{Text\+Source}}}]{source,  }\item[{string?}]{call\+Back,  }\item[{\mbox{\hyperlink{classSpeakSchema}{Speak\+Schema}}?}]{speak\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Speaks a file using the provided byte array and providing a Call\+Back 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & file is the form of a byte\mbox{[}\mbox{]}\\
+\hline
+\end{DoxyParams}
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em call\+Back} & Call\+Back url\\
+\hline
+\end{DoxyParams}
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em speak\+Schema} & Options for the transcription\mbox{\hyperlink{classSpeakSchema}{Speak\+Schema}} \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{Speak_2v1_2AsyncResponse_8cs_a02ce1f0f221e9a1e53e39fbb5991ece1}{Async\+Response}}
+\end{DoxyReturn}
+\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceISpeakClient_a33b5c7ff249da8d5d5a3a9ed476592c3}\label{interfaceISpeakClient_a33b5c7ff249da8d5d5a3a9ed476592c3}} 
+\index{ISpeakClient@{ISpeakClient}!ToFile@{ToFile}}
+\index{ToFile@{ToFile}!ISpeakClient@{ISpeakClient}}
+\doxysubsubsection{\texorpdfstring{ToFile()}{ToFile()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}}$>$ ISpeak\+Client.\+To\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{TextSource_8cs_adaa03ef66dc1ca990c099788f052d133}{Text\+Source}}}]{source,  }\item[{string}]{filename,  }\item[{\mbox{\hyperlink{classSpeakSchema}{Speak\+Schema}}?}]{speak\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfaceISpeakClient_ad9f36cacd9fdc4bef762ee6e3e6c6bbe}\label{interfaceISpeakClient_ad9f36cacd9fdc4bef762ee6e3e6c6bbe}} 
+\index{ISpeakClient@{ISpeakClient}!ToStream@{ToStream}}
+\index{ToStream@{ToStream}!ISpeakClient@{ISpeakClient}}
+\doxysubsubsection{\texorpdfstring{ToStream()}{ToStream()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}}$>$ ISpeak\+Client.\+To\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{TextSource_8cs_adaa03ef66dc1ca990c099788f052d133}{Text\+Source}}}]{source,  }\item[{\mbox{\hyperlink{classSpeakSchema}{Speak\+Schema}}?}]{speak\+Schema,  }\item[{Cancellation\+Token\+Source?}]{cancellation\+Token = {\ttfamily default},  }\item[{Dictionary$<$ string, string $>$?}]{addons = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Speaks a file using the provided stream 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & file is the form of a stream Stream\\
+\hline
+{\em speak\+Schema} & Options for the transcription \mbox{\hyperlink{classSpeakSchema}{Speak\+Schema}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{Speak_2v1_2SyncResponse_8cs_a2b24b6b85210925332efdda72dd3e537}{Sync\+Response}}
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Deepgram/\+Clients/\+Interfaces/v1/\mbox{\hyperlink{ISpeakClient_8cs}{ISpeak\+Client.\+cs}}\end{DoxyCompactItemize}

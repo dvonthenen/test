@@ -1,0 +1,42 @@
+\hypertarget{ErrorResponse_8cs}{}\doxysection{Deepgram/\+Models/\+Live/v1/\+Error\+Response.cs File Reference}
+\label{ErrorResponse_8cs}\index{Deepgram/Models/Live/v1/ErrorResponse.cs@{Deepgram/Models/Live/v1/ErrorResponse.cs}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+record???? \mbox{\hyperlink{ErrorResponse_8cs_a3170e2f23db856479b082efb2a0f01be}{Error\+Response}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{ErrorResponse_8cs_a3170e2f23db856479b082efb2a0f01be}\label{ErrorResponse_8cs_a3170e2f23db856479b082efb2a0f01be}} 
+\index{ErrorResponse.cs@{ErrorResponse.cs}!ErrorResponse@{ErrorResponse}}
+\index{ErrorResponse@{ErrorResponse}!ErrorResponse.cs@{ErrorResponse.cs}}
+\doxysubsubsection{\texorpdfstring{ErrorResponse}{ErrorResponse}}
+{\footnotesize\ttfamily record???? Error\+Response}
+
+
+
+Definition at line 7 of file Error\+Response.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{12     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{13     [JsonPropertyName(\textcolor{stringliteral}{"{}description"{}})]}
+\DoxyCodeLine{14     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? Description \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{19     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{20     [JsonPropertyName(\textcolor{stringliteral}{"{}message"{}})]}
+\DoxyCodeLine{21     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? Message \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{26     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{27     [JsonPropertyName(\textcolor{stringliteral}{"{}variant"{}})]}
+\DoxyCodeLine{28     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? Variant \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{33     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{34     [JsonPropertyName(\textcolor{stringliteral}{"{}type"{}})]}
+\DoxyCodeLine{35     [JsonConverter(typeof(JsonStringEnumConverter))]}
+\DoxyCodeLine{36     \textcolor{keyword}{public} \mbox{\hyperlink{LiveType_8cs_a005fe194a3c2c010b732adef72942a0f}{LiveType}}? Type \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = \mbox{\hyperlink{LiveType_8cs_a005fe194a3c2c010b732adef72942a0f}{LiveType}}.Error;}
+\DoxyCodeLine{37 \}}
+
+\end{DoxyCode}

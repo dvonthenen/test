@@ -1,0 +1,34 @@
+\hypertarget{UnhandledResponse_8cs}{}\doxysection{Deepgram/\+Models/\+Live/v1/\+Unhandled\+Response.cs File Reference}
+\label{UnhandledResponse_8cs}\index{Deepgram/Models/Live/v1/UnhandledResponse.cs@{Deepgram/Models/Live/v1/UnhandledResponse.cs}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+record?? \mbox{\hyperlink{UnhandledResponse_8cs_a2444af0f791eed9263cb177670ee3a81}{Unhandled\+Response}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{UnhandledResponse_8cs_a2444af0f791eed9263cb177670ee3a81}\label{UnhandledResponse_8cs_a2444af0f791eed9263cb177670ee3a81}} 
+\index{UnhandledResponse.cs@{UnhandledResponse.cs}!UnhandledResponse@{UnhandledResponse}}
+\index{UnhandledResponse@{UnhandledResponse}!UnhandledResponse.cs@{UnhandledResponse.cs}}
+\doxysubsubsection{\texorpdfstring{UnhandledResponse}{UnhandledResponse}}
+{\footnotesize\ttfamily record?? Unhandled\+Response}
+
+
+
+Definition at line 7 of file Unhandled\+Response.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{12     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{13     [JsonPropertyName(\textcolor{stringliteral}{"{}raw"{}})]}
+\DoxyCodeLine{14     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? Raw \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{19     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{20     [JsonPropertyName(\textcolor{stringliteral}{"{}type"{}})]}
+\DoxyCodeLine{21     [JsonConverter(typeof(JsonStringEnumConverter))]}
+\DoxyCodeLine{22     \textcolor{keyword}{public} \mbox{\hyperlink{LiveType_8cs_a005fe194a3c2c010b732adef72942a0f}{LiveType}}? Type \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = \mbox{\hyperlink{LiveType_8cs_a005fe194a3c2c010b732adef72942a0f}{LiveType}}.Unhandled;}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}

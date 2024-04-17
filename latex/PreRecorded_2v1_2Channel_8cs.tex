@@ -1,0 +1,41 @@
+\hypertarget{PreRecorded_2v1_2Channel_8cs}{}\doxysection{Deepgram/\+Models/\+Pre\+Recorded/v1/\+Channel.cs File Reference}
+\label{PreRecorded_2v1_2Channel_8cs}\index{Deepgram/Models/PreRecorded/v1/Channel.cs@{Deepgram/Models/PreRecorded/v1/Channel.cs}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+record???? \mbox{\hyperlink{PreRecorded_2v1_2Channel_8cs_a15780fc8b50c42e23f164e234763be4d}{Channel}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{PreRecorded_2v1_2Channel_8cs_a15780fc8b50c42e23f164e234763be4d}\label{PreRecorded_2v1_2Channel_8cs_a15780fc8b50c42e23f164e234763be4d}} 
+\index{Channel.cs@{Channel.cs}!Channel@{Channel}}
+\index{Channel@{Channel}!Channel.cs@{Channel.cs}}
+\doxysubsubsection{\texorpdfstring{Channel}{Channel}}
+{\footnotesize\ttfamily record???? Channel}
+
+
+
+Definition at line 7 of file Channel.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{12     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{13     [JsonPropertyName(\textcolor{stringliteral}{"{}alternatives"{}})]}
+\DoxyCodeLine{14     \textcolor{keyword}{public} IReadOnlyList<Alternative>? Alternatives \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{20     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{21     [JsonPropertyName(\textcolor{stringliteral}{"{}detected\_language"{}})]}
+\DoxyCodeLine{22     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? DetectedLanguage \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{27     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{28     [JsonPropertyName(\textcolor{stringliteral}{"{}language\_confidence"{}})]}
+\DoxyCodeLine{29     \textcolor{keyword}{public} \textcolor{keywordtype}{double}? LanguageConfidence \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{34     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{35     [JsonPropertyName(\textcolor{stringliteral}{"{}search"{}})]}
+\DoxyCodeLine{36     \textcolor{keyword}{public} IReadOnlyList<Search>? \mbox{\hyperlink{Search_8cs_a05729af15813d0282c049d4383bd6791}{Search}} \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{37 \}}
+
+\end{DoxyCode}

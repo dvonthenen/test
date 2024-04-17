@@ -1,0 +1,45 @@
+\hypertarget{Entity_8cs}{}\doxysection{Deepgram/\+Models/\+Pre\+Recorded/v1/\+Entity.cs File Reference}
+\label{Entity_8cs}\index{Deepgram/Models/PreRecorded/v1/Entity.cs@{Deepgram/Models/PreRecorded/v1/Entity.cs}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+record????? \mbox{\hyperlink{Entity_8cs_a59fb0a4bc5812c888d988cf56eca8f56}{Entity}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{Entity_8cs_a59fb0a4bc5812c888d988cf56eca8f56}\label{Entity_8cs_a59fb0a4bc5812c888d988cf56eca8f56}} 
+\index{Entity.cs@{Entity.cs}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity.cs@{Entity.cs}}
+\doxysubsubsection{\texorpdfstring{Entity}{Entity}}
+{\footnotesize\ttfamily record????? Entity}
+
+
+
+Definition at line 7 of file Entity.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{13     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{14     [JsonPropertyName(\textcolor{stringliteral}{"{}label"{}})]}
+\DoxyCodeLine{15     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? Label \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{20     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{21     [JsonPropertyName(\textcolor{stringliteral}{"{}value"{}})]}
+\DoxyCodeLine{22     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? Value \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{27     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{28     [JsonPropertyName(\textcolor{stringliteral}{"{}start\_word"{}})]}
+\DoxyCodeLine{29     \textcolor{keyword}{public} \textcolor{keywordtype}{int}? StartWord \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{34     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{35     [JsonPropertyName(\textcolor{stringliteral}{"{}end\_word"{}})]}
+\DoxyCodeLine{36     \textcolor{keyword}{public} \textcolor{keywordtype}{int}? EndWord \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{41     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{42     [JsonPropertyName(\textcolor{stringliteral}{"{}confidence"{}})]}
+\DoxyCodeLine{43     \textcolor{keyword}{public} \textcolor{keywordtype}{double}? Confidence \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{44 \}}
+
+\end{DoxyCode}

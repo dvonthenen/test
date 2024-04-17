@@ -1,0 +1,53 @@
+\hypertarget{PreRecorded_2v1_2Segment_8cs}{}\doxysection{Deepgram/\+Models/\+Pre\+Recorded/v1/\+Segment.cs File Reference}
+\label{PreRecorded_2v1_2Segment_8cs}\index{Deepgram/Models/PreRecorded/v1/Segment.cs@{Deepgram/Models/PreRecorded/v1/Segment.cs}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+record??????? \mbox{\hyperlink{PreRecorded_2v1_2Segment_8cs_a623cf3affaf25185d851aecf0f67e178}{Segment}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{PreRecorded_2v1_2Segment_8cs_a623cf3affaf25185d851aecf0f67e178}\label{PreRecorded_2v1_2Segment_8cs_a623cf3affaf25185d851aecf0f67e178}} 
+\index{Segment.cs@{Segment.cs}!Segment@{Segment}}
+\index{Segment@{Segment}!Segment.cs@{Segment.cs}}
+\doxysubsubsection{\texorpdfstring{Segment}{Segment}}
+{\footnotesize\ttfamily record??????? Segment}
+
+
+
+Definition at line 7 of file Segment.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{12     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{13     [JsonPropertyName(\textcolor{stringliteral}{"{}text"{}})]}
+\DoxyCodeLine{14     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? Text \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{19     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{20     [JsonPropertyName(\textcolor{stringliteral}{"{}start\_word"{}})]}
+\DoxyCodeLine{21     \textcolor{keyword}{public} \textcolor{keywordtype}{int}? StartWord \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{26     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{27     [JsonPropertyName(\textcolor{stringliteral}{"{}end\_word"{}})]}
+\DoxyCodeLine{28     \textcolor{keyword}{public} \textcolor{keywordtype}{int}? EndWord \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{33     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{34     [JsonPropertyName(\textcolor{stringliteral}{"{}sentiment"{}})]}
+\DoxyCodeLine{35     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? Sentiment \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{40     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{41     [JsonPropertyName(\textcolor{stringliteral}{"{}sentiment\_score"{}})]}
+\DoxyCodeLine{42     \textcolor{keyword}{public} \textcolor{keywordtype}{double}? SentimentScore \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{47     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{48     [JsonPropertyName(\textcolor{stringliteral}{"{}topics"{}})]}
+\DoxyCodeLine{49     \textcolor{keyword}{public} IReadOnlyList<Topic>? Topics \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{54     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{55     [JsonPropertyName(\textcolor{stringliteral}{"{}intents"{}})]}
+\DoxyCodeLine{56     \textcolor{keyword}{public} IReadOnlyList<Intent>? Intents \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{57 \}}
+
+\end{DoxyCode}

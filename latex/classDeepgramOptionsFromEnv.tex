@@ -1,0 +1,223 @@
+\hypertarget{classDeepgramOptionsFromEnv}{}\doxysection{Deepgram\+Options\+From\+Env Class Reference}
+\label{classDeepgramOptionsFromEnv}\index{DeepgramOptionsFromEnv@{DeepgramOptionsFromEnv}}
+Inheritance diagram for Deepgram\+Options\+From\+Env\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDeepgramOptionsFromEnv}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDeepgramOptionsFromEnv_abd1179812fa3a729dab3e65da77cf22f}{Deepgram\+Options\+From\+Env}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classDeepgramOptionsFromEnv_a20f65ccd6c39f464a4f3e4bae6d2a446}{Api\+Key}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Deepgram API KEY \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classDeepgramOptionsFromEnv_ace17ab19a61c62a0190b92321fa8eba6}{Base\+Address}} = Defaults.\+DEFAULT\+\_\+\+URI\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Base\+Address of the server \+:defaults to api.\+deepgram.\+com no need to attach the protocol it will be added internally \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classDeepgramOptionsFromEnv_aade377cabb9b6febcc2e5a1726dc1bcc}{APIVersion}} = Defaults.\+DEFAULT\+\_\+\+API\+\_\+\+VERSION\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Api endpoint version \end{DoxyCompactList}\item 
+Dictionary$<$ string, string $>$ \mbox{\hyperlink{classDeepgramOptionsFromEnv_a672970c6fb1eda8ad4019db736cb84db}{Headers}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Global headers to always be added to the request \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDeepgramOptionsFromEnv_ad6587af57df65efc0891f3f26489ad79}{Keep\+Alive}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enable sending Keep\+Alives for Streaming \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDeepgramOptionsFromEnv_a09f15ae81cf286479514778911d1950a}{On\+Prem}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enable when using On\+Prem mode \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 7 of file Deepgram\+Options\+From\+Env.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDeepgramOptionsFromEnv_abd1179812fa3a729dab3e65da77cf22f}\label{classDeepgramOptionsFromEnv_abd1179812fa3a729dab3e65da77cf22f}} 
+\index{DeepgramOptionsFromEnv@{DeepgramOptionsFromEnv}!DeepgramOptionsFromEnv@{DeepgramOptionsFromEnv}}
+\index{DeepgramOptionsFromEnv@{DeepgramOptionsFromEnv}!DeepgramOptionsFromEnv@{DeepgramOptionsFromEnv}}
+\doxysubsubsection{\texorpdfstring{DeepgramOptionsFromEnv()}{DeepgramOptionsFromEnv()}}
+{\footnotesize\ttfamily Deepgram\+Options\+From\+Env.\+Deepgram\+Options\+From\+Env (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 69 of file Deepgram\+Options\+From\+Env.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70     \{}
+\DoxyCodeLine{71         \mbox{\hyperlink{classDeepgramOptionsFromEnv_a20f65ccd6c39f464a4f3e4bae6d2a446}{ApiKey}} = Environment.GetEnvironmentVariable(\textcolor{stringliteral}{"{}DEEPGRAM\_API\_KEY"{}}) ?? \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{72         \mbox{\hyperlink{classDeepgramOptionsFromEnv_ace17ab19a61c62a0190b92321fa8eba6}{BaseAddress}} = Environment.GetEnvironmentVariable(\textcolor{stringliteral}{"{}DEEPGRAM\_HOST"{}}) ?? Defaults.DEFAULT\_URI;}
+\DoxyCodeLine{73         \mbox{\hyperlink{classDeepgramOptionsFromEnv_aade377cabb9b6febcc2e5a1726dc1bcc}{APIVersion}} = Environment.GetEnvironmentVariable(\textcolor{stringliteral}{"{}DEEPGRAM\_API\_VERSION"{}}) ?? Defaults.DEFAULT\_API\_VERSION;}
+\DoxyCodeLine{74         var onPrem = Environment.GetEnvironmentVariable(\textcolor{stringliteral}{"{}DEEPGRAM\_ON\_PREM"{}}) ?? \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{75         var keepAlive = Environment.GetEnvironmentVariable(\textcolor{stringliteral}{"{}DEEPGRAM\_KEEP\_ALIVE"{}}) ?? \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77         \mbox{\hyperlink{classDeepgramOptionsFromEnv_a672970c6fb1eda8ad4019db736cb84db}{Headers}} = \textcolor{keyword}{new} Dictionary<string, string>();}
+\DoxyCodeLine{78         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x = 0; x < 20; x++)}
+\DoxyCodeLine{79         \{}
+\DoxyCodeLine{80             var param = Environment.GetEnvironmentVariable(\$\textcolor{stringliteral}{"{}DEEPGRAM\_PARAM\_\{x\}"{}});}
+\DoxyCodeLine{81             \textcolor{keywordflow}{if} (param != \textcolor{keyword}{null})}
+\DoxyCodeLine{82             \{}
+\DoxyCodeLine{83                 var value = Environment.GetEnvironmentVariable(\$\textcolor{stringliteral}{"{}DEEPGRAM\_PARAM\_VALUE\_\{x\}"{}}) ?? \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{84                 \mbox{\hyperlink{classDeepgramOptionsFromEnv_a672970c6fb1eda8ad4019db736cb84db}{Headers}}[param] = value;}
+\DoxyCodeLine{85             \}}
+\DoxyCodeLine{86             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{87             \{}
+\DoxyCodeLine{88                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{89             \}}
+\DoxyCodeLine{90         \}}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92         \mbox{\hyperlink{classDeepgramOptionsFromEnv_a09f15ae81cf286479514778911d1950a}{OnPrem}} = onPrem.ToLower() == \textcolor{stringliteral}{"{}true"{}};}
+\DoxyCodeLine{93         \mbox{\hyperlink{classDeepgramOptionsFromEnv_ad6587af57df65efc0891f3f26489ad79}{KeepAlive}} = keepAlive.ToLower() == \textcolor{stringliteral}{"{}true"{}};}
+\DoxyCodeLine{94     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classDeepgramOptionsFromEnv_a20f65ccd6c39f464a4f3e4bae6d2a446}\label{classDeepgramOptionsFromEnv_a20f65ccd6c39f464a4f3e4bae6d2a446}} 
+\index{DeepgramOptionsFromEnv@{DeepgramOptionsFromEnv}!ApiKey@{ApiKey}}
+\index{ApiKey@{ApiKey}!DeepgramOptionsFromEnv@{DeepgramOptionsFromEnv}}
+\doxysubsubsection{\texorpdfstring{ApiKey}{ApiKey}}
+{\footnotesize\ttfamily string Deepgram\+Options\+From\+Env.\+Api\+Key\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Deepgram API KEY 
+
+
+
+Definition at line 15 of file Deepgram\+Options\+From\+Env.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+
+
+Referenced by Deepgram\+Options\+From\+Env().
+
+\mbox{\Hypertarget{classDeepgramOptionsFromEnv_aade377cabb9b6febcc2e5a1726dc1bcc}\label{classDeepgramOptionsFromEnv_aade377cabb9b6febcc2e5a1726dc1bcc}} 
+\index{DeepgramOptionsFromEnv@{DeepgramOptionsFromEnv}!APIVersion@{APIVersion}}
+\index{APIVersion@{APIVersion}!DeepgramOptionsFromEnv@{DeepgramOptionsFromEnv}}
+\doxysubsubsection{\texorpdfstring{APIVersion}{APIVersion}}
+{\footnotesize\ttfamily string Deepgram\+Options\+From\+Env.\+APIVersion = Defaults.\+DEFAULT\+\_\+\+API\+\_\+\+VERSION\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Api endpoint version 
+
+
+
+Definition at line 26 of file Deepgram\+Options\+From\+Env.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = Defaults.DEFAULT\_API\_VERSION;}
+
+\end{DoxyCode}
+
+
+Referenced by Deepgram\+Options\+From\+Env().
+
+\mbox{\Hypertarget{classDeepgramOptionsFromEnv_ace17ab19a61c62a0190b92321fa8eba6}\label{classDeepgramOptionsFromEnv_ace17ab19a61c62a0190b92321fa8eba6}} 
+\index{DeepgramOptionsFromEnv@{DeepgramOptionsFromEnv}!BaseAddress@{BaseAddress}}
+\index{BaseAddress@{BaseAddress}!DeepgramOptionsFromEnv@{DeepgramOptionsFromEnv}}
+\doxysubsubsection{\texorpdfstring{BaseAddress}{BaseAddress}}
+{\footnotesize\ttfamily string Deepgram\+Options\+From\+Env.\+Base\+Address = Defaults.\+DEFAULT\+\_\+\+URI\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Base\+Address of the server \+:defaults to api.\+deepgram.\+com no need to attach the protocol it will be added internally 
+
+
+
+Definition at line 21 of file Deepgram\+Options\+From\+Env.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = Defaults.DEFAULT\_URI;}
+
+\end{DoxyCode}
+
+
+Referenced by Deepgram\+Options\+From\+Env().
+
+\mbox{\Hypertarget{classDeepgramOptionsFromEnv_a672970c6fb1eda8ad4019db736cb84db}\label{classDeepgramOptionsFromEnv_a672970c6fb1eda8ad4019db736cb84db}} 
+\index{DeepgramOptionsFromEnv@{DeepgramOptionsFromEnv}!Headers@{Headers}}
+\index{Headers@{Headers}!DeepgramOptionsFromEnv@{DeepgramOptionsFromEnv}}
+\doxysubsubsection{\texorpdfstring{Headers}{Headers}}
+{\footnotesize\ttfamily Dictionary$<$string, string$>$ Deepgram\+Options\+From\+Env.\+Headers\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Global headers to always be added to the request 
+
+
+
+Definition at line 31 of file Deepgram\+Options\+From\+Env.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+
+
+Referenced by Deepgram\+Options\+From\+Env().
+
+\mbox{\Hypertarget{classDeepgramOptionsFromEnv_ad6587af57df65efc0891f3f26489ad79}\label{classDeepgramOptionsFromEnv_ad6587af57df65efc0891f3f26489ad79}} 
+\index{DeepgramOptionsFromEnv@{DeepgramOptionsFromEnv}!KeepAlive@{KeepAlive}}
+\index{KeepAlive@{KeepAlive}!DeepgramOptionsFromEnv@{DeepgramOptionsFromEnv}}
+\doxysubsubsection{\texorpdfstring{KeepAlive}{KeepAlive}}
+{\footnotesize\ttfamily bool Deepgram\+Options\+From\+Env.\+Keep\+Alive = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Enable sending Keep\+Alives for Streaming 
+
+
+
+Definition at line 43 of file Deepgram\+Options\+From\+Env.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = \textcolor{keyword}{false};}
+
+\end{DoxyCode}
+
+
+Referenced by Deepgram\+Options\+From\+Env().
+
+\mbox{\Hypertarget{classDeepgramOptionsFromEnv_a09f15ae81cf286479514778911d1950a}\label{classDeepgramOptionsFromEnv_a09f15ae81cf286479514778911d1950a}} 
+\index{DeepgramOptionsFromEnv@{DeepgramOptionsFromEnv}!OnPrem@{OnPrem}}
+\index{OnPrem@{OnPrem}!DeepgramOptionsFromEnv@{DeepgramOptionsFromEnv}}
+\doxysubsubsection{\texorpdfstring{OnPrem}{OnPrem}}
+{\footnotesize\ttfamily bool Deepgram\+Options\+From\+Env.\+On\+Prem = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Enable when using On\+Prem mode 
+
+
+
+Definition at line 51 of file Deepgram\+Options\+From\+Env.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = \textcolor{keyword}{false};}
+
+\end{DoxyCode}
+
+
+Referenced by Deepgram\+Options\+From\+Env().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Deepgram/\+Models/\+Authenticate/v1/\mbox{\hyperlink{DeepgramOptionsFromEnv_8cs}{Deepgram\+Options\+From\+Env.\+cs}}\end{DoxyCompactItemize}

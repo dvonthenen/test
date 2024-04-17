@@ -1,0 +1,789 @@
+\hypertarget{classPrerecordedSchema}{}\doxysection{Prerecorded\+Schema Class Reference}
+\label{classPrerecordedSchema}\index{PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int? \mbox{\hyperlink{classPrerecordedSchema_a6ea2e8a3bdf777e02176fdf6fc6ab288}{Alternatives}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Number of transcripts to return per request  Default is 1 \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classPrerecordedSchema_a6cf2215365a7c51a1f8d1006d5d89399}{Call\+Back}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Call\+Back allows you to have your submitted audio processed asynchronously.  default is null \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classPrerecordedSchema_ad9a49032806e42d057c339f2aca845b7}{Callback\+Method}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enables callback method \end{DoxyCompactList}\item 
+List$<$ string $>$? \mbox{\hyperlink{classPrerecordedSchema_a4956d6b0f50c4676b4fc1e0baa321cba}{Custom\+Intent}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. A custom intent you want the model to detect within your input audio if present. Submit up to 100. \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classPrerecordedSchema_aab5a5332cfd08de85816ae88d848541a}{Custom\+Intent\+Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Optional. Sets how the model will interpret strings submitted to the custom\+\_\+intent param. When \char`\"{}strict\char`\"{}, the model will only return intents submitted using the custom\+\_\+intent param. When \char`\"{}extended\char`\"{}, the model will return it\textquotesingle{}s own detected intents in addition those submitted using the custom\+\_\+intents param. \end{DoxyCompactList}\item 
+List$<$ string $>$? \mbox{\hyperlink{classPrerecordedSchema_a9460d2251cfde5bf805d14bc6952abe9}{Custom\+Topic}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Custom Topic allows you to specify a custom topic for your submitted audio. \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classPrerecordedSchema_af8ff15030b4e82b0ec08baff56c0880f}{Custom\+Topic\+Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em When strict, the model will only return topics submitted using the custom\+\_\+topic param. When extended, the model will return its own detected topics in addition to those submitted using the custom\+\_\+topic param. Default\+: extended \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classPrerecordedSchema_a4d838cbdc1ab77e682890ca4d708a809}{Detect\+Entities}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Entity Detection identifies and extracts key entities from content in submitted audio  \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classPrerecordedSchema_aa025d682cc0e7b3bb19681087960ec76}{Detect\+Language}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Language Detection identifies the dominant language spoken in submitted audio.  \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classPrerecordedSchema_ab4edddc572dd72a04b8523ba00238071}{Detect\+Topics}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Identify and extract key topics. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classPrerecordedSchema_ad0014e954575b823a50730f58056f984}{Diarize}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Diarize recognizes speaker changes and assigns a speaker to each word in the transcript.  default is false \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classPrerecordedSchema_ab878af88fcb7d3316bc3c9a2c6d8cdf7}{Diarize\+Version}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool? \mbox{\hyperlink{classPrerecordedSchema_a71ba2656e87221e0517045501056e7d1}{Dictation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string? \mbox{\hyperlink{classPrerecordedSchema_ab09f8b42c726129aea2e5192b5195975}{Encoding}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Encoding allows you to specify the expected encoding of your submitted audio.  supported encodings Audio\+Encoding \end{DoxyCompactList}\item 
+Dictionary$<$ string, string $>$? \mbox{\hyperlink{classPrerecordedSchema_a55d1a4a735c160897282c3148d776a78}{Extra}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Deepgram’s Extra Metadata feature allows you to attach arbitrary key-\/value pairs to your API requests that are attached to the API response for usage in downstream processing. Extra metadata is limited to 2048 characters per key-\/value pair.  \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classPrerecordedSchema_a10b8f57453092f937b1d620f84fe46ff}{Filler\+Words}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Whether to include words like \char`\"{}uh\char`\"{} and \char`\"{}um\char`\"{} in transcription output. see href=\char`\"{}https\+://developers.\+deepgram.\+com/reference/pre-\/recorded\char`\"{}/$>$ \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classPrerecordedSchema_a3b499fce9720f1d8529574eca7019464}{Intents}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enables intent detection \end{DoxyCompactList}\item 
+List$<$ string $>$? \mbox{\hyperlink{classPrerecordedSchema_a1dc35f3b91081d86a56859b03946a436}{Keywords}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Keywords can boost or suppress specialized terminology.  \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classPrerecordedSchema_ac59ba90d5fe6e0ea933fadb42a350346}{Language}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Primary spoken language of submitted audio  default value is \textquotesingle{}en\textquotesingle{} \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classPrerecordedSchema_a2cb2f9da5709a9d47384aa5bfbafc52a}{Measurements}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Spoken measurements will be converted to their corresponding abbreviations. e.\+g., milligram to mg. \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classPrerecordedSchema_ab505989cb4dd8f37882e1555f85f5018}{Model}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em AI model used to process submitted audio  \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classPrerecordedSchema_a65afd273c8bb2ab924abc0c74142e169}{Multi\+Channel}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Multichannel transcribes each channel in submitted audio independently.  \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classPrerecordedSchema_aeecf9d1643d3a806ad1fcb89e3f21efc}{Paragraphs}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enable paragraph detection \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classPrerecordedSchema_a70e1bafda5d6e0ca37a5ac2085a2ae11}{Profanity\+Filter}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Profanity Filter looks for recognized profanity and converts it to the nearest recognized non-\/profane word or removes it from the transcript completely.  \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classPrerecordedSchema_ac9ec1480b7bb1988be2ef4920d82c32d}{Punctuate}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Adds punctuation and capitalization to transcript  \end{DoxyCompactList}\item 
+List$<$ string $>$? \mbox{\hyperlink{classPrerecordedSchema_a01e80fcb71dd784b3ebe44c5c4083b39}{Redact}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether to redact sensitive information, replacing redacted content with asterisks ($\ast$). Can send multiple instances in query string (for example, redact=pci\&redact=numbers).  default is List$<$string$>$(\char`\"{}false\char`\"{}) \end{DoxyCompactList}\item 
+List$<$ string $>$? \mbox{\hyperlink{classPrerecordedSchema_afb3b36fe4e335b37f55f398b901bbe40}{Replace}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Find and Replace searches for terms or phrases in submitted audio and replaces them.  default is null \end{DoxyCompactList}\item 
+int? \mbox{\hyperlink{classPrerecordedSchema_a8b4dca289f4a2f5005a485f490ad3c47}{Sample\+Rate}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sample Rate allows you to specify the sample rate of your submitted audio.  only applies when Encoding has a value \end{DoxyCompactList}\item 
+List$<$ string $>$? \mbox{\hyperlink{classPrerecordedSchema_ae0e7329644ffdc35bf53dcfb07f5a4bf}{Search}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Search searches for terms or phrases in submitted audio.  default is null \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classPrerecordedSchema_ab0ce7bd9bddebeb789df017ac51e1fa1}{Sentiment}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enables sentiment analysis \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classPrerecordedSchema_aa68a330c60e508a606e3f97c5f4bf6fb}{Smart\+Format}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Smart Format formats transcripts to improve readability.  \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classPrerecordedSchema_aa807591fbce2e75407f38b5b67e4dbf3}{Summarize}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ string $>$? \mbox{\hyperlink{classPrerecordedSchema_a03fd1aee6ba5d850039685802f078866}{Tag}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Tagging allows you to label your requests with one or more tags in a list,for the purpose of identification during usage reporting.  Default is a null \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classPrerecordedSchema_a77b3e984ad6e5e21e87caa2b4dc804e2}{Topics}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double? \mbox{\hyperlink{classPrerecordedSchema_abb92f6dbbbb8c4120f3cea4a633ed7c0}{Utt\+Split}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Length of time in seconds used to split utterances. \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classPrerecordedSchema_a46158eba8e5daf32ed074790789ccec6}{Utterances}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enable utterance segmentation \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classPrerecordedSchema_a44c4105e96b8d17c2f2fc33a458be19c}{Version}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Version of the model to use.  default value is \char`\"{}latest\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 7 of file Prerecorded\+Schema.\+cs.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classPrerecordedSchema_a6ea2e8a3bdf777e02176fdf6fc6ab288}\label{classPrerecordedSchema_a6ea2e8a3bdf777e02176fdf6fc6ab288}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Alternatives@{Alternatives}}
+\index{Alternatives@{Alternatives}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Alternatives}{Alternatives}}
+{\footnotesize\ttfamily int? Prerecorded\+Schema.\+Alternatives\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Number of transcripts to return per request  Default is 1 
+
+
+
+Definition at line 16 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_a6cf2215365a7c51a1f8d1006d5d89399}\label{classPrerecordedSchema_a6cf2215365a7c51a1f8d1006d5d89399}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!CallBack@{CallBack}}
+\index{CallBack@{CallBack}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{CallBack}{CallBack}}
+{\footnotesize\ttfamily string? Prerecorded\+Schema.\+Call\+Back\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Call\+Back allows you to have your submitted audio processed asynchronously.  default is null 
+
+
+
+Definition at line 25 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_ad9a49032806e42d057c339f2aca845b7}\label{classPrerecordedSchema_ad9a49032806e42d057c339f2aca845b7}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!CallbackMethod@{CallbackMethod}}
+\index{CallbackMethod@{CallbackMethod}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{CallbackMethod}{CallbackMethod}}
+{\footnotesize\ttfamily bool? Prerecorded\+Schema.\+Callback\+Method\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Enables callback method 
+
+
+
+Definition at line 32 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_a4956d6b0f50c4676b4fc1e0baa321cba}\label{classPrerecordedSchema_a4956d6b0f50c4676b4fc1e0baa321cba}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!CustomIntent@{CustomIntent}}
+\index{CustomIntent@{CustomIntent}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{CustomIntent}{CustomIntent}}
+{\footnotesize\ttfamily List$<$string$>$? Prerecorded\+Schema.\+Custom\+Intent\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. A custom intent you want the model to detect within your input audio if present. Submit up to 100. 
+
+
+
+Definition at line 39 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_aab5a5332cfd08de85816ae88d848541a}\label{classPrerecordedSchema_aab5a5332cfd08de85816ae88d848541a}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!CustomIntentMode@{CustomIntentMode}}
+\index{CustomIntentMode@{CustomIntentMode}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{CustomIntentMode}{CustomIntentMode}}
+{\footnotesize\ttfamily string? Prerecorded\+Schema.\+Custom\+Intent\+Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Optional. Sets how the model will interpret strings submitted to the custom\+\_\+intent param. When \char`\"{}strict\char`\"{}, the model will only return intents submitted using the custom\+\_\+intent param. When \char`\"{}extended\char`\"{}, the model will return it\textquotesingle{}s own detected intents in addition those submitted using the custom\+\_\+intents param. 
+
+
+
+Definition at line 46 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_a9460d2251cfde5bf805d14bc6952abe9}\label{classPrerecordedSchema_a9460d2251cfde5bf805d14bc6952abe9}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!CustomTopic@{CustomTopic}}
+\index{CustomTopic@{CustomTopic}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{CustomTopic}{CustomTopic}}
+{\footnotesize\ttfamily List$<$string$>$? Prerecorded\+Schema.\+Custom\+Topic\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Custom Topic allows you to specify a custom topic for your submitted audio. 
+
+
+
+Definition at line 53 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_af8ff15030b4e82b0ec08baff56c0880f}\label{classPrerecordedSchema_af8ff15030b4e82b0ec08baff56c0880f}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!CustomTopicMode@{CustomTopicMode}}
+\index{CustomTopicMode@{CustomTopicMode}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{CustomTopicMode}{CustomTopicMode}}
+{\footnotesize\ttfamily string? Prerecorded\+Schema.\+Custom\+Topic\+Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+When strict, the model will only return topics submitted using the custom\+\_\+topic param. When extended, the model will return its own detected topics in addition to those submitted using the custom\+\_\+topic param. Default\+: extended 
+
+
+
+Definition at line 60 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_a4d838cbdc1ab77e682890ca4d708a809}\label{classPrerecordedSchema_a4d838cbdc1ab77e682890ca4d708a809}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!DetectEntities@{DetectEntities}}
+\index{DetectEntities@{DetectEntities}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{DetectEntities}{DetectEntities}}
+{\footnotesize\ttfamily bool? Prerecorded\+Schema.\+Detect\+Entities\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Entity Detection identifies and extracts key entities from content in submitted audio  
+
+
+
+Definition at line 68 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_aa025d682cc0e7b3bb19681087960ec76}\label{classPrerecordedSchema_aa025d682cc0e7b3bb19681087960ec76}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!DetectLanguage@{DetectLanguage}}
+\index{DetectLanguage@{DetectLanguage}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{DetectLanguage}{DetectLanguage}}
+{\footnotesize\ttfamily bool? Prerecorded\+Schema.\+Detect\+Language\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Language Detection identifies the dominant language spoken in submitted audio.  
+
+
+
+Definition at line 76 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_ab4edddc572dd72a04b8523ba00238071}\label{classPrerecordedSchema_ab4edddc572dd72a04b8523ba00238071}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!DetectTopics@{DetectTopics}}
+\index{DetectTopics@{DetectTopics}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{DetectTopics}{DetectTopics}}
+{\footnotesize\ttfamily bool? Prerecorded\+Schema.\+Detect\+Topics\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Identify and extract key topics. 
+
+
+
+Definition at line 83 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_ad0014e954575b823a50730f58056f984}\label{classPrerecordedSchema_ad0014e954575b823a50730f58056f984}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Diarize@{Diarize}}
+\index{Diarize@{Diarize}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Diarize}{Diarize}}
+{\footnotesize\ttfamily bool? Prerecorded\+Schema.\+Diarize\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Diarize recognizes speaker changes and assigns a speaker to each word in the transcript.  default is false 
+
+
+
+Definition at line 92 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{92 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_ab878af88fcb7d3316bc3c9a2c6d8cdf7}\label{classPrerecordedSchema_ab878af88fcb7d3316bc3c9a2c6d8cdf7}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!DiarizeVersion@{DiarizeVersion}}
+\index{DiarizeVersion@{DiarizeVersion}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{DiarizeVersion}{DiarizeVersion}}
+{\footnotesize\ttfamily string? Prerecorded\+Schema.\+Diarize\+Version\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+
+
+default is null, only applies if Diarize is set to true 
+
+Definition at line 100 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{100 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_a71ba2656e87221e0517045501056e7d1}\label{classPrerecordedSchema_a71ba2656e87221e0517045501056e7d1}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Dictation@{Dictation}}
+\index{Dictation@{Dictation}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Dictation}{Dictation}}
+{\footnotesize\ttfamily bool? Prerecorded\+Schema.\+Dictation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+
+
+default is null, only applies if Diarize is set to true 
+
+Definition at line 108 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{108 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_ab09f8b42c726129aea2e5192b5195975}\label{classPrerecordedSchema_ab09f8b42c726129aea2e5192b5195975}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Encoding@{Encoding}}
+\index{Encoding@{Encoding}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Encoding}{Encoding}}
+{\footnotesize\ttfamily string? Prerecorded\+Schema.\+Encoding\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Encoding allows you to specify the expected encoding of your submitted audio.  supported encodings Audio\+Encoding 
+
+
+
+Definition at line 117 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{117 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_a55d1a4a735c160897282c3148d776a78}\label{classPrerecordedSchema_a55d1a4a735c160897282c3148d776a78}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Extra@{Extra}}
+\index{Extra@{Extra}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Extra}{Extra}}
+{\footnotesize\ttfamily Dictionary$<$string, string$>$? Prerecorded\+Schema.\+Extra\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Deepgram’s Extra Metadata feature allows you to attach arbitrary key-\/value pairs to your API requests that are attached to the API response for usage in downstream processing. Extra metadata is limited to 2048 characters per key-\/value pair.  
+
+
+
+Definition at line 126 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{126 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_a10b8f57453092f937b1d620f84fe46ff}\label{classPrerecordedSchema_a10b8f57453092f937b1d620f84fe46ff}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!FillerWords@{FillerWords}}
+\index{FillerWords@{FillerWords}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{FillerWords}{FillerWords}}
+{\footnotesize\ttfamily bool? Prerecorded\+Schema.\+Filler\+Words\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Whether to include words like \char`\"{}uh\char`\"{} and \char`\"{}um\char`\"{} in transcription output. see href=\char`\"{}https\+://developers.\+deepgram.\+com/reference/pre-\/recorded\char`\"{}/$>$ 
+
+
+
+Definition at line 134 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{134 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_a3b499fce9720f1d8529574eca7019464}\label{classPrerecordedSchema_a3b499fce9720f1d8529574eca7019464}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Intents@{Intents}}
+\index{Intents@{Intents}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Intents}{Intents}}
+{\footnotesize\ttfamily bool? Prerecorded\+Schema.\+Intents\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Enables intent detection 
+
+
+
+Definition at line 141 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{141 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_a1dc35f3b91081d86a56859b03946a436}\label{classPrerecordedSchema_a1dc35f3b91081d86a56859b03946a436}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Keywords@{Keywords}}
+\index{Keywords@{Keywords}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Keywords}{Keywords}}
+{\footnotesize\ttfamily List$<$string$>$? Prerecorded\+Schema.\+Keywords\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Keywords can boost or suppress specialized terminology.  
+
+
+
+Definition at line 149 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{149 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_ac59ba90d5fe6e0ea933fadb42a350346}\label{classPrerecordedSchema_ac59ba90d5fe6e0ea933fadb42a350346}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Language@{Language}}
+\index{Language@{Language}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Language}{Language}}
+{\footnotesize\ttfamily string? Prerecorded\+Schema.\+Language\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Primary spoken language of submitted audio  default value is \textquotesingle{}en\textquotesingle{} 
+
+
+
+Definition at line 158 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{158 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_a2cb2f9da5709a9d47384aa5bfbafc52a}\label{classPrerecordedSchema_a2cb2f9da5709a9d47384aa5bfbafc52a}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Measurements@{Measurements}}
+\index{Measurements@{Measurements}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Measurements}{Measurements}}
+{\footnotesize\ttfamily bool? Prerecorded\+Schema.\+Measurements\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Spoken measurements will be converted to their corresponding abbreviations. e.\+g., milligram to mg. 
+
+
+
+Definition at line 165 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{165 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_ab505989cb4dd8f37882e1555f85f5018}\label{classPrerecordedSchema_ab505989cb4dd8f37882e1555f85f5018}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Model@{Model}}
+\index{Model@{Model}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Model}{Model}}
+{\footnotesize\ttfamily string? Prerecorded\+Schema.\+Model\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+AI model used to process submitted audio  
+
+
+
+Definition at line 173 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{173 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_a65afd273c8bb2ab924abc0c74142e169}\label{classPrerecordedSchema_a65afd273c8bb2ab924abc0c74142e169}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!MultiChannel@{MultiChannel}}
+\index{MultiChannel@{MultiChannel}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{MultiChannel}{MultiChannel}}
+{\footnotesize\ttfamily bool? Prerecorded\+Schema.\+Multi\+Channel\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Multichannel transcribes each channel in submitted audio independently.  
+
+
+
+Definition at line 181 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{181 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_aeecf9d1643d3a806ad1fcb89e3f21efc}\label{classPrerecordedSchema_aeecf9d1643d3a806ad1fcb89e3f21efc}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Paragraphs@{Paragraphs}}
+\index{Paragraphs@{Paragraphs}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Paragraphs}{Paragraphs}}
+{\footnotesize\ttfamily bool? Prerecorded\+Schema.\+Paragraphs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Enable paragraph detection 
+
+
+
+Definition at line 188 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{188 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_a70e1bafda5d6e0ca37a5ac2085a2ae11}\label{classPrerecordedSchema_a70e1bafda5d6e0ca37a5ac2085a2ae11}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!ProfanityFilter@{ProfanityFilter}}
+\index{ProfanityFilter@{ProfanityFilter}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{ProfanityFilter}{ProfanityFilter}}
+{\footnotesize\ttfamily bool? Prerecorded\+Schema.\+Profanity\+Filter\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Profanity Filter looks for recognized profanity and converts it to the nearest recognized non-\/profane word or removes it from the transcript completely.  
+
+
+
+Definition at line 197 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{197 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_ac9ec1480b7bb1988be2ef4920d82c32d}\label{classPrerecordedSchema_ac9ec1480b7bb1988be2ef4920d82c32d}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Punctuate@{Punctuate}}
+\index{Punctuate@{Punctuate}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Punctuate}{Punctuate}}
+{\footnotesize\ttfamily bool? Prerecorded\+Schema.\+Punctuate\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Adds punctuation and capitalization to transcript  
+
+
+
+Definition at line 205 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{205 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_a01e80fcb71dd784b3ebe44c5c4083b39}\label{classPrerecordedSchema_a01e80fcb71dd784b3ebe44c5c4083b39}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Redact@{Redact}}
+\index{Redact@{Redact}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Redact}{Redact}}
+{\footnotesize\ttfamily List$<$string$>$? Prerecorded\+Schema.\+Redact\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Indicates whether to redact sensitive information, replacing redacted content with asterisks ($\ast$). Can send multiple instances in query string (for example, redact=pci\&redact=numbers).  default is List$<$string$>$(\char`\"{}false\char`\"{}) 
+
+
+
+Definition at line 214 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{214 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_afb3b36fe4e335b37f55f398b901bbe40}\label{classPrerecordedSchema_afb3b36fe4e335b37f55f398b901bbe40}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Replace@{Replace}}
+\index{Replace@{Replace}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Replace}{Replace}}
+{\footnotesize\ttfamily List$<$string$>$? Prerecorded\+Schema.\+Replace\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Find and Replace searches for terms or phrases in submitted audio and replaces them.  default is null 
+
+
+
+Definition at line 223 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{223 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_a8b4dca289f4a2f5005a485f490ad3c47}\label{classPrerecordedSchema_a8b4dca289f4a2f5005a485f490ad3c47}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!SampleRate@{SampleRate}}
+\index{SampleRate@{SampleRate}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{SampleRate}{SampleRate}}
+{\footnotesize\ttfamily int? Prerecorded\+Schema.\+Sample\+Rate\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Sample Rate allows you to specify the sample rate of your submitted audio.  only applies when Encoding has a value 
+
+
+
+Definition at line 232 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{232 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_ae0e7329644ffdc35bf53dcfb07f5a4bf}\label{classPrerecordedSchema_ae0e7329644ffdc35bf53dcfb07f5a4bf}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Search@{Search}}
+\index{Search@{Search}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Search}{Search}}
+{\footnotesize\ttfamily List$<$string$>$? Prerecorded\+Schema.\+Search\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Search searches for terms or phrases in submitted audio.  default is null 
+
+
+
+Definition at line 241 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{241 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_ab0ce7bd9bddebeb789df017ac51e1fa1}\label{classPrerecordedSchema_ab0ce7bd9bddebeb789df017ac51e1fa1}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Sentiment@{Sentiment}}
+\index{Sentiment@{Sentiment}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Sentiment}{Sentiment}}
+{\footnotesize\ttfamily bool? Prerecorded\+Schema.\+Sentiment\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Enables sentiment analysis 
+
+
+
+Definition at line 248 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{248 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_aa68a330c60e508a606e3f97c5f4bf6fb}\label{classPrerecordedSchema_aa68a330c60e508a606e3f97c5f4bf6fb}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!SmartFormat@{SmartFormat}}
+\index{SmartFormat@{SmartFormat}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{SmartFormat}{SmartFormat}}
+{\footnotesize\ttfamily bool? Prerecorded\+Schema.\+Smart\+Format\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Smart Format formats transcripts to improve readability.  
+
+
+
+Definition at line 256 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{256 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_aa807591fbce2e75407f38b5b67e4dbf3}\label{classPrerecordedSchema_aa807591fbce2e75407f38b5b67e4dbf3}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Summarize@{Summarize}}
+\index{Summarize@{Summarize}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Summarize}{Summarize}}
+{\footnotesize\ttfamily string? Prerecorded\+Schema.\+Summarize\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 263 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{263 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_a03fd1aee6ba5d850039685802f078866}\label{classPrerecordedSchema_a03fd1aee6ba5d850039685802f078866}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Tag@{Tag}}
+\index{Tag@{Tag}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Tag}{Tag}}
+{\footnotesize\ttfamily List$<$string$>$? Prerecorded\+Schema.\+Tag\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Tagging allows you to label your requests with one or more tags in a list,for the purpose of identification during usage reporting.  Default is a null 
+
+
+
+Definition at line 273 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{273 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_a77b3e984ad6e5e21e87caa2b4dc804e2}\label{classPrerecordedSchema_a77b3e984ad6e5e21e87caa2b4dc804e2}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Topics@{Topics}}
+\index{Topics@{Topics}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Topics}{Topics}}
+{\footnotesize\ttfamily bool? Prerecorded\+Schema.\+Topics\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 280 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{280 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_a46158eba8e5daf32ed074790789ccec6}\label{classPrerecordedSchema_a46158eba8e5daf32ed074790789ccec6}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Utterances@{Utterances}}
+\index{Utterances@{Utterances}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Utterances}{Utterances}}
+{\footnotesize\ttfamily bool? Prerecorded\+Schema.\+Utterances\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Enable utterance segmentation 
+
+
+
+Definition at line 294 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{294 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_abb92f6dbbbb8c4120f3cea4a633ed7c0}\label{classPrerecordedSchema_abb92f6dbbbb8c4120f3cea4a633ed7c0}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!UttSplit@{UttSplit}}
+\index{UttSplit@{UttSplit}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{UttSplit}{UttSplit}}
+{\footnotesize\ttfamily double? Prerecorded\+Schema.\+Utt\+Split\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Length of time in seconds used to split utterances. 
+
+
+
+Definition at line 287 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{287 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPrerecordedSchema_a44c4105e96b8d17c2f2fc33a458be19c}\label{classPrerecordedSchema_a44c4105e96b8d17c2f2fc33a458be19c}} 
+\index{PrerecordedSchema@{PrerecordedSchema}!Version@{Version}}
+\index{Version@{Version}!PrerecordedSchema@{PrerecordedSchema}}
+\doxysubsubsection{\texorpdfstring{Version}{Version}}
+{\footnotesize\ttfamily string? Prerecorded\+Schema.\+Version\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Version of the model to use.  default value is \char`\"{}latest\char`\"{} 
+
+
+
+Definition at line 303 of file Prerecorded\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{303 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Deepgram/\+Models/\+Pre\+Recorded/v1/\mbox{\hyperlink{PrerecordedSchema_8cs}{Prerecorded\+Schema.\+cs}}\end{DoxyCompactItemize}

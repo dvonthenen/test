@@ -1,0 +1,566 @@
+\hypertarget{classLiveSchema}{}\doxysection{Live\+Schema Class Reference}
+\label{classLiveSchema}\index{LiveSchema@{LiveSchema}}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int? \mbox{\hyperlink{classLiveSchema_ad8c6475d90a44bd9cc752446ffd02016}{Alternatives}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Number of transcripts to return per request  Default is 1 \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classLiveSchema_a307ced52030acfb933467faab3b53a9e}{Call\+Back}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Call\+Back allows you to have your submitted audio processed asynchronously.  default is null \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classLiveSchema_a29b785cb75ca4a8fb8deb42dccae1eb8}{Callback\+Method}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enables callback method \end{DoxyCompactList}\item 
+int? \mbox{\hyperlink{classLiveSchema_a1a88a79a8cfada68366264294509b6e2}{Channels}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Channels allows you to specify the number of independent audio channels your submitted audio contains. Used when the Encoding feature is also being used to submit streaming raw audio  \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classLiveSchema_a3d5162f6bfe2eeb0ef780bbc43064ec6}{Diarize}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Diarize recognizes speaker changes and assigns a speaker to each word in the transcript.  default is false \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classLiveSchema_a2cad23ddc0981223430848ab2cace2b0}{Diarize\+Version}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string? \mbox{\hyperlink{classLiveSchema_a4e568acf2b41bbf38c8e908e18bcc718}{Encoding}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Encoding allows you to specify the expected encoding of your submitted audio.  supported encodings Audio\+Encoding \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classLiveSchema_aa682f2932166ecc5cbbea38505e39e06}{End\+Pointing}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Endpointing returns transcripts when pauses in speech are detected.  \end{DoxyCompactList}\item 
+Dictionary$<$ string, string $>$? \mbox{\hyperlink{classLiveSchema_a453099290baddcd315e9a84d52437d8c}{Extra}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Deepgram’s Extra Metadata feature allows you to attach arbitrary key-\/value pairs to your API requests that are attached to the API response for usage in downstream processing. Extra metadata is limited to 2048 characters per key-\/value pair.  \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classLiveSchema_a41e77b25212b7aef642bf98d3e9fad2f}{Filler\+Words}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Whether to include words like \char`\"{}uh\char`\"{} and \char`\"{}um\char`\"{} in transcription output. see href=\char`\"{}https\+://developers.\+deepgram.\+com/reference/pre-\/recorded\char`\"{}/$>$ \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classLiveSchema_af91e3b886eb0062ccf1fa92fb3578a27}{Interim\+Results}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Interim Results provides preliminary results for streaming audio to solve the need for immediate results combined with high levels of accuracy.  \end{DoxyCompactList}\item 
+List$<$ string $>$? \mbox{\hyperlink{classLiveSchema_a3072ce235d51f9d8bafd3c86ceb36837}{Keywords}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Keywords can boost or suppress specialized terminology.  \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classLiveSchema_a1fca08fe4edfa8cc81cec8cb004b8876}{Language}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Primary spoken language of submitted audio  default value is \textquotesingle{}en\textquotesingle{} \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classLiveSchema_af103e443e176a308f3164028f5ad727e}{Model}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em AI model used to process submitted audio  \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classLiveSchema_a0904ab351756bb4751c86b8aa76ac228}{Multi\+Channel}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Multichannel transcribes each channel in submitted audio independently.  \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classLiveSchema_a04ec1cc21f2c8f6088ede2fd721dbf1f}{Profanity\+Filter}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Profanity Filter looks for recognized profanity and converts it to the nearest recognized non-\/profane word or removes it from the transcript completely.  for use with base model tier only \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classLiveSchema_a2ff9409f558666f76983ba8fea3661a5}{Punctuate}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Adds punctuation and capitalization to transcript  \end{DoxyCompactList}\item 
+List$<$ string $>$? \mbox{\hyperlink{classLiveSchema_ad4198b1799880c7665822bbf851ee26f}{Redact}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether to redact sensitive information, replacing redacted content with asterisks ($\ast$). Can send multiple instances in query string (for example, redact=pci\&redact=numbers).  default is List$<$string$>$(\char`\"{}false\char`\"{}) \end{DoxyCompactList}\item 
+List$<$ string $>$? \mbox{\hyperlink{classLiveSchema_a74e9a0949a4a936c2db5057e2e840a46}{Replace}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Find and Replace searches for terms or phrases in submitted audio and replaces them.  default is null \end{DoxyCompactList}\item 
+int? \mbox{\hyperlink{classLiveSchema_a67bfe28488dd9cdc9dafd9a85a530acb}{Sample\+Rate}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sample Rate allows you to specify the sample rate of your submitted audio.  only applies when Encoding has a value \end{DoxyCompactList}\item 
+List$<$ string $>$? \mbox{\hyperlink{classLiveSchema_a1c0287cdf91d3dfbee4b19b6ca0cc276}{Search}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Search searches for terms or phrases in submitted audio.  default is null \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classLiveSchema_a6901e5f49d093ea06ef659164e345981}{Smart\+Format}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Smart Format formats transcripts to improve readability.  \end{DoxyCompactList}\item 
+List$<$ string $>$? \mbox{\hyperlink{classLiveSchema_a959fd3e6f154d0f2c25f6e8d3f59d244}{Tag}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Tagging allows you to label your requests with one or more tags in a list,for the purpose of identification during usage reporting.  Default is a null \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classLiveSchema_a68788a23b688d273714b775688501175}{Utterance\+End}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates how long Deepgram will wait to send a \{\char`\"{}type\char`\"{}\+: \char`\"{}\+Utterance\+End\char`\"{}\} message after a word has been transcribed  \end{DoxyCompactList}\item 
+bool? \mbox{\hyperlink{classLiveSchema_ab6762c9d53cfa94d0f07439760d424f5}{Vad\+Events}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enables voice activity detection (VAD) events \end{DoxyCompactList}\item 
+string? \mbox{\hyperlink{classLiveSchema_ae430445ec86df0261888e66f01d89b54}{Version}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Version of the model to use.  default value is \char`\"{}latest\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 7 of file Live\+Schema.\+cs.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classLiveSchema_ad8c6475d90a44bd9cc752446ffd02016}\label{classLiveSchema_ad8c6475d90a44bd9cc752446ffd02016}} 
+\index{LiveSchema@{LiveSchema}!Alternatives@{Alternatives}}
+\index{Alternatives@{Alternatives}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{Alternatives}{Alternatives}}
+{\footnotesize\ttfamily int? Live\+Schema.\+Alternatives\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Number of transcripts to return per request  Default is 1 
+
+
+
+Definition at line 17 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_a307ced52030acfb933467faab3b53a9e}\label{classLiveSchema_a307ced52030acfb933467faab3b53a9e}} 
+\index{LiveSchema@{LiveSchema}!CallBack@{CallBack}}
+\index{CallBack@{CallBack}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{CallBack}{CallBack}}
+{\footnotesize\ttfamily string? Live\+Schema.\+Call\+Back\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Call\+Back allows you to have your submitted audio processed asynchronously.  default is null 
+
+
+
+Definition at line 26 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_a29b785cb75ca4a8fb8deb42dccae1eb8}\label{classLiveSchema_a29b785cb75ca4a8fb8deb42dccae1eb8}} 
+\index{LiveSchema@{LiveSchema}!CallbackMethod@{CallbackMethod}}
+\index{CallbackMethod@{CallbackMethod}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{CallbackMethod}{CallbackMethod}}
+{\footnotesize\ttfamily bool? Live\+Schema.\+Callback\+Method\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Enables callback method 
+
+
+
+Definition at line 33 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_a1a88a79a8cfada68366264294509b6e2}\label{classLiveSchema_a1a88a79a8cfada68366264294509b6e2}} 
+\index{LiveSchema@{LiveSchema}!Channels@{Channels}}
+\index{Channels@{Channels}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{Channels}{Channels}}
+{\footnotesize\ttfamily int? Live\+Schema.\+Channels\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Channels allows you to specify the number of independent audio channels your submitted audio contains. Used when the Encoding feature is also being used to submit streaming raw audio  
+
+
+
+Definition at line 42 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_a3d5162f6bfe2eeb0ef780bbc43064ec6}\label{classLiveSchema_a3d5162f6bfe2eeb0ef780bbc43064ec6}} 
+\index{LiveSchema@{LiveSchema}!Diarize@{Diarize}}
+\index{Diarize@{Diarize}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{Diarize}{Diarize}}
+{\footnotesize\ttfamily bool? Live\+Schema.\+Diarize\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Diarize recognizes speaker changes and assigns a speaker to each word in the transcript.  default is false 
+
+
+
+Definition at line 51 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_a2cad23ddc0981223430848ab2cace2b0}\label{classLiveSchema_a2cad23ddc0981223430848ab2cace2b0}} 
+\index{LiveSchema@{LiveSchema}!DiarizeVersion@{DiarizeVersion}}
+\index{DiarizeVersion@{DiarizeVersion}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{DiarizeVersion}{DiarizeVersion}}
+{\footnotesize\ttfamily string? Live\+Schema.\+Diarize\+Version\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+
+
+default is null, only applies if Diarize is set to true 
+
+Definition at line 59 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_a4e568acf2b41bbf38c8e908e18bcc718}\label{classLiveSchema_a4e568acf2b41bbf38c8e908e18bcc718}} 
+\index{LiveSchema@{LiveSchema}!Encoding@{Encoding}}
+\index{Encoding@{Encoding}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{Encoding}{Encoding}}
+{\footnotesize\ttfamily string? Live\+Schema.\+Encoding\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Encoding allows you to specify the expected encoding of your submitted audio.  supported encodings Audio\+Encoding 
+
+
+
+Definition at line 68 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_aa682f2932166ecc5cbbea38505e39e06}\label{classLiveSchema_aa682f2932166ecc5cbbea38505e39e06}} 
+\index{LiveSchema@{LiveSchema}!EndPointing@{EndPointing}}
+\index{EndPointing@{EndPointing}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{EndPointing}{EndPointing}}
+{\footnotesize\ttfamily string? Live\+Schema.\+End\+Pointing\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Endpointing returns transcripts when pauses in speech are detected.  
+
+
+
+Definition at line 76 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_a453099290baddcd315e9a84d52437d8c}\label{classLiveSchema_a453099290baddcd315e9a84d52437d8c}} 
+\index{LiveSchema@{LiveSchema}!Extra@{Extra}}
+\index{Extra@{Extra}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{Extra}{Extra}}
+{\footnotesize\ttfamily Dictionary$<$string, string$>$? Live\+Schema.\+Extra\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Deepgram’s Extra Metadata feature allows you to attach arbitrary key-\/value pairs to your API requests that are attached to the API response for usage in downstream processing. Extra metadata is limited to 2048 characters per key-\/value pair.  
+
+
+
+Definition at line 85 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{85 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_a41e77b25212b7aef642bf98d3e9fad2f}\label{classLiveSchema_a41e77b25212b7aef642bf98d3e9fad2f}} 
+\index{LiveSchema@{LiveSchema}!FillerWords@{FillerWords}}
+\index{FillerWords@{FillerWords}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{FillerWords}{FillerWords}}
+{\footnotesize\ttfamily bool? Live\+Schema.\+Filler\+Words\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Whether to include words like \char`\"{}uh\char`\"{} and \char`\"{}um\char`\"{} in transcription output. see href=\char`\"{}https\+://developers.\+deepgram.\+com/reference/pre-\/recorded\char`\"{}/$>$ 
+
+
+
+Definition at line 93 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{93 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_af91e3b886eb0062ccf1fa92fb3578a27}\label{classLiveSchema_af91e3b886eb0062ccf1fa92fb3578a27}} 
+\index{LiveSchema@{LiveSchema}!InterimResults@{InterimResults}}
+\index{InterimResults@{InterimResults}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{InterimResults}{InterimResults}}
+{\footnotesize\ttfamily bool? Live\+Schema.\+Interim\+Results\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Interim Results provides preliminary results for streaming audio to solve the need for immediate results combined with high levels of accuracy.  
+
+
+
+Definition at line 101 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{101 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_a3072ce235d51f9d8bafd3c86ceb36837}\label{classLiveSchema_a3072ce235d51f9d8bafd3c86ceb36837}} 
+\index{LiveSchema@{LiveSchema}!Keywords@{Keywords}}
+\index{Keywords@{Keywords}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{Keywords}{Keywords}}
+{\footnotesize\ttfamily List$<$string$>$? Live\+Schema.\+Keywords\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Keywords can boost or suppress specialized terminology.  
+
+
+
+Definition at line 109 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{109 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_a1fca08fe4edfa8cc81cec8cb004b8876}\label{classLiveSchema_a1fca08fe4edfa8cc81cec8cb004b8876}} 
+\index{LiveSchema@{LiveSchema}!Language@{Language}}
+\index{Language@{Language}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{Language}{Language}}
+{\footnotesize\ttfamily string? Live\+Schema.\+Language\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Primary spoken language of submitted audio  default value is \textquotesingle{}en\textquotesingle{} 
+
+
+
+Definition at line 118 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{118 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_af103e443e176a308f3164028f5ad727e}\label{classLiveSchema_af103e443e176a308f3164028f5ad727e}} 
+\index{LiveSchema@{LiveSchema}!Model@{Model}}
+\index{Model@{Model}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{Model}{Model}}
+{\footnotesize\ttfamily string? Live\+Schema.\+Model\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+AI model used to process submitted audio  
+
+
+
+Definition at line 126 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{126 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_a0904ab351756bb4751c86b8aa76ac228}\label{classLiveSchema_a0904ab351756bb4751c86b8aa76ac228}} 
+\index{LiveSchema@{LiveSchema}!MultiChannel@{MultiChannel}}
+\index{MultiChannel@{MultiChannel}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{MultiChannel}{MultiChannel}}
+{\footnotesize\ttfamily bool? Live\+Schema.\+Multi\+Channel\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Multichannel transcribes each channel in submitted audio independently.  
+
+
+
+Definition at line 134 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{134 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_a04ec1cc21f2c8f6088ede2fd721dbf1f}\label{classLiveSchema_a04ec1cc21f2c8f6088ede2fd721dbf1f}} 
+\index{LiveSchema@{LiveSchema}!ProfanityFilter@{ProfanityFilter}}
+\index{ProfanityFilter@{ProfanityFilter}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{ProfanityFilter}{ProfanityFilter}}
+{\footnotesize\ttfamily bool? Live\+Schema.\+Profanity\+Filter\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Profanity Filter looks for recognized profanity and converts it to the nearest recognized non-\/profane word or removes it from the transcript completely.  for use with base model tier only 
+
+
+
+Definition at line 145 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{145 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_a2ff9409f558666f76983ba8fea3661a5}\label{classLiveSchema_a2ff9409f558666f76983ba8fea3661a5}} 
+\index{LiveSchema@{LiveSchema}!Punctuate@{Punctuate}}
+\index{Punctuate@{Punctuate}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{Punctuate}{Punctuate}}
+{\footnotesize\ttfamily bool? Live\+Schema.\+Punctuate\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Adds punctuation and capitalization to transcript  
+
+
+
+Definition at line 153 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{153 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_ad4198b1799880c7665822bbf851ee26f}\label{classLiveSchema_ad4198b1799880c7665822bbf851ee26f}} 
+\index{LiveSchema@{LiveSchema}!Redact@{Redact}}
+\index{Redact@{Redact}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{Redact}{Redact}}
+{\footnotesize\ttfamily List$<$string$>$? Live\+Schema.\+Redact\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Indicates whether to redact sensitive information, replacing redacted content with asterisks ($\ast$). Can send multiple instances in query string (for example, redact=pci\&redact=numbers).  default is List$<$string$>$(\char`\"{}false\char`\"{}) 
+
+
+
+Definition at line 162 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{162 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_a74e9a0949a4a936c2db5057e2e840a46}\label{classLiveSchema_a74e9a0949a4a936c2db5057e2e840a46}} 
+\index{LiveSchema@{LiveSchema}!Replace@{Replace}}
+\index{Replace@{Replace}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{Replace}{Replace}}
+{\footnotesize\ttfamily List$<$string$>$? Live\+Schema.\+Replace\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Find and Replace searches for terms or phrases in submitted audio and replaces them.  default is null 
+
+
+
+Definition at line 171 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{171 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_a67bfe28488dd9cdc9dafd9a85a530acb}\label{classLiveSchema_a67bfe28488dd9cdc9dafd9a85a530acb}} 
+\index{LiveSchema@{LiveSchema}!SampleRate@{SampleRate}}
+\index{SampleRate@{SampleRate}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{SampleRate}{SampleRate}}
+{\footnotesize\ttfamily int? Live\+Schema.\+Sample\+Rate\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Sample Rate allows you to specify the sample rate of your submitted audio.  only applies when Encoding has a value 
+
+
+
+Definition at line 180 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{180 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_a1c0287cdf91d3dfbee4b19b6ca0cc276}\label{classLiveSchema_a1c0287cdf91d3dfbee4b19b6ca0cc276}} 
+\index{LiveSchema@{LiveSchema}!Search@{Search}}
+\index{Search@{Search}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{Search}{Search}}
+{\footnotesize\ttfamily List$<$string$>$? Live\+Schema.\+Search\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Search searches for terms or phrases in submitted audio.  default is null 
+
+
+
+Definition at line 189 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{189 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_a6901e5f49d093ea06ef659164e345981}\label{classLiveSchema_a6901e5f49d093ea06ef659164e345981}} 
+\index{LiveSchema@{LiveSchema}!SmartFormat@{SmartFormat}}
+\index{SmartFormat@{SmartFormat}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{SmartFormat}{SmartFormat}}
+{\footnotesize\ttfamily bool? Live\+Schema.\+Smart\+Format\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Smart Format formats transcripts to improve readability.  
+
+
+
+Definition at line 197 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{197 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_a959fd3e6f154d0f2c25f6e8d3f59d244}\label{classLiveSchema_a959fd3e6f154d0f2c25f6e8d3f59d244}} 
+\index{LiveSchema@{LiveSchema}!Tag@{Tag}}
+\index{Tag@{Tag}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{Tag}{Tag}}
+{\footnotesize\ttfamily List$<$string$>$? Live\+Schema.\+Tag\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Tagging allows you to label your requests with one or more tags in a list,for the purpose of identification during usage reporting.  Default is a null 
+
+
+
+Definition at line 206 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{206 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_a68788a23b688d273714b775688501175}\label{classLiveSchema_a68788a23b688d273714b775688501175}} 
+\index{LiveSchema@{LiveSchema}!UtteranceEnd@{UtteranceEnd}}
+\index{UtteranceEnd@{UtteranceEnd}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{UtteranceEnd}{UtteranceEnd}}
+{\footnotesize\ttfamily string? Live\+Schema.\+Utterance\+End\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Indicates how long Deepgram will wait to send a \{\char`\"{}type\char`\"{}\+: \char`\"{}\+Utterance\+End\char`\"{}\} message after a word has been transcribed  
+
+
+
+Definition at line 214 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{214 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_ab6762c9d53cfa94d0f07439760d424f5}\label{classLiveSchema_ab6762c9d53cfa94d0f07439760d424f5}} 
+\index{LiveSchema@{LiveSchema}!VadEvents@{VadEvents}}
+\index{VadEvents@{VadEvents}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{VadEvents}{VadEvents}}
+{\footnotesize\ttfamily bool? Live\+Schema.\+Vad\+Events\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Enables voice activity detection (VAD) events 
+
+
+
+Definition at line 221 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{221 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLiveSchema_ae430445ec86df0261888e66f01d89b54}\label{classLiveSchema_ae430445ec86df0261888e66f01d89b54}} 
+\index{LiveSchema@{LiveSchema}!Version@{Version}}
+\index{Version@{Version}!LiveSchema@{LiveSchema}}
+\doxysubsubsection{\texorpdfstring{Version}{Version}}
+{\footnotesize\ttfamily string? Live\+Schema.\+Version\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Version of the model to use.  default value is \char`\"{}latest\char`\"{} 
+
+
+
+Definition at line 230 of file Live\+Schema.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{230 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Deepgram/\+Models/\+Live/v1/\mbox{\hyperlink{LiveSchema_8cs}{Live\+Schema.\+cs}}\end{DoxyCompactItemize}

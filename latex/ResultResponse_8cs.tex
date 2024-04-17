@@ -1,0 +1,61 @@
+\hypertarget{ResultResponse_8cs}{}\doxysection{Deepgram/\+Models/\+Live/v1/\+Result\+Response.cs File Reference}
+\label{ResultResponse_8cs}\index{Deepgram/Models/Live/v1/ResultResponse.cs@{Deepgram/Models/Live/v1/ResultResponse.cs}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+record????????? \mbox{\hyperlink{ResultResponse_8cs_ab390276f22607d565735d8fccc240a2d}{Result\+Response}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{ResultResponse_8cs_ab390276f22607d565735d8fccc240a2d}\label{ResultResponse_8cs_ab390276f22607d565735d8fccc240a2d}} 
+\index{ResultResponse.cs@{ResultResponse.cs}!ResultResponse@{ResultResponse}}
+\index{ResultResponse@{ResultResponse}!ResultResponse.cs@{ResultResponse.cs}}
+\doxysubsubsection{\texorpdfstring{ResultResponse}{ResultResponse}}
+{\footnotesize\ttfamily record????????? Result\+Response}
+
+
+
+Definition at line 6 of file Result\+Response.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{11     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{12     [JsonPropertyName(\textcolor{stringliteral}{"{}channel"{}})]}
+\DoxyCodeLine{13     \textcolor{keyword}{public} \mbox{\hyperlink{Live_2v1_2Channel_8cs_a38dc211d973db40c75729426ac776fe0}{Channel}}? \mbox{\hyperlink{Live_2v1_2Channel_8cs_a38dc211d973db40c75729426ac776fe0}{Channel}} \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{18     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{19     [JsonPropertyName(\textcolor{stringliteral}{"{}channel\_index"{}})]}
+\DoxyCodeLine{20     \textcolor{keyword}{public} IReadOnlyList<int>? ChannelIndex \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{25     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{26     [JsonPropertyName(\textcolor{stringliteral}{"{}duration"{}})]}
+\DoxyCodeLine{27     \textcolor{keyword}{public} decimal? Duration \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{32     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{33     [JsonPropertyName(\textcolor{stringliteral}{"{}is\_final"{}})]}
+\DoxyCodeLine{34     \textcolor{keyword}{public} \textcolor{keywordtype}{bool}? IsFinal \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{39     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{40     [JsonPropertyName(\textcolor{stringliteral}{"{}metadata"{}})]}
+\DoxyCodeLine{41     \textcolor{keyword}{public} \mbox{\hyperlink{Live_2v1_2Metadata_8cs_a1ac7270346422c8d92cbc1b33c13e5b0}{MetaData}}? \mbox{\hyperlink{Live_2v1_2Metadata_8cs_a1ac7270346422c8d92cbc1b33c13e5b0}{MetaData}} \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{46     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{47     [JsonPropertyName(\textcolor{stringliteral}{"{}speech\_final"{}})]}
+\DoxyCodeLine{48     \textcolor{keyword}{public} \textcolor{keywordtype}{bool}? SpeechFinal \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{53     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{54     [JsonPropertyName(\textcolor{stringliteral}{"{}start"{}})]}
+\DoxyCodeLine{55     \textcolor{keyword}{public} decimal? Start \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{60     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{61     [JsonPropertyName(\textcolor{stringliteral}{"{}type"{}})]}
+\DoxyCodeLine{62     [JsonConverter(typeof(JsonStringEnumConverter))]}
+\DoxyCodeLine{63     \textcolor{keyword}{public} \mbox{\hyperlink{LiveType_8cs_a005fe194a3c2c010b732adef72942a0f}{LiveType}}? Type \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = \mbox{\hyperlink{LiveType_8cs_a005fe194a3c2c010b732adef72942a0f}{LiveType}}.Results;}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65     \textcolor{comment}{// TODO: DYV is this needed???}}
+\DoxyCodeLine{69 \textcolor{comment}{}    \textcolor{keyword}{public} Exception? \mbox{\hyperlink{Logger_2Constants_8cs_aca1fd1d8935433e6ba2e3918214e07f9a902b0d55fddef6f8d651fe1035b7d4bd}{Error}} \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{70 \}}
+
+\end{DoxyCode}

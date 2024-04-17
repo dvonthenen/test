@@ -1,0 +1,54 @@
+\hypertarget{PreRecorded_2v1_2Alternative_8cs}{}\doxysection{Deepgram/\+Models/\+Pre\+Recorded/v1/\+Alternative.cs File Reference}
+\label{PreRecorded_2v1_2Alternative_8cs}\index{Deepgram/Models/PreRecorded/v1/Alternative.cs@{Deepgram/Models/PreRecorded/v1/Alternative.cs}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+record??????? \mbox{\hyperlink{PreRecorded_2v1_2Alternative_8cs_a59f697bd400368c10a1134b8ea126a48}{Alternative}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{PreRecorded_2v1_2Alternative_8cs_a59f697bd400368c10a1134b8ea126a48}\label{PreRecorded_2v1_2Alternative_8cs_a59f697bd400368c10a1134b8ea126a48}} 
+\index{Alternative.cs@{Alternative.cs}!Alternative@{Alternative}}
+\index{Alternative@{Alternative}!Alternative.cs@{Alternative.cs}}
+\doxysubsubsection{\texorpdfstring{Alternative}{Alternative}}
+{\footnotesize\ttfamily record??????? Alternative}
+
+
+
+Definition at line 7 of file Alternative.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{12     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{13     [JsonPropertyName(\textcolor{stringliteral}{"{}confidence"{}})]}
+\DoxyCodeLine{14     \textcolor{keyword}{public} \textcolor{keywordtype}{double}? Confidence \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{20     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{21     [JsonPropertyName(\textcolor{stringliteral}{"{}entities"{}})]}
+\DoxyCodeLine{22     \textcolor{keyword}{public} IReadOnlyList<Entity>? Entities \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{28     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{29     [JsonPropertyName(\textcolor{stringliteral}{"{}paragraphs"{}})]}
+\DoxyCodeLine{30     \textcolor{keyword}{public} \mbox{\hyperlink{ParagraphGroup_8cs_af807ca22b25c24f8aa43c9b9038ac7c0}{ParagraphGroup}}? Paragraphs \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{36     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{37     [JsonPropertyName(\textcolor{stringliteral}{"{}summaries"{}})]}
+\DoxyCodeLine{38     \textcolor{keyword}{public} IReadOnlyList<SummaryObsolete>? Summaries \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{43     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{44     [JsonPropertyName(\textcolor{stringliteral}{"{}transcript"{}})]}
+\DoxyCodeLine{45     \textcolor{keyword}{public} \textcolor{keywordtype}{string}? Transcript \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 }
+\DoxyCodeLine{52     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{53     [JsonPropertyName(\textcolor{stringliteral}{"{}translations"{}})]}
+\DoxyCodeLine{54     \textcolor{keyword}{public} IReadOnlyList<Translation>? Translations \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{59     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]}
+\DoxyCodeLine{60     [JsonPropertyName(\textcolor{stringliteral}{"{}words"{}})]}
+\DoxyCodeLine{61     \textcolor{keyword}{public} IReadOnlyList<Word>? Words \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{62 \}}
+
+\end{DoxyCode}
