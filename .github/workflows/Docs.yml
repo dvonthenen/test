@@ -1,0 +1,50 @@
+name: Doxygen
+
+on:
+  push:
+    branches:
+      - "!not_activated_on_branches!*"
+    tags:
+      - "[0-9]+.[0-9]+.[0-9]+"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+        - name: Checkout code from main branch        
+          uses: actions/checkout@v3
+          with:
+            ref: main
+            repository: ${{ github.repository }}
+
+        - name: Get the current tag name
+          run: echo "TAG_NAME=${GITHUB_REF##*/}" >> "$GITHUB_ENV"
+
+        # New Step: Extracting Major Version Number
+        - name: Set the current major version
+          run: echo "MAJOR_VERSION=$(echo $TAG_NAME | cut -d '.' -f 1)" >> "$GITHUB_ENV" # This extracts the major version assuming a 'vX.Y.Z' format
+
+        - name: Checkout the gh-pages branch
+          uses: actions/checkout@v3
+          with:
+            ref: gh-pages
+            path: gh-pages
+
+        - uses: mattnotmitt/doxygen-action@v1.9.8
+          with:
+            working-directory: 'submodule/'
+            doxyfile-path: 'docs/Doxygen'
+
+        - name: Deploy to GitHub Pages
+          uses: peaceiris/actions-gh-pages@v3
+          with:
+              github_token: ${{ secrets.GITHUB_TOKEN }}
+              publish_dir: ./gh-pages
+              publish_branch: gh-pages
+              keep_files: true
+
+        - name: Print the GitHub Pages URL for the current tag
+          run: |
+            echo "Documentation URL for $TAG_NAME: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/docs/$MAJOR_VERSION/index.html"
+      
