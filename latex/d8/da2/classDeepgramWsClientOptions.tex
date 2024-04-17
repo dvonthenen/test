@@ -1,0 +1,272 @@
+\hypertarget{classDeepgramWsClientOptions}{}\doxysection{Deepgram\+Ws\+Client\+Options Class Reference}
+\label{classDeepgramWsClientOptions}\index{DeepgramWsClientOptions@{DeepgramWsClientOptions}}
+
+
+Configuration for the Deepgram client  
+
+
+Inheritance diagram for Deepgram\+Ws\+Client\+Options\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d8/da2/classDeepgramWsClientOptions}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDeepgramWsClientOptions_a754542c9820c097e296b190cd2fd6a0d}{Deepgram\+Ws\+Client\+Options}} (string? api\+Key=null, string? base\+Address=null, bool? keep\+Alive=null, bool? on\+Prem=null, Dictionary$<$ string, string $>$? headers=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classDeepgramWsClientOptions_ac2029e9b113126004f25f8691a8c8d13}{Api\+Key}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Deepgram API KEY \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classDeepgramWsClientOptions_a2fb5b0b92eb6b4ac260d60524e81ecb4}{Base\+Address}} = Defaults.\+DEFAULT\+\_\+\+URI\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Base\+Address of the server \+:defaults to api.\+deepgram.\+com no need to attach the protocol it will be added internally \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classDeepgramWsClientOptions_a83c0e7ba287770affbd5ea88cec383e3}{APIVersion}} = Defaults.\+DEFAULT\+\_\+\+API\+\_\+\+VERSION\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Api endpoint version \end{DoxyCompactList}\item 
+Dictionary$<$ string, string $>$ \mbox{\hyperlink{classDeepgramWsClientOptions_a658810ec4b1ae3432e6f8ba2c27b1efa}{Headers}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Global headers to always be added to the request \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDeepgramWsClientOptions_a38a9f0857cc76782854d3192c7b3b158}{Keep\+Alive}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enable sending Keep\+Alives for Streaming \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDeepgramWsClientOptions_a1938ec23d5be2103ee7b1a6015869f2b}{On\+Prem}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enable when using On\+Prem mode \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Configuration for the Deepgram client 
+
+
+
+Definition at line 10 of file Deepgram\+Ws\+Client\+Options.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDeepgramWsClientOptions_a754542c9820c097e296b190cd2fd6a0d}\label{classDeepgramWsClientOptions_a754542c9820c097e296b190cd2fd6a0d}} 
+\index{DeepgramWsClientOptions@{DeepgramWsClientOptions}!DeepgramWsClientOptions@{DeepgramWsClientOptions}}
+\index{DeepgramWsClientOptions@{DeepgramWsClientOptions}!DeepgramWsClientOptions@{DeepgramWsClientOptions}}
+\doxysubsubsection{\texorpdfstring{DeepgramWsClientOptions()}{DeepgramWsClientOptions()}}
+{\footnotesize\ttfamily Deepgram\+Ws\+Client\+Options.\+Deepgram\+Ws\+Client\+Options (\begin{DoxyParamCaption}\item[{string?}]{api\+Key = {\ttfamily null},  }\item[{string?}]{base\+Address = {\ttfamily null},  }\item[{bool?}]{keep\+Alive = {\ttfamily null},  }\item[{bool?}]{on\+Prem = {\ttfamily null},  }\item[{Dictionary$<$ string, string $>$?}]{headers = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 59 of file Deepgram\+Ws\+Client\+Options.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60     \{}
+\DoxyCodeLine{61         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, \textcolor{stringliteral}{"{}ENTER"{}});}
+\DoxyCodeLine{62         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, apiKey == \textcolor{keyword}{null} ? \textcolor{stringliteral}{"{}API KEY is null"{}} : \textcolor{stringliteral}{"{}API KEY provided"{}});}
+\DoxyCodeLine{63         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, baseAddress == \textcolor{keyword}{null} ? \textcolor{stringliteral}{"{}BaseAddress is null"{}} : \textcolor{stringliteral}{"{}BaseAddress provided"{}});}
+\DoxyCodeLine{64         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, keepAlive == \textcolor{keyword}{null} ? \textcolor{stringliteral}{"{}KeepAlive is null"{}} : \textcolor{stringliteral}{"{}KeepAlive provided"{}});}
+\DoxyCodeLine{65         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, onPrem == \textcolor{keyword}{null} ? \textcolor{stringliteral}{"{}OnPrem is null"{}} : \textcolor{stringliteral}{"{}OnPrem provided"{}});}
+\DoxyCodeLine{66         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, headers == \textcolor{keyword}{null} ? \textcolor{stringliteral}{"{}Headers is null"{}} : \textcolor{stringliteral}{"{}Headers provided"{}});}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68         \mbox{\hyperlink{classDeepgramWsClientOptions_ac2029e9b113126004f25f8691a8c8d13}{ApiKey}} = apiKey ?? \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{69         \mbox{\hyperlink{classDeepgramWsClientOptions_a2fb5b0b92eb6b4ac260d60524e81ecb4}{BaseAddress}} = baseAddress ?? Defaults.DEFAULT\_URI;}
+\DoxyCodeLine{70         \mbox{\hyperlink{classDeepgramWsClientOptions_a38a9f0857cc76782854d3192c7b3b158}{KeepAlive}} = keepAlive ?? \textcolor{keyword}{false};}
+\DoxyCodeLine{71         \mbox{\hyperlink{classDeepgramWsClientOptions_a1938ec23d5be2103ee7b1a6015869f2b}{OnPrem}} = onPrem ?? \textcolor{keyword}{false};}
+\DoxyCodeLine{72         \mbox{\hyperlink{classDeepgramWsClientOptions_a658810ec4b1ae3432e6f8ba2c27b1efa}{Headers}} = headers ?? \textcolor{keyword}{new} Dictionary<string, string>();}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, \$\textcolor{stringliteral}{"{}KeepAlive: \{KeepAlive\}"{}});}
+\DoxyCodeLine{75         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, \$\textcolor{stringliteral}{"{}OnPrem: \{OnPrem\}"{}});}
+\DoxyCodeLine{76         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, \$\textcolor{stringliteral}{"{}APIVersion: \{APIVersion\}"{}});}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78         \textcolor{comment}{// user provided takes precedence}}
+\DoxyCodeLine{79         \textcolor{keywordflow}{if} (\textcolor{keywordtype}{string}.IsNullOrWhiteSpace(\mbox{\hyperlink{classDeepgramWsClientOptions_ac2029e9b113126004f25f8691a8c8d13}{ApiKey}}))}
+\DoxyCodeLine{80         \{}
+\DoxyCodeLine{81             \textcolor{comment}{// then try the environment variable}}
+\DoxyCodeLine{82             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, \textcolor{stringliteral}{"{}API KEY is not set"{}});}
+\DoxyCodeLine{83             \mbox{\hyperlink{classDeepgramWsClientOptions_ac2029e9b113126004f25f8691a8c8d13}{ApiKey}} = Environment.GetEnvironmentVariable(variable: Defaults.DEEPGRAM\_API\_KEY) ?? \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{84             \textcolor{keywordflow}{if} (!\textcolor{keywordtype}{string}.IsNullOrEmpty(\mbox{\hyperlink{classDeepgramWsClientOptions_ac2029e9b113126004f25f8691a8c8d13}{ApiKey}}))}
+\DoxyCodeLine{85             \{}
+\DoxyCodeLine{86                 \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, \textcolor{stringliteral}{"{}API KEY set from environment variable"{}});}
+\DoxyCodeLine{87             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{88                 \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a1645aa5c3e59424312de45552ed51ec3}{Warning}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, \textcolor{stringliteral}{"{}API KEY environment variable not set"{}});}
+\DoxyCodeLine{89             \}}
+\DoxyCodeLine{90         \}}
+\DoxyCodeLine{91         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classDeepgramWsClientOptions_a1938ec23d5be2103ee7b1a6015869f2b}{OnPrem}} \&\& \textcolor{keywordtype}{string}.IsNullOrEmpty(\mbox{\hyperlink{classDeepgramWsClientOptions_ac2029e9b113126004f25f8691a8c8d13}{ApiKey}}))}
+\DoxyCodeLine{92         \{}
+\DoxyCodeLine{93             var exStr = \textcolor{stringliteral}{"{}Deepgram API Key is invalid"{}};}
+\DoxyCodeLine{94             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a2103a15a44d6c5ae80563cce05a89abe}{Error}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, exStr);}
+\DoxyCodeLine{95             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentException(exStr);}
+\DoxyCodeLine{96         \}}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98         \textcolor{comment}{// base url}}
+\DoxyCodeLine{99         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, \$\textcolor{stringliteral}{"{}REST BaseAddress: \{BaseAddress\}"{}});}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101         Regex regex = \textcolor{keyword}{new} Regex(\textcolor{stringliteral}{@"{}\(\backslash\)b(\(\backslash\)/v[0-\/9]+)\(\backslash\)b"{}}, RegexOptions.IgnoreCase);}
+\DoxyCodeLine{102         \textcolor{keywordflow}{if} (!regex.IsMatch(\mbox{\hyperlink{classDeepgramWsClientOptions_a2fb5b0b92eb6b4ac260d60524e81ecb4}{BaseAddress}}))}
+\DoxyCodeLine{103         \{}
+\DoxyCodeLine{104             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, \$\textcolor{stringliteral}{"{}REST BaseAddress does not contain API version: \{BaseAddress\}"{}});}
+\DoxyCodeLine{105             \mbox{\hyperlink{classDeepgramWsClientOptions_a2fb5b0b92eb6b4ac260d60524e81ecb4}{BaseAddress}} = \$\textcolor{stringliteral}{"{}\{BaseAddress\}/\{APIVersion\}"{}};}
+\DoxyCodeLine{106             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, \$\textcolor{stringliteral}{"{}BaseAddress: \{BaseAddress\}"{}});}
+\DoxyCodeLine{107         \}}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109         \textcolor{comment}{//checks for http:// https:// http https -\/ https:// is include to ensure it is all stripped out and correctly formatted }}
+\DoxyCodeLine{110         regex = \textcolor{keyword}{new} Regex(\textcolor{stringliteral}{@"{}\(\backslash\)b(http:\(\backslash\)/\(\backslash\)/|https:\(\backslash\)/\(\backslash\)/|http|https)\(\backslash\)b"{}}, RegexOptions.IgnoreCase);}
+\DoxyCodeLine{111         \textcolor{keywordflow}{if} (regex.IsMatch(\mbox{\hyperlink{classDeepgramWsClientOptions_a2fb5b0b92eb6b4ac260d60524e81ecb4}{BaseAddress}}))}
+\DoxyCodeLine{112         \{}
+\DoxyCodeLine{113             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, \$\textcolor{stringliteral}{"{}BaseAddress contains HTTP(s) protocol. Remove: \{BaseAddress\}"{}});}
+\DoxyCodeLine{114             \mbox{\hyperlink{classDeepgramWsClientOptions_a2fb5b0b92eb6b4ac260d60524e81ecb4}{BaseAddress}} = \mbox{\hyperlink{classDeepgramWsClientOptions_a2fb5b0b92eb6b4ac260d60524e81ecb4}{BaseAddress}}.Substring(\mbox{\hyperlink{classDeepgramWsClientOptions_a2fb5b0b92eb6b4ac260d60524e81ecb4}{BaseAddress}}.IndexOf(\textcolor{stringliteral}{"{}/"{}}) + 2);}
+\DoxyCodeLine{115             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, \$\textcolor{stringliteral}{"{}BaseAddress: \{BaseAddress\}"{}});}
+\DoxyCodeLine{116         \}}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118         \textcolor{comment}{//checks for ws:// wss:// ws wss -\/ wss:// is include to ensure it is all stripped out and correctly formatted}}
+\DoxyCodeLine{119         regex = \textcolor{keyword}{new} Regex(\textcolor{stringliteral}{@"{}\(\backslash\)b(ws:\(\backslash\)/\(\backslash\)/|wss:\(\backslash\)/\(\backslash\)/|ws|wss)\(\backslash\)b"{}}, RegexOptions.IgnoreCase);}
+\DoxyCodeLine{120         \textcolor{keywordflow}{if} (!regex.IsMatch(\mbox{\hyperlink{classDeepgramWsClientOptions_a2fb5b0b92eb6b4ac260d60524e81ecb4}{BaseAddress}}))}
+\DoxyCodeLine{121         \{}
+\DoxyCodeLine{122             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, \$\textcolor{stringliteral}{"{}BaseAddress does not contain protocol: \{BaseAddress\}"{}});}
+\DoxyCodeLine{123             \mbox{\hyperlink{classDeepgramWsClientOptions_a2fb5b0b92eb6b4ac260d60524e81ecb4}{BaseAddress}} = \$\textcolor{stringliteral}{"{}wss://\{BaseAddress\}"{}};}
+\DoxyCodeLine{124             \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a4abefae0218fc147ef0c6ea554770e65}{Debug}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, \$\textcolor{stringliteral}{"{}BaseAddress: \{BaseAddress\}"{}});}
+\DoxyCodeLine{125         \}}
+\DoxyCodeLine{126         \mbox{\hyperlink{classDeepgramWsClientOptions_a2fb5b0b92eb6b4ac260d60524e81ecb4}{BaseAddress}} = \mbox{\hyperlink{classDeepgramWsClientOptions_a2fb5b0b92eb6b4ac260d60524e81ecb4}{BaseAddress}}.TrimEnd(\textcolor{charliteral}{'/'});}
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_ac222ef6b1df9735d43a1e61a11434928}{Information}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, \$\textcolor{stringliteral}{"{}BaseAddress: \{BaseAddress\}"{}});}
+\DoxyCodeLine{129         \mbox{\hyperlink{classLog}{Log}}.\mbox{\hyperlink{classLog_a46391f0dc4e95096e2a7effb721ac1b8}{Verbose}}(\textcolor{stringliteral}{"{}DeepgramWsClientOptions"{}}, \textcolor{stringliteral}{"{}LEAVE"{}});}
+\DoxyCodeLine{130     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classDeepgramWsClientOptions_ac2029e9b113126004f25f8691a8c8d13}\label{classDeepgramWsClientOptions_ac2029e9b113126004f25f8691a8c8d13}} 
+\index{DeepgramWsClientOptions@{DeepgramWsClientOptions}!ApiKey@{ApiKey}}
+\index{ApiKey@{ApiKey}!DeepgramWsClientOptions@{DeepgramWsClientOptions}}
+\doxysubsubsection{\texorpdfstring{ApiKey}{ApiKey}}
+{\footnotesize\ttfamily string Deepgram\+Ws\+Client\+Options.\+Api\+Key\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Deepgram API KEY 
+
+
+
+Definition at line 18 of file Deepgram\+Ws\+Client\+Options.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+
+
+Referenced by Deepgram\+Ws\+Client\+Options().
+
+\mbox{\Hypertarget{classDeepgramWsClientOptions_a83c0e7ba287770affbd5ea88cec383e3}\label{classDeepgramWsClientOptions_a83c0e7ba287770affbd5ea88cec383e3}} 
+\index{DeepgramWsClientOptions@{DeepgramWsClientOptions}!APIVersion@{APIVersion}}
+\index{APIVersion@{APIVersion}!DeepgramWsClientOptions@{DeepgramWsClientOptions}}
+\doxysubsubsection{\texorpdfstring{APIVersion}{APIVersion}}
+{\footnotesize\ttfamily string Deepgram\+Ws\+Client\+Options.\+APIVersion = Defaults.\+DEFAULT\+\_\+\+API\+\_\+\+VERSION\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Api endpoint version 
+
+
+
+Definition at line 29 of file Deepgram\+Ws\+Client\+Options.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = Defaults.DEFAULT\_API\_VERSION;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classDeepgramWsClientOptions_a2fb5b0b92eb6b4ac260d60524e81ecb4}\label{classDeepgramWsClientOptions_a2fb5b0b92eb6b4ac260d60524e81ecb4}} 
+\index{DeepgramWsClientOptions@{DeepgramWsClientOptions}!BaseAddress@{BaseAddress}}
+\index{BaseAddress@{BaseAddress}!DeepgramWsClientOptions@{DeepgramWsClientOptions}}
+\doxysubsubsection{\texorpdfstring{BaseAddress}{BaseAddress}}
+{\footnotesize\ttfamily string Deepgram\+Ws\+Client\+Options.\+Base\+Address = Defaults.\+DEFAULT\+\_\+\+URI\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Base\+Address of the server \+:defaults to api.\+deepgram.\+com no need to attach the protocol it will be added internally 
+
+
+
+Definition at line 24 of file Deepgram\+Ws\+Client\+Options.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = Defaults.DEFAULT\_URI;}
+
+\end{DoxyCode}
+
+
+Referenced by Deepgram\+Ws\+Client\+Options().
+
+\mbox{\Hypertarget{classDeepgramWsClientOptions_a658810ec4b1ae3432e6f8ba2c27b1efa}\label{classDeepgramWsClientOptions_a658810ec4b1ae3432e6f8ba2c27b1efa}} 
+\index{DeepgramWsClientOptions@{DeepgramWsClientOptions}!Headers@{Headers}}
+\index{Headers@{Headers}!DeepgramWsClientOptions@{DeepgramWsClientOptions}}
+\doxysubsubsection{\texorpdfstring{Headers}{Headers}}
+{\footnotesize\ttfamily Dictionary$<$string, string$>$ Deepgram\+Ws\+Client\+Options.\+Headers\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Global headers to always be added to the request 
+
+
+
+Definition at line 34 of file Deepgram\+Ws\+Client\+Options.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{34 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+
+
+Referenced by Deepgram\+Ws\+Client\+Options().
+
+\mbox{\Hypertarget{classDeepgramWsClientOptions_a38a9f0857cc76782854d3192c7b3b158}\label{classDeepgramWsClientOptions_a38a9f0857cc76782854d3192c7b3b158}} 
+\index{DeepgramWsClientOptions@{DeepgramWsClientOptions}!KeepAlive@{KeepAlive}}
+\index{KeepAlive@{KeepAlive}!DeepgramWsClientOptions@{DeepgramWsClientOptions}}
+\doxysubsubsection{\texorpdfstring{KeepAlive}{KeepAlive}}
+{\footnotesize\ttfamily bool Deepgram\+Ws\+Client\+Options.\+Keep\+Alive = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Enable sending Keep\+Alives for Streaming 
+
+
+
+Definition at line 42 of file Deepgram\+Ws\+Client\+Options.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = \textcolor{keyword}{false};}
+
+\end{DoxyCode}
+
+
+Referenced by Deepgram\+Ws\+Client\+Options().
+
+\mbox{\Hypertarget{classDeepgramWsClientOptions_a1938ec23d5be2103ee7b1a6015869f2b}\label{classDeepgramWsClientOptions_a1938ec23d5be2103ee7b1a6015869f2b}} 
+\index{DeepgramWsClientOptions@{DeepgramWsClientOptions}!OnPrem@{OnPrem}}
+\index{OnPrem@{OnPrem}!DeepgramWsClientOptions@{DeepgramWsClientOptions}}
+\doxysubsubsection{\texorpdfstring{OnPrem}{OnPrem}}
+{\footnotesize\ttfamily bool Deepgram\+Ws\+Client\+Options.\+On\+Prem = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Enable when using On\+Prem mode 
+
+
+
+Definition at line 50 of file Deepgram\+Ws\+Client\+Options.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \} = \textcolor{keyword}{false};}
+
+\end{DoxyCode}
+
+
+Referenced by Deepgram\+Ws\+Client\+Options().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Deepgram/\+Models/\+Authenticate/v1/\mbox{\hyperlink{DeepgramWsClientOptions_8cs}{Deepgram\+Ws\+Client\+Options.\+cs}}\end{DoxyCompactItemize}
