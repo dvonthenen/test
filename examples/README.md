@@ -1,37 +1,25 @@
 # Examples for Testing Features Locally
 
-The example projects are meant to be used to test features locally by contributors working on this SDK.
+Test features locally or use these examples as quickstarts to get up and running with the Deeegram .NET SDK.
 
-## Prerequisites
+Here are the steps to follow to run the examples:
 
-In order to run the code in the `examples` folder, you first need to install/pip the dependencies contained in the `requirements-examples.txt` for the examples.
+## Add Your Code (if you are testing changes to the SDK)
 
-```bash
-pip install -r requirements-examples.txt
-```
+Make your changes to the SDK (be sure you are on a branch you have created to do this work).
 
-## Steps to Test Your Code
+### Edit the API key
 
-If you are contributing changes to this SDK, you can test those changes by using the `prerecorded`, `streaming`, or `manage` "hello world"-style applications in the `examples` folder. Here are the steps to follow:
+Inside the example file, replace the API key where it says 'YOUR_DEEPGRAM_API_KEY'
 
-### Set your API Key as an Environment Variable named "DEEPGRAM_API_KEY"
-
-If using bash, this could be done in your `.bash_profile` like so:
-
-```bash
-export DEEPGRAM_API_KEY = "YOUR_DEEPGRAM_API_KEY"
-```
-
-or this could also be done by a simple export before executing your python application:
-
-```bash
-DEEPGRAM_API_KEY="YOUR_DEEPGRAM_API_KEY" python main.py
-```
+`DEEPGRAM_API_KEY = 'YOUR_DEEPGRAM_API_KEY'`
 
 ### Run the project
 
-If you chose to set an environment variable in your shell profile (ie `.bash_profile`) you can change directory into each example folder and run the example like so:
+Make sure you're in the directory with the `Program.cs` file and run the project with the following command.
 
-```bash
-python main.py
-```
+`dotnet run Program.cs`
+
+### After testing
+
+After you have used the example files to test your code, be sure to reset the example file to the way it was when you started (i.e. discard features you may have added to the options dictionary when testing features).

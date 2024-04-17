@@ -1,27 +1,39 @@
 name: CI
-
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - release-v*
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
+      - release-v*
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet-version: ["6.0.x", "7.0.x","8.0.x"]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+      - name: Install dependencies
+        run: dotnet restore Deepgram.sln
+      - name: Run tests
+        run: dotnet test Deepgram.sln
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v2
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
         with:
-          python-version: '3.10' 
-          
-      - name: Install Dependencies
-        run: pip install .
-
-      #- name: Run Tests
-      #  run: pytest tests/
-
-      - name: Check SDK Setup
-        run: python -m pip install --upgrade build
-
-      - name: Build SDK
-        run: python -m build
+          dotnet-version: "8.x.x"
+      - name: Install dependencies
+        run: dotnet restore Deepgram.sln
+      - name: Build
+        run: dotnet build Deepgram.sln --configuration Release --no-restore

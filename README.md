@@ -1,13 +1,10 @@
-# Deepgram Python SDK
+# Deepgram .NET SDK
 
-[![Discord](https://dcbadge.vercel.app/api/server/xWRaCDBtW4?style=flat)](https://discord.gg/xWRaCDBtW4) [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/deepgram/deepgram-python-sdk/CI)](https://github.com/deepgram/deepgram-python-sdk/actions/workflows/CI.yml) [![PyPI](https://img.shields.io/pypi/v/deepgram-sdk)](https://pypi.org/project/deepgram-sdk/)
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg?style=flat-rounded)](./.github/CODE_OF_CONDUCT.md)
+[![NuGet](https://img.shields.io/nuget/v/deepgram)](https://www.nuget.org/packages/Deepgram) [![Build Status](https://github.com/deepgram-devs/deepgram-dotnet-sdk/workflows/CI/badge.svg)](https://github.com/deepgram-devs/deepgram-dotnet-sdk/actions?query=CI) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](./.github/CODE_OF_CONDUCT.md) [![Discord](https://dcbadge.vercel.app/api/server/xWRaCDBtW4?style=flat)](https://discord.gg/xWRaCDBtW4)
 
-Official Python SDK for [Deepgram](https://www.deepgram.com/). Power your apps with world-class speech and Language AI models.
+Official .NET SDK for [Deepgram](https://www.deepgram.com/). Power your apps with world-class speech and Language AI models.
 
-> This SDK only supports hosted usage of api.deepgram.com.
-
-- [Deepgram Python SDK](#deepgram-python-sdk)
+- [Deepgram .NET SDK](#deepgram-net-sdk)
 - [Documentation](#documentation)
 - [Getting an API Key](#getting-an-api-key)
 - [Requirements](#requirements)
@@ -15,205 +12,222 @@ Official Python SDK for [Deepgram](https://www.deepgram.com/). Power your apps w
 - [Quickstarts](#quickstarts)
   - [PreRecorded Audio Transcription Quickstart](#prerecorded-audio-transcription-quickstart)
   - [Live Audio Transcription Quickstart](#live-audio-transcription-quickstart)
-- [Examples](#examples)
+- [Example Code](#example-code)
+- [Logging](#logging)
+- [Backwards Compatability](#backwards-compatibility)
 - [Development and Contributing](#development-and-contributing)
 - [Getting Help](#getting-help)
+- [Backwards Compatibility](#backwards-compatibility)
 
 # Documentation
 
-You can learn more about the Deepgram API at [developers.deepgram.com](https://developers.deepgram.com/docs).
+Complete documentation of the .NET SDK can be found on the
+[Deepgram Docs](https://developers.deepgram.com/docs/dotnet-sdk).
+
+You can learn more about the full Deepgram API at [https://developers.deepgram.com](https://developers.deepgram.com).
 
 # Getting an API Key
 
-🔑 To access the Deepgram API you will need a [free Deepgram API Key](https://console.deepgram.com/signup?jump=keys).
+🔑 To access the Deepgram API, you will need a [free Deepgram API Key](https://console.deepgram.com/signup?jump=keys).
 
 # Requirements
 
-[Python](https://www.python.org/downloads/) (version ^3.10)
+This SDK supports the following versions:
+
+- .NET 8.0
+- .NET 7.0
+- .NET 6.0
 
 # Installation
 
-To install the latest version available (which will guarantee change over time):
+To install the latest version of the C# SDK using NuGet (latest means this version will guarantee change over time), run the following command from your terminal in your project's directory:
 
-```sh
-pip install deepgram-sdk
+```bash
+dotnet add package Deepgram
 ```
 
-If you are going to write an application to consume this SDK, it's [highly recommended](https://discuss.python.org/t/how-to-pin-a-package-to-a-specific-major-version-or-lower/17077) and a [programming staple](https://www.easypost.com/dependency-pinning-guide) to pin to at **least** a major version of an SDK (ie `==2.*`) or **with due diligence**, to a minor and/or specific version (ie `==2.1.*` or `==2.12.0`, respectively). If you are unfamiliar with [semantic versioning or semver](https://semver.org/), it's a must-read.
+Or use the NuGet package Manager. Right click on project and select manage NuGet packages.
 
-In a `requirements.txt` file, pinning to a major (or minor) version, like if you want to stick to using the SDK `v2.12.0` release, that can be done like this:
+### Installing the Previous Version
 
+We guarantee that major interfaces will not break in a given major semver (ie, `4.*` release). However, all bets are off moving from a `3.*` to `4.*` major release. This follows standard semver best-practices.
+
+To install the previous major version of the .NET SDK, run the following command from your terminal in your project's directory:
+
+```bash
+dotnet add package Deepgram --version 3.4.2
 ```
-deepgram-sdk==2.*
-```
-
-Or using pip:
-
-```sh
-pip install deepgram-sdk==2.*
-```
-
-Pinning to a specific version can be done like this in a `requirements.txt` file:
-
-```
-deepgram-sdk==2.12.0
-```
-
-Or using pip:
-
-```sh
-pip install deepgram-sdk==2.12.0
-```
-
-We guarantee that major interfaces will not break in a given major semver (ie `2.*` release). However, all bets are off moving from a `2.*` to `3.*` major release. This follows standard semver best-practices.
 
 # Quickstarts
 
-This SDK aims to reduce complexity and abtract/hide some internal Deepgram details that clients shouldn't need to know about.  However you can still tweak options and settings if you need.
+This SDK aims to reduce complexity and abstract/hide some internal Deepgram details that clients shouldn't need to know about.  However, you can still tweak options and settings if you need.
 
 ## PreRecorded Audio Transcription Quickstart
 
 You can find a [walkthrough](https://developers.deepgram.com/docs/pre-recorded-audio-transcription) on our documentation site. Transcribing Pre-Recorded Audio can be done using the following sample code:
 
-```python
-AUDIO_URL = {
-    "url": "https://static.deepgram.com/examples/Bueller-Life-moves-pretty-fast.wav"
-}
+```csharp
+// JSON options
+JsonSerializerOptions options = new(JsonSerializerDefaults.Web)
+{
+  WriteIndented = true
+};
 
-# STEP 1 Create a Deepgram client using the API key from environment variables
-deepgram = DeepgramClient()
+// Set "DEEPGRAM_API_KEY" environment variable to your Deepgram API Key
+var deepgramClient = new PreRecordedClient();
 
-# STEP 2 Call the transcribe_url method on the prerecorded class
-options = PrerecordedOptions(
-    model="nova",
-    smart_format=True,
-    summarize="v2",
-)
-url_response = deepgram.listen.prerecorded.v("1").transcribe_url(AUDIO_URL, options)
-print(url_response)
+var response = await deepgramClient.TranscribeUrl(
+  new UrlSource("https://static.deepgram.com/examples/Bueller-Life-moves-pretty-fast.wav"),
+  new PrerecordedSchema()
+  {
+    Model = "nova-2",
+  });
+
+Console.WriteLine(JsonSerializer.Serialize(response, options));
 ```
 
 ## Live Audio Transcription Quickstart
 
 You can find a [walkthrough](https://developers.deepgram.com/docs/live-streaming-audio-transcription) on our documentation site. Transcribing Live Audio can be done using the following sample code:
 
-```python
-deepgram = DeepgramClient()
+```csharp
+// Set "DEEPGRAM_API_KEY" environment variable to your Deepgram API Key
+var liveClient = new LiveClient();
 
-# Create a websocket connection to Deepgram
-options = LiveOptions(
-    punctuate=True,
-    language="en-US",
-    encoding="linear16",
-    channels=1,
-    sample_rate=16000,
-)
+// Subscribe to the EventResponseReceived event
+liveClient.Subscribe(new EventHandler<OpenResponse>((sender, e) =>
+{
+    Console.WriteLine($"\n\n----> {e.Type} received");
+}));
+liveClient.Subscribe(new EventHandler<MetadataResponse>((sender, e) =>
+{
+    Console.WriteLine($"----> {e.Type} received");
+}));
+liveClient.Subscribe(new EventHandler<ResultResponse>((sender, e) =>
+{
+    Console.WriteLine($"----> Speaker: {e.Channel.Alternatives[0].Transcript}");
+}));
+liveClient.Subscribe(new EventHandler<SpeechStartedResponse>((sender, e) =>
+{
+    Console.WriteLine($"----> {e.Type} received");
+}));
+liveClient.Subscribe(new EventHandler<UtteranceEndResponse>((sender, e) =>
+{
+    Console.WriteLine($"----> {e.Type} received");
+}));
+liveClient.Subscribe(new EventHandler<CloseResponse>((sender, e) =>
+{
+    Console.WriteLine($"----> {e.Type} received");
+}));
+liveClient.Subscribe(new EventHandler<UnhandledResponse>((sender, e) =>
+{
+    Console.WriteLine($"----> {e.Type} received");
+}));
+liveClient.Subscribe(new EventHandler<ErrorResponse>((sender, e) =>
+{
+    Console.WriteLine($"----> { e.Type} received. Error: {e.Message}");
+}));
 
-def on_message(result=None):
-    if result is None:
-        return
-    sentence = result.channel.alternatives[0].transcript
-    if len(sentence) == 0:
-        return
-    print(f"speaker: {sentence}")
+// Start the connection
+var liveSchema = new LiveSchema()
+{
+    Model = "nova-2",
+    Encoding = "linear16",
+    SampleRate = 16000,
+    Punctuate = true,
+    SmartFormat = true,
+    InterimResults = true,
+    UtteranceEnd = "1000",
+    VadEvents = true,
+};
+await liveClient.Connect(liveSchema);
 
-def on_metadata(metadata=None):
-    if metadata is None:
-        return
-    print(f"\n{metadata}\n")
+// Microphone streaming
+var microphone = new Microphone(liveClient.Send);
+microphone.Start();
 
+// Wait for the user to press a key
+Console.ReadKey();
 
-def on_error(error=None):
-    if error is None:
-        return
-    print(f"\n{error}\n")
+// Stop the microphone
+microphone.Stop();
 
-dg_connection = deepgram.listen.live.v("1")
-dg_connection.start(options)
-
-dg_connection.on(LiveTranscriptionEvents.Transcript, on_message)
-dg_connection.on(LiveTranscriptionEvents.Metadata, on_metadata)
-dg_connection.on(LiveTranscriptionEvents.Error, on_error)
-
-# create microphone
-microphone = Microphone(dg_connection.send)
-
-# start microphone
-microphone.start()
-
-# wait until finished
-input("Press Enter to stop recording...\n\n")
-
-# Wait for the microphone to close
-microphone.finish()
-
-# Indicate that we've finished
-dg_connection.finish()
-
-print("Finished")
+// Stop the connection
+await liveClient.Stop();
 ```
 
-# Examples
+# Example Code
 
-There are examples for **every** API call in this SDK. You can find all of these examples in the [examples folder](https://github.com/deepgram/deepgram-python-sdk/tree/main/examples) at the root of this repo.
+There are examples for **every** API call in this SDK. You can find all of these examples in the [examples folder](https://github.com/deepgram/deepgram-dotnet-sdk/tree/main/examples) at the root of this repo.
 
 These examples provide:
 
-- PreRecorded Audio Transcription:
+- Analyze Text:
 
-    - From an Audio File - [examples/prerecorded/file](https://github.com/deepgram/deepgram-python-sdk/blob/main/examples/prerecorded/file/main.py)
-    - From an URL - [examples/prerecorded/url](https://github.com/deepgram/deepgram-python-sdk/blob/main/examples/prerecorded/url/main.py)
+    - Intent Recognition - [examples/analyze/intent](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/analyze/intent/Program.cs)
+    - Sentiment Analysis - [examples/analyze/sentiment](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/analyze/sentiment/Program.cs)
+    - Summarization - [examples/analyze/summary](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/analyze/summary/Program.cs)
+    - Topic Detection - [examples/analyze/topic](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/analyze/topic/Program.cs)
+
+- PreRecorded Audio:
+
+    - Transcription From an Audio File - [examples/prerecorded/file](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/prerecorded/file/Program.cs)
+    - Transcription From a URL - [examples/prerecorded/url](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/prerecorded/url/Program.cs)
+    - Intent Recognition - [examples/prerecorded/intent](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/prerecorded/intent/Program.cs)
+    - Sentiment Analysis - [examples/prerecorded/sentiment](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/prerecorded/sentiment/Program.cs)
+    - Summarization - [examples/prerecorded/intent](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/prerecorded/summary/Program.cs)
+    - Topic Detection - [examples/prerecorded/topic](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/prerecorded/topic/Program.cs)
 
 - Live Audio Transcription:
 
-    - From a Microphone - [examples/streaming/microphone](https://github.com/deepgram/deepgram-python-sdk/blob/main/examples/streaming/microphone/main.py)
-    - From an HTTP Endpoint - [examples/streaming/http](https://github.com/deepgram/deepgram-python-sdk/blob/main/examples/streaming/http/main.py)
+    - From a Microphone - [examples/streaming/microphone](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/streaming/microphone/Program.cs)
+    - From an HTTP stream - [examples/streaming/http](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/streaming/http/Program.cs)
+    - From a File - [examples/streaming/file](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/streaming/file/Program.cs)
 
 - Management API exercise the full [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations for:
 
-    - Balances - [examples/manage/balances](https://github.com/deepgram/deepgram-python-sdk/blob/main/examples/manage/balances/main.py)
-    - Invitations - [examples/manage/invitations](https://github.com/deepgram/deepgram-python-sdk/blob/main/examples/manage/invitations/main.py)
-    - Keys - [examples/manage/keys](https://github.com/deepgram/deepgram-python-sdk/blob/main/examples/manage/keys/main.py)
-    - Members - [examples/manage/members](https://github.com/deepgram/deepgram-python-sdk/blob/main/examples/manage/members/main.py)
-    - Projects - [examples/manage/projects](https://github.com/deepgram/deepgram-python-sdk/blob/main/examples/manage/projects/main.py)
-    - Scopes - [examples/manage/scopes](https://github.com/deepgram/deepgram-python-sdk/blob/main/examples/manage/scopes/main.py)
-    - Usage - [examples/manage/usage](https://github.com/deepgram/deepgram-python-sdk/blob/main/examples/manage/usage/main.py)
+    - Balances - [examples/manage/balances](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/manage/balances/Program.cs)
+    - Invitations - [examples/manage/invitations](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/manage/invitations/Program.cs)
+    - Keys - [examples/manage/keys](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/manage/keys/Program.cs)
+    - Members - [examples/manage/members](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/manage/members/Program.cs)
+    - Projects - [examples/manage/projects](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/manage/projects/Program.cs)
+    - Scopes - [examples/manage/scopes](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/manage/scopes/Program.cs)
+    - Usage - [examples/manage/usage](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/examples/manage/usage/Program.cs)
 
-To run each example set the `DEEPGRAM_API_KEY` as an environment variable, then `cd` into each example folder and execute the example: `go run main.py`.
+To run each example, set the `DEEPGRAM_API_KEY` as an environment variable, then `cd` into each example folder and execute the example: `dotnet run <Project File>.csproj`.
+
+
+# Logging
+
+This SDK uses [Serilog](https://github.com/serilog/serilog) to perform all of its logging tasks. By default, this SDK will enable `Information` level messages and higher (ie `Warning`, `Error`, etc.) when you initialize the library as follows:
+
+```csharp
+// Default logging level is "Information"
+Library.Initialize();
+```
+
+To increase the logging output/verbosity for debug or troubleshooting purposes, you can set the `Debug` level but using this code:
+
+```csharp
+Library.Initialize(LogLevel.Debug);
+```
+
+# Backwards Compatibility
+
+Older SDK versions will receive Priority 1 (P1) bug support only. Security issues, both in our code and dependencies, are promptly addressed. Significant bugs without clear workarounds are also given priority attention.
 
 # Development and Contributing
 
 Interested in contributing? We ❤️ pull requests!
 
 To make sure our community is safe for all, be sure to review and agree to our
-[Code of Conduct](https://github.com/deepgram/deepgram-python-sdk/blob/main/.github/CODE_OF_CONDUCT.md). Then see the
-[Contribution](https://github.com/deepgram/deepgram-python-sdk/blob/main/.github/CONTRIBUTING.md) guidelines for more information.
-
-## Prerequisites
-
-In order to develop new features for the SDK itself, you first need to uninstall any previous installation of the `deepgram-sdk` and then install/pip the dependencies contained in the `requirements.txt` then instruct python (via pip) to use the SDK by installing it locally.
-
-From the root of the repo, that would entail:
-
-```bash
-pip uninstall deepgram-sdk
-pip install -r requirements.txt
-pip install -e .
-```
-
-## Testing
-
-If you are looking to contribute or modify pytest code, then you need to install the following dependencies:
-
-```bash
-pip install -r requirements-dev.txt
-```
+[Code of Conduct](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/.github/CODE_OF_CONDUCT.md). Then see the
+[Contribution](https://github.com/deepgram/deepgram-dotnet-sdk/blob/main/.github/CONTRIBUTING.md) guidelines for more information.
 
 # Getting Help
 
-We love to hear from you so if you have questions, comments or find a bug in the
-project, let us know! You can either:
+We love to hear from you, so if you have questions, comments or find a bug in the project, please let us know! You can either:
 
-- [Open an issue in this repository](https://github.com/deepgram/deepgram-python-sdk/issues/new)
+- [Open an issue in this repository](https://github.com/deepgram/deepgram-dotnet-sdk/issues/new)
 - [Join the Deepgram Github Discussions Community](https://github.com/orgs/deepgram/discussions)
 - [Join the Deepgram Discord Community](https://discord.gg/xWRaCDBtW4)
